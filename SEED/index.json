@@ -9,11 +9,6 @@
     "title": "Table of Content",
     "keywords": ""
   },
-  "articles/docfx_getting_started.html": {
-    "href": "articles/docfx_getting_started.html",
-    "title": "Getting Started with docfx | docfx seed website",
-    "keywords": "Improve this Doc Getting Started with docfx Getting Started This is a seed. docfx is an API documentation generator for .NET, currently support C# and VB. It has the ability to extract triple slash comments out from your source code. What's more, it has syntax to link additional files to API to add additional remarks. docfx will scan your source code and your additional conceptual files and generate a complete HTML documentation website for you. docfx provides the flexibility for you to customize the website through templates. We currently have several embeded templates, including websites containing pure static html pages and also website managed by AngularJS. Click \"View Source\" for an API to route to the source code in GitHub (your API must be pushed to GitHub) docfx provide DNX version for cross platform use. docfx can be used within Visual Studio seamlessly. NOTE offical docfx.msbuild nuget package is now in pre-release version. You can also build your own with source code and use it locally. We support Docfx Flavored Markdown(DFM) for writing conceptual files. DFM is 100% compatible with Github Flavored Markdown(GFM) and add several new features including file inclusion , cross reference , and yaml header ."
-  },
   "articles/csharp_coding_standards.html": {
     "href": "articles/csharp_coding_standards.html",
     "title": "C# Coding Standards | docfx seed website",
@@ -43,56 +38,6 @@
     "href": "articles/toc.html",
     "title": "Table of Content",
     "keywords": ""
-  },
-  "api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate.html": {
-    "href": "api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate.html",
-    "title": "Delegate ContainersRefType.ContainersRefTypeDelegate | docfx seed website",
-    "keywords": "Improve this Doc View Source Delegate ContainersRefType.ContainersRefTypeDelegate Delegate ContainersRefTypeDelegate Namespace :Microsoft.DevDiv Assembly :BaseClassForTestClass1.dll Syntax public delegate void ContainersRefTypeDelegate();"
-  },
-  "api/CatLibrary.TomFromBaseClass.html": {
-    "href": "api/CatLibrary.TomFromBaseClass.html",
-    "title": "Class TomFromBaseClass | docfx seed website",
-    "keywords": "Improve this Doc View Source Class TomFromBaseClass TomFromBaseClass inherits from @ Inheritance System.Object Tom TomFromBaseClass Inherited Members TomMethod(Complex<TomFromBaseClass, TomFromBaseClass>, Tuple<String, Tom>) System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace :CatLibrary Assembly :CatLibrary.dll Syntax public class TomFromBaseClass : Tom Constructors | Improve this Doc View Source TomFromBaseClass(Int32) This is a #ctor with parameter Declaration public TomFromBaseClass(int k) Parameters Type Name Description System.Int32 k"
-  },
-  "api/CatLibrary.Tom.html": {
-    "href": "api/CatLibrary.Tom.html",
-    "title": "Class Tom | docfx seed website",
-    "keywords": "Improve this Doc View Source Class Tom Tom class is only inherit from Object. Not any member inside itself. Inheritance System.Object Tom Inherited Members System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace :CatLibrary Assembly :CatLibrary.dll Syntax public class Tom Methods | Improve this Doc View Source TomMethod(Complex<TomFromBaseClass, TomFromBaseClass>, Tuple<String, Tom>) This is a Tom Method with complex type as return Declaration public Complex<string, TomFromBaseClass> TomMethod(Complex<TomFromBaseClass, TomFromBaseClass> a, Tuple<string, Tom> b) Parameters Type Name Description Complex < TomFromBaseClass , TomFromBaseClass > a A complex input System.Tuple < System.String , Tom > b Another complex input Returns Type Description Complex < System.String , TomFromBaseClass > Complex TomFromBaseClass Exceptions Type Condition System.NotImplementedException This is not implemented System.ArgumentException This is the exception to be thrown when implemented CatException <T> This is the exception in current documentation"
-  },
-  "api/CatLibrary.MRefNormalDelegate.html": {
-    "href": "api/CatLibrary.MRefNormalDelegate.html",
-    "title": "Delegate MRefNormalDelegate | docfx seed website",
-    "keywords": "Improve this Doc View Source Delegate MRefNormalDelegate Delegate in the namespace Namespace :CatLibrary Assembly :CatLibrary.dll Syntax public delegate void MRefNormalDelegate(List<string> pics, out string name); Parameters Type Name Description System.Collections.Generic.List < System.String > pics a name list of pictures. System.String name give out the needed name."
-  },
-  "api/CatLibrary.MRefDelegate`3.html": {
-    "href": "api/CatLibrary.MRefDelegate`3.html",
-    "title": "Delegate MRefDelegate<K, T, L> | docfx seed website",
-    "keywords": "Improve this Doc View Source Delegate MRefDelegate<K, T, L> Generic delegate with many constrains. Namespace :CatLibrary Assembly :CatLibrary.dll Syntax public delegate void MRefDelegate<K, T, L>(K k, T t, L l)where K : class, IComparable where T : struct where L : Tom, IEnumerable<long>; Parameters Type Name Description K k Type K. T t Type T. L l Type L. Type Parameters Name Description K Generic K. T Generic T. L Generic L."
-  },
-  "api/CatLibrary.ICatExtension.html": {
-    "href": "api/CatLibrary.ICatExtension.html",
-    "title": "Class ICatExtension | docfx seed website",
-    "keywords": "Improve this Doc View Source Class ICatExtension It's the class that contains ICat interface's extension method. This class must be public and static . Also it shouldn't be a geneic class Inheritance System.Object ICatExtension Inherited Members System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace :CatLibrary Assembly :CatLibrary.dll Syntax public class ICatExtension Methods | Improve this Doc View Source Play(ICat, String) Extension method to let cat play Declaration public static void Play(ICat icat, string toy) Parameters Type Name Description ICat icat Cat System.String toy Something to play | Improve this Doc View Source Sleep(ICat, Int64) Extension method hint that how long the cat can sleep. Declaration public static void Sleep(ICat icat, long hours) Parameters Type Name Description ICat icat The type will be extended. System.Int64 hours The length of sleep."
-  },
-  "api/CatLibrary.ICat.html": {
-    "href": "api/CatLibrary.ICat.html",
-    "title": "Interface ICat | docfx seed website",
-    "keywords": "Improve this Doc View Source Interface ICat Cat's interface Inherited Members Name Item[Int32] Eat() CatLibrary.IAnimal.Eat<Tool>(Tool) Eat(String) Namespace :CatLibrary Assembly :CatLibrary.dll Syntax public interface ICat : IAnimal Events | Improve this Doc View Source eat eat event of cat. Every cat must implement this event. Declaration event EventHandler eat Event Type Type Description System.EventHandler"
-  },
-  "api/CatLibrary.FakeDelegate`1.html": {
-    "href": "api/CatLibrary.FakeDelegate`1.html",
-    "title": "Delegate FakeDelegate<T> | docfx seed website",
-    "keywords": "Improve this Doc View Source Delegate FakeDelegate<T> Fake delegate Namespace :CatLibrary Assembly :CatLibrary.dll Syntax public delegate int FakeDelegate<T>(long num, string name, params object[] scores); Parameters Type Name Description System.Int64 num Fake para System.String name Fake para System.Object [] scores Optional Parameter. Returns Type Description System.Int32 Return a fake number to confuse you. Type Parameters Name Description T Fake para"
-  },
-  "api/toc.html": {
-    "href": "api/toc.html",
-    "title": "Table of Content",
-    "keywords": ""
-  },
-  "articles/engineering_guidelines.html": {
-    "href": "articles/engineering_guidelines.html",
-    "title": "Engineering Guidelines | docfx seed website",
-    "keywords": "Improve this Doc Engineering Guidelines Basics Copyright header and license notice All source code files require the following exact header according to its language (please do not make any changes to it). extension: .cs // Copyright (c) Microsoft. All rights reserved. // Licensed under the MIT license. See LICENSE file in the project root for full license information. extension: .js // Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information. extension: .css /* Copyright (c) Microsoft Corporation. All Rights Reserved. Licensed under the MIT License. See License.txt in the project root for license information. */ extension: .tmpl , .tmpl.partial {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}} External dependencies This refers to dependencies on projects (i.e. NuGet packages) outside of the docfx repo, and especially outside of Microsoft. Adding new dependencies require additional approval. Current approved dependencies are: Newtonsoft.Json Jint HtmlAgilityPack Nustache YamlDotNet Code reviews and checkins To help ensure that only the highest quality code makes its way into the project, please submit all your code changes to GitHub as PRs. This includes runtime code changes, unit test updates, and deployment scripts. For example, sending a PR for just an update to a unit test might seem like a waste of time but the unit tests are just as important as the product code and as such, reviewing changes to them is also just as important. The advantages are numerous: improving code quality, more visibility on changes and their potential impact, avoiding duplication of effort, and creating general awareness of progress being made in various areas. In general a PR should be signed off(using the :+1: emoticon) by the Owner of that code. To commit the PR to the repo do not use the Big Green Button . Instead, do a typical push that you would use with Git (e.g. local pull, rebase, merge, push). Source Code Management Branch strategy In general: master has the code for the latest release on NuGet.org. (e.g. 1.0.0 , 1.1.0 ) dev has the code that is being worked on but not yet released. This is the branch into which devs normally submit pull requests and merge changes into. We run daily CI towards dev branch and generate pre-release nuget package, e.g. 1.0.1-alpha-9-abcdefsd . hotfix has the code for fixing master bug after it is released. hotfix changes will be merged back to master and dev once it is verified. Solution and project folder structure and naming Solution files go in the repo root. The default entry point is All.sln . Every project also needs a project.json and a matching .xproj file. This project.json is the source of truth for a project's dependencies and configuration options. Solution need to contain solution folders that match the physical folder ( src , test , tools , etc.). Assembly naming pattern The general naming pattern is Microsoft.DocAsCode.<area>.<subarea> . Unit tests We use xUnit.net for all unit testing. Coding Standards Please refer to C# Coding standards for detailed guideline for C# coding standards. TODO Template Coding standards TODO Template Preprocess JS Coding standards"
   },
   "api/CatLibrary.Complex`2.html": {
     "href": "api/CatLibrary.Complex`2.html",
@@ -129,25 +74,50 @@
     "title": "Namespace MRef.Demo.Enumeration | docfx seed website",
     "keywords": "Improve this Doc Namespace MRef.Demo.Enumeration Enums ColorType Enumeration ColorType"
   },
-  "api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface.html": {
-    "href": "api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface.html",
-    "title": "Interface ContainersRefType.ContainersRefTypeChildInterface | docfx seed website",
-    "keywords": "Improve this Doc View Source Interface ContainersRefType.ContainersRefTypeChildInterface Namespace :Microsoft.DevDiv Assembly :BaseClassForTestClass1.dll Syntax public interface ContainersRefTypeChildInterface"
+  "api/CatLibrary.MRefDelegate`3.html": {
+    "href": "api/CatLibrary.MRefDelegate`3.html",
+    "title": "Delegate MRefDelegate<K, T, L> | docfx seed website",
+    "keywords": "Improve this Doc View Source Delegate MRefDelegate<K, T, L> Generic delegate with many constrains. Namespace :CatLibrary Assembly :CatLibrary.dll Syntax public delegate void MRefDelegate<K, T, L>(K k, T t, L l)where K : class, IComparable where T : struct where L : Tom, IEnumerable<long>; Parameters Type Name Description K k Type K. T t Type T. L l Type L. Type Parameters Name Description K Generic K. T Generic T. L Generic L."
   },
-  "api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild.html": {
-    "href": "api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild.html",
-    "title": "Class ContainersRefType.ContainersRefTypeChild | docfx seed website",
-    "keywords": "Improve this Doc View Source Class ContainersRefType.ContainersRefTypeChild Inheritance System.Object ContainersRefType.ContainersRefTypeChild Inherited Members System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace :Microsoft.DevDiv Assembly :BaseClassForTestClass1.dll Syntax public class ContainersRefTypeChild"
+  "api/CatLibrary.FakeDelegate`1.html": {
+    "href": "api/CatLibrary.FakeDelegate`1.html",
+    "title": "Delegate FakeDelegate<T> | docfx seed website",
+    "keywords": "Improve this Doc View Source Delegate FakeDelegate<T> Fake delegate Namespace :CatLibrary Assembly :CatLibrary.dll Syntax public delegate int FakeDelegate<T>(long num, string name, params object[] scores); Parameters Type Name Description System.Int64 num Fake para System.String name Fake para System.Object [] scores Optional Parameter. Returns Type Description System.Int32 Return a fake number to confuse you. Type Parameters Name Description T Fake para"
   },
-  "api/Microsoft.DevDiv.ContainersRefType.ColorType.html": {
-    "href": "api/Microsoft.DevDiv.ContainersRefType.ColorType.html",
-    "title": "Enum ContainersRefType.ColorType | docfx seed website",
-    "keywords": "Improve this Doc View Source Enum ContainersRefType.ColorType Enumeration ColorType Namespace :Microsoft.DevDiv Assembly :BaseClassForTestClass1.dll Syntax public enum ColorType Fields | Improve this Doc View Source Blue blue Declaration Blue = 1 Field Value Type Description ContainersRefType.ColorType | Improve this Doc View Source Red red Declaration Red = 0 Field Value Type Description ContainersRefType.ColorType | Improve this Doc View Source Yellow yellow Declaration Yellow = 2 Field Value Type Description ContainersRefType.ColorType"
+  "api/toc.html": {
+    "href": "api/toc.html",
+    "title": "Table of Content",
+    "keywords": ""
   },
-  "api/Microsoft.DevDiv.ContainersRefType.html": {
-    "href": "api/Microsoft.DevDiv.ContainersRefType.html",
-    "title": "Struct ContainersRefType | docfx seed website",
-    "keywords": "Improve this Doc View Source Struct ContainersRefType Struct ContainersRefType Inherited Members System.ValueType.Equals(System.Object) System.ValueType.GetHashCode() System.ValueType.ToString() System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetType() Namespace :Microsoft.DevDiv Assembly :BaseClassForTestClass1.dll Syntax public struct ContainersRefType Fields | Improve this Doc View Source ColorCount ColorCount Declaration public long ColorCount Field Value Type Description System.Int64 Properties | Improve this Doc View Source GetColorCount GetColorCount Declaration public long GetColorCount { get; } Property Value Type Description System.Int64 Methods | Improve this Doc View Source ContainersRefTypeNonRefMethod(Object[]) ContainersRefTypeNonRefMethod array Declaration public static int ContainersRefTypeNonRefMethod(params object[] parmsArray) Parameters Type Name Description System.Object [] parmsArray Returns Type Description System.Int32 Events | Improve this Doc View Source ContainersRefTypeEventHandler Declaration public event EventHandler ContainersRefTypeEventHandler Event Type Type Description System.EventHandler"
+  "articles/engineering_guidelines.html": {
+    "href": "articles/engineering_guidelines.html",
+    "title": "Engineering Guidelines | docfx seed website",
+    "keywords": "Improve this Doc Engineering Guidelines Basics Copyright header and license notice All source code files require the following exact header according to its language (please do not make any changes to it). extension: .cs // Copyright (c) Microsoft. All rights reserved. // Licensed under the MIT license. See LICENSE file in the project root for full license information. extension: .js // Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information. extension: .css /* Copyright (c) Microsoft Corporation. All Rights Reserved. Licensed under the MIT License. See License.txt in the project root for license information. */ extension: .tmpl , .tmpl.partial {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}} External dependencies This refers to dependencies on projects (i.e. NuGet packages) outside of the docfx repo, and especially outside of Microsoft. Adding new dependencies require additional approval. Current approved dependencies are: Newtonsoft.Json Jint HtmlAgilityPack Nustache YamlDotNet Code reviews and checkins To help ensure that only the highest quality code makes its way into the project, please submit all your code changes to GitHub as PRs. This includes runtime code changes, unit test updates, and deployment scripts. For example, sending a PR for just an update to a unit test might seem like a waste of time but the unit tests are just as important as the product code and as such, reviewing changes to them is also just as important. The advantages are numerous: improving code quality, more visibility on changes and their potential impact, avoiding duplication of effort, and creating general awareness of progress being made in various areas. In general a PR should be signed off(using the :+1: emoticon) by the Owner of that code. To commit the PR to the repo do not use the Big Green Button . Instead, do a typical push that you would use with Git (e.g. local pull, rebase, merge, push). Source Code Management Branch strategy In general: master has the code for the latest release on NuGet.org. (e.g. 1.0.0 , 1.1.0 ) dev has the code that is being worked on but not yet released. This is the branch into which devs normally submit pull requests and merge changes into. We run daily CI towards dev branch and generate pre-release nuget package, e.g. 1.0.1-alpha-9-abcdefsd . hotfix has the code for fixing master bug after it is released. hotfix changes will be merged back to master and dev once it is verified. Solution and project folder structure and naming Solution files go in the repo root. The default entry point is All.sln . Every project also needs a project.json and a matching .xproj file. This project.json is the source of truth for a project's dependencies and configuration options. Solution need to contain solution folders that match the physical folder ( src , test , tools , etc.). Assembly naming pattern The general naming pattern is Microsoft.DocAsCode.<area>.<subarea> . Unit tests We use xUnit.net for all unit testing. Coding Standards Please refer to C# Coding standards for detailed guideline for C# coding standards. TODO Template Coding standards TODO Template Preprocess JS Coding standards"
+  },
+  "articles/docfx_getting_started.html": {
+    "href": "articles/docfx_getting_started.html",
+    "title": "Getting Started with docfx | docfx seed website",
+    "keywords": "Improve this Doc Getting Started with docfx Getting Started This is a seed. docfx is an API documentation generator for .NET, currently support C# and VB. It has the ability to extract triple slash comments out from your source code. What's more, it has syntax to link additional files to API to add additional remarks. docfx will scan your source code and your additional conceptual files and generate a complete HTML documentation website for you. docfx provides the flexibility for you to customize the website through templates. We currently have several embeded templates, including websites containing pure static html pages and also website managed by AngularJS. Click \"View Source\" for an API to route to the source code in GitHub (your API must be pushed to GitHub) docfx provide DNX version for cross platform use. docfx can be used within Visual Studio seamlessly. NOTE offical docfx.msbuild nuget package is now in pre-release version. You can also build your own with source code and use it locally. We support Docfx Flavored Markdown(DFM) for writing conceptual files. DFM is 100% compatible with Github Flavored Markdown(GFM) and add several new features including file inclusion , cross reference , and yaml header ."
+  },
+  "api/CatLibrary.html": {
+    "href": "api/CatLibrary.html",
+    "title": "Namespace CatLibrary | docfx seed website",
+    "keywords": "Improve this Doc Namespace CatLibrary Classes Cat <T, K> Here's main class of this Demo . You can see mostly type of article within this class and you for more detail, please see the remarks. this class is a template class. It has two Generic parameter. they are: and . The extension method of this class can refer to ICatExtension class CatException <T> Complex <T, J> ICatExtension It's the class that contains ICat interface's extension method. This class must be public and static . Also it shouldn't be a geneic class Tom Tom class is only inherit from Object. Not any member inside itself. TomFromBaseClass TomFromBaseClass inherits from @ Interfaces IAnimal This is basic interface of all animal. ICat Cat's interface Delegates FakeDelegate <T> Fake delegate MRefDelegate <K, T, L> Generic delegate with many constrains. MRefNormalDelegate Delegate in the namespace"
+  },
+  "api/CatLibrary.TomFromBaseClass.html": {
+    "href": "api/CatLibrary.TomFromBaseClass.html",
+    "title": "Class TomFromBaseClass | docfx seed website",
+    "keywords": "Improve this Doc View Source Class TomFromBaseClass TomFromBaseClass inherits from @ Inheritance System.Object Tom TomFromBaseClass Inherited Members TomMethod(Complex<TomFromBaseClass, TomFromBaseClass>, Tuple<String, Tom>) System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace :CatLibrary Assembly :CatLibrary.dll Syntax public class TomFromBaseClass : Tom Constructors | Improve this Doc View Source TomFromBaseClass(Int32) This is a #ctor with parameter Declaration public TomFromBaseClass(int k) Parameters Type Name Description System.Int32 k"
+  },
+  "api/CatLibrary.Tom.html": {
+    "href": "api/CatLibrary.Tom.html",
+    "title": "Class Tom | docfx seed website",
+    "keywords": "Improve this Doc View Source Class Tom Tom class is only inherit from Object. Not any member inside itself. Inheritance System.Object Tom Inherited Members System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace :CatLibrary Assembly :CatLibrary.dll Syntax public class Tom Methods | Improve this Doc View Source TomMethod(Complex<TomFromBaseClass, TomFromBaseClass>, Tuple<String, Tom>) This is a Tom Method with complex type as return Declaration public Complex<string, TomFromBaseClass> TomMethod(Complex<TomFromBaseClass, TomFromBaseClass> a, Tuple<string, Tom> b) Parameters Type Name Description Complex < TomFromBaseClass , TomFromBaseClass > a A complex input System.Tuple < System.String , Tom > b Another complex input Returns Type Description Complex < System.String , TomFromBaseClass > Complex TomFromBaseClass Exceptions Type Condition System.NotImplementedException This is not implemented System.ArgumentException This is the exception to be thrown when implemented CatException <T> This is the exception in current documentation"
+  },
+  "api/CatLibrary.MRefNormalDelegate.html": {
+    "href": "api/CatLibrary.MRefNormalDelegate.html",
+    "title": "Delegate MRefNormalDelegate | docfx seed website",
+    "keywords": "Improve this Doc View Source Delegate MRefNormalDelegate Delegate in the namespace Namespace :CatLibrary Assembly :CatLibrary.dll Syntax public delegate void MRefNormalDelegate(List<string> pics, out string name); Parameters Type Name Description System.Collections.Generic.List < System.String > pics a name list of pictures. System.String name give out the needed name."
   },
   "api/MRef.Demo.Enumeration.ColorType.html": {
     "href": "api/MRef.Demo.Enumeration.ColorType.html",
@@ -164,10 +134,40 @@
     "title": "Class ExplicitLayoutClass | docfx seed website",
     "keywords": "Improve this Doc View Source Class ExplicitLayoutClass Inheritance System.Object ExplicitLayoutClass Inherited Members System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace :Microsoft.DevDiv Assembly :BaseClassForTestClass1.dll Syntax [StructLayout(LayoutKind.Explicit)] public class ExplicitLayoutClass"
   },
-  "api/CatLibrary.html": {
-    "href": "api/CatLibrary.html",
-    "title": "Namespace CatLibrary | docfx seed website",
-    "keywords": "Improve this Doc Namespace CatLibrary Classes Cat <T, K> Here's main class of this Demo . You can see mostly type of article within this class and you for more detail, please see the remarks. this class is a template class. It has two Generic parameter. they are: and . The extension method of this class can refer to ICatExtension class CatException <T> Complex <T, J> ICatExtension It's the class that contains ICat interface's extension method. This class must be public and static . Also it shouldn't be a geneic class Tom Tom class is only inherit from Object. Not any member inside itself. TomFromBaseClass TomFromBaseClass inherits from @ Interfaces IAnimal This is basic interface of all animal. ICat Cat's interface Delegates FakeDelegate <T> Fake delegate MRefDelegate <K, T, L> Generic delegate with many constrains. MRefNormalDelegate Delegate in the namespace"
+  "api/Microsoft.DevDiv.ContainersRefType.html": {
+    "href": "api/Microsoft.DevDiv.ContainersRefType.html",
+    "title": "Struct ContainersRefType | docfx seed website",
+    "keywords": "Improve this Doc View Source Struct ContainersRefType Struct ContainersRefType Inherited Members System.ValueType.Equals(System.Object) System.ValueType.GetHashCode() System.ValueType.ToString() System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetType() Namespace :Microsoft.DevDiv Assembly :BaseClassForTestClass1.dll Syntax public struct ContainersRefType Fields | Improve this Doc View Source ColorCount ColorCount Declaration public long ColorCount Field Value Type Description System.Int64 Properties | Improve this Doc View Source GetColorCount GetColorCount Declaration public long GetColorCount { get; } Property Value Type Description System.Int64 Methods | Improve this Doc View Source ContainersRefTypeNonRefMethod(Object[]) ContainersRefTypeNonRefMethod array Declaration public static int ContainersRefTypeNonRefMethod(params object[] parmsArray) Parameters Type Name Description System.Object [] parmsArray Returns Type Description System.Int32 Events | Improve this Doc View Source ContainersRefTypeEventHandler Declaration public event EventHandler ContainersRefTypeEventHandler Event Type Type Description System.EventHandler"
+  },
+  "api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate.html": {
+    "href": "api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeDelegate.html",
+    "title": "Delegate ContainersRefType.ContainersRefTypeDelegate | docfx seed website",
+    "keywords": "Improve this Doc View Source Delegate ContainersRefType.ContainersRefTypeDelegate Delegate ContainersRefTypeDelegate Namespace :Microsoft.DevDiv Assembly :BaseClassForTestClass1.dll Syntax public delegate void ContainersRefTypeDelegate();"
+  },
+  "api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface.html": {
+    "href": "api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChildInterface.html",
+    "title": "Interface ContainersRefType.ContainersRefTypeChildInterface | docfx seed website",
+    "keywords": "Improve this Doc View Source Interface ContainersRefType.ContainersRefTypeChildInterface Namespace :Microsoft.DevDiv Assembly :BaseClassForTestClass1.dll Syntax public interface ContainersRefTypeChildInterface"
+  },
+  "api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild.html": {
+    "href": "api/Microsoft.DevDiv.ContainersRefType.ContainersRefTypeChild.html",
+    "title": "Class ContainersRefType.ContainersRefTypeChild | docfx seed website",
+    "keywords": "Improve this Doc View Source Class ContainersRefType.ContainersRefTypeChild Inheritance System.Object ContainersRefType.ContainersRefTypeChild Inherited Members System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace :Microsoft.DevDiv Assembly :BaseClassForTestClass1.dll Syntax public class ContainersRefTypeChild"
+  },
+  "api/Microsoft.DevDiv.ContainersRefType.ColorType.html": {
+    "href": "api/Microsoft.DevDiv.ContainersRefType.ColorType.html",
+    "title": "Enum ContainersRefType.ColorType | docfx seed website",
+    "keywords": "Improve this Doc View Source Enum ContainersRefType.ColorType Enumeration ColorType Namespace :Microsoft.DevDiv Assembly :BaseClassForTestClass1.dll Syntax public enum ColorType Fields | Improve this Doc View Source Blue blue Declaration Blue = 1 Field Value Type Description ContainersRefType.ColorType | Improve this Doc View Source Red red Declaration Red = 0 Field Value Type Description ContainersRefType.ColorType | Improve this Doc View Source Yellow yellow Declaration Yellow = 2 Field Value Type Description ContainersRefType.ColorType"
+  },
+  "api/CatLibrary.ICatExtension.html": {
+    "href": "api/CatLibrary.ICatExtension.html",
+    "title": "Class ICatExtension | docfx seed website",
+    "keywords": "Improve this Doc View Source Class ICatExtension It's the class that contains ICat interface's extension method. This class must be public and static . Also it shouldn't be a geneic class Inheritance System.Object ICatExtension Inherited Members System.Object.ToString() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.ReferenceEquals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() Namespace :CatLibrary Assembly :CatLibrary.dll Syntax public class ICatExtension Methods | Improve this Doc View Source Play(ICat, String) Extension method to let cat play Declaration public static void Play(ICat icat, string toy) Parameters Type Name Description ICat icat Cat System.String toy Something to play | Improve this Doc View Source Sleep(ICat, Int64) Extension method hint that how long the cat can sleep. Declaration public static void Sleep(ICat icat, long hours) Parameters Type Name Description ICat icat The type will be extended. System.Int64 hours The length of sleep."
+  },
+  "api/CatLibrary.ICat.html": {
+    "href": "api/CatLibrary.ICat.html",
+    "title": "Interface ICat | docfx seed website",
+    "keywords": "Improve this Doc View Source Interface ICat Cat's interface Inherited Members Name Item[Int32] Eat() CatLibrary.IAnimal.Eat<Tool>(Tool) Eat(String) Namespace :CatLibrary Assembly :CatLibrary.dll Syntax public interface ICat : IAnimal Events | Improve this Doc View Source eat eat event of cat. Every cat must implement this event. Declaration event EventHandler eat Event Type Type Description System.EventHandler"
   },
   "api/CatLibrary.IAnimal.html": {
     "href": "api/CatLibrary.IAnimal.html",
