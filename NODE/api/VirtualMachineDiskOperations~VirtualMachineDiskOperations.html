@@ -1,0 +1,1656 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VirtualMachineDiskOperations
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VirtualMachineDiskOperations
+   ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations" data-uid="VirtualMachineDiskOperations~VirtualMachineDiskOperations">Class VirtualMachineDiskOperations
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <h6><strong>Namespace</strong>:</h6>
+              <h6><strong>Assembly</strong>:.dll</h6>
+              <h5 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">VirtualMachineDiskOperations</code></pre>
+              </div>
+              <h3 id="fields">Fields
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/superyyrrzz/Node2DocFX/new/master/apispec/new?filename=VirtualMachineDiskOperations_VirtualMachineDiskOperations_client.md&amp;value=---%0Auid%3A%20VirtualMachineDiskOperations~VirtualMachineDiskOperations%23client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations_client" data-uid="VirtualMachineDiskOperations~VirtualMachineDiskOperations#client">client</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">client</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/superyyrrzz/Node2DocFX/new/master/apispec/new?filename=VirtualMachineDiskOperations_VirtualMachineDiskOperations_beginCreatingDataDisk.md&amp;value=---%0Auid%3A%20VirtualMachineDiskOperations~VirtualMachineDiskOperations%23beginCreatingDataDisk%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations_beginCreatingDataDisk" data-uid="VirtualMachineDiskOperations~VirtualMachineDiskOperations#beginCreatingDataDisk">beginCreatingDataDisk(serviceName, deploymentName, roleName, parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>The Create Data Disk operation adds a data disk to a virtual machine.
+There are three ways to create the data disk using the Add Data Disk
+operation. Option 1 - Attach an empty data disk to the role by specifying
+the disk label and location of the disk image. Do not include the
+DiskName and SourceMediaLink elements in the request body. Include the
+MediaLink element and reference a blob that is in the same geographical
+region as the role. You can also omit the MediaLink element. In this
+usage, Azure will create the data disk in the storage account configured
+as default for the role. Option 2 - Attach an existing data disk that is
+in the image repository. Do not include the DiskName and SourceMediaLink
+elements in the request body. Specify the data disk to use by including
+the DiskName element. Note: If included the in the response body, the
+MediaLink and LogicalDiskSizeInGB elements are ignored. Option 3 -
+Specify the location of a blob in your storage account that contain a
+disk image to use. Include the SourceMediaLink element. Note: If the
+MediaLink element isincluded, it is ignored.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157199.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157199.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginCreatingDataDisk(serviceName, deploymentName, roleName, parameters, callback);</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>serviceName</em></td>
+                    <td>
+                      <p>The name of your service.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>deploymentName</em></td>
+                    <td>
+                      <p>The name of the deployment.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>roleName</em></td>
+                    <td>
+                      <p>The name of the role to add the data disk to.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">VirtualMachineDataDiskCreateParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters
+supplied to the Create Virtual Machine Data Disk operation.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>hostCaching</em></td>
+                            <td>
+                              <p>Specifies the platform caching
+behavior of data disk blob for read/write efficiency. The default vault
+is ReadOnly. Possible values are: None, ReadOnly, or ReadWrite. Warning:
+Setting this property impacts the consistency of the disk.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>label</em></td>
+                            <td>
+                              <p>Specifies the description of the data
+disk. When you attach a disk, either by directly referencing a media
+using the MediaLink element or specifying the target disk size, you can
+use the DiskLabel element to customize the name property of the target
+data disk.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              <p>Specifies the name of the disk. Azure
+uses the specified disk to create the data disk for the machine and
+populates this field with the disk name.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>logicalUnitNumber</em></td>
+                            <td>
+                              <p>Specifies the Logical Unit
+Number (LUN) for the disk. The LUN specifies the slot in which the data
+drive appears when mounted for usage by the virtual machine. Valid LUN
+values are 0 through 15.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>logicalDiskSizeInGB</em></td>
+                            <td>
+                              <p>Specifies the size, in
+GB, of an empty disk to be attached to the role. The disk can be created
+as part of disk attach or create VM role call by specifying the value for
+this property. Azure creates the empty disk based on size preference and
+attaches the newly created disk to the Role.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>mediaLinkUri</em></td>
+                            <td>
+                              <p>Specifies the location of the blob
+in Azure storage where the media for the disk is located. The blob
+location must belong to the storage account in the subscription specified
+by the SubscriptionId value in the operation call. Example:
+<a href="http://example.blob.core.windows.net/disks/mydisk.vhd">http://example.blob.core.windows.net/disks/mydisk.vhd</a>.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>sourceMediaLinkUri</em></td>
+                            <td>
+                              <p>Specifies the location of
+a blob in account storage which is mounted as a data disk when the
+virtual machine is created.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/superyyrrzz/Node2DocFX/new/master/apispec/new?filename=VirtualMachineDiskOperations_VirtualMachineDiskOperations_beginDeletingDataDisk.md&amp;value=---%0Auid%3A%20VirtualMachineDiskOperations~VirtualMachineDiskOperations%23beginDeletingDataDisk%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations_beginDeletingDataDisk" data-uid="VirtualMachineDiskOperations~VirtualMachineDiskOperations#beginDeletingDataDisk">beginDeletingDataDisk(serviceName, deploymentName, roleName, logicalUnitNumber, deleteFromStorage, callback)</h4>
+              <div class="markdown level1 summary"><p>The Begin Deleting Data Disk operation removes the specified data disk
+from a virtual machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157179.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157179.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginDeletingDataDisk(serviceName, deploymentName, roleName, logicalUnitNumber, deleteFromStorage, callback);</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>serviceName</em></td>
+                    <td>
+                      <p>The name of your service.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>deploymentName</em></td>
+                    <td>
+                      <p>The name of the deployment.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>roleName</em></td>
+                    <td>
+                      <p>The name of the role to delete the data disk from.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Number</span></td>
+                    <td><em>logicalUnitNumber</em></td>
+                    <td>
+                      <p>The logical unit number of the disk.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">boolean</span></td>
+                    <td><em>deleteFromStorage</em></td>
+                    <td>
+                      <p>Specifies that the source blob for
+the disk should also be deleted from storage.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/superyyrrzz/Node2DocFX/new/master/apispec/new?filename=VirtualMachineDiskOperations_VirtualMachineDiskOperations_beginUpdatingDisk.md&amp;value=---%0Auid%3A%20VirtualMachineDiskOperations~VirtualMachineDiskOperations%23beginUpdatingDisk%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations_beginUpdatingDisk" data-uid="VirtualMachineDiskOperations~VirtualMachineDiskOperations#beginUpdatingDisk">beginUpdatingDisk(name, parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>The Add Disk operation adds a disk to the user image repository. The disk
+can be an operating system disk or a data disk.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginUpdatingDisk(name, parameters, callback);</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the disk being updated.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">VirtualMachineDiskUpdateParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied
+to the Update Virtual Machine Disk operation.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>hasOperatingSystem</em></td>
+                            <td>
+                              <p>Specifies whether the
+disk contains an operating system. Note: Only a disk with an operating
+system installed can be mounted as OS Drive.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>operatingSystemType</em></td>
+                            <td>
+                              <p>The operating system type
+of the disk. Possible values are: Linux or Windows.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>label</em></td>
+                            <td>
+                              <p>Specifies the friendly name of the disk.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>mediaLinkUri</em></td>
+                            <td>
+                              <p>Specifies the location of the
+blob in Azure storage. The blob location must belong to a storage account
+in the subscription specified by the SubscriptionId value in the
+operation call. Example:
+<a href="http://example.blob.core.windows.net/disks/mydisk.vhd">http://example.blob.core.windows.net/disks/mydisk.vhd</a>.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              <p>Specifies a name for the disk. Azure uses
+the name to identify the disk when creating virtual machines from the
+disk.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>resizedSizeInGB</em></td>
+                            <td>
+                              <p>Resizes the underlying blob
+to the indicated size in GB.To use the ResizedSizeInGB property, the
+version header should be at least 2014-10-01.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/superyyrrzz/Node2DocFX/new/master/apispec/new?filename=VirtualMachineDiskOperations_VirtualMachineDiskOperations_createDataDisk.md&amp;value=---%0Auid%3A%20VirtualMachineDiskOperations~VirtualMachineDiskOperations%23createDataDisk%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations_createDataDisk" data-uid="VirtualMachineDiskOperations~VirtualMachineDiskOperations#createDataDisk">createDataDisk(serviceName, deploymentName, roleName, parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>The Create Data Disk operation adds a data disk to a virtual machine.
+There are three ways to create the data disk using the Add Data Disk
+operation. Option 1 - Attach an empty data disk to the role by specifying
+the disk label and location of the disk image. Do not include the
+DiskName and SourceMediaLink elements in the request body. Include the
+MediaLink element and reference a blob that is in the same geographical
+region as the role. You can also omit the MediaLink element. In this
+usage, Azure will create the data disk in the storage account configured
+as default for the role. Option 2 - Attach an existing data disk that is
+in the image repository. Do not include the DiskName and SourceMediaLink
+elements in the request body. Specify the data disk to use by including
+the DiskName element. Note: If included the in the response body, the
+MediaLink and LogicalDiskSizeInGB elements are ignored. Option 3 -
+Specify the location of a blob in your storage account that contain a
+disk image to use. Include the SourceMediaLink element. Note: If the
+MediaLink element isincluded, it is ignored.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157199.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157199.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createDataDisk(serviceName, deploymentName, roleName, parameters, callback);</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>serviceName</em></td>
+                    <td>
+                      <p>The name of your service.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>deploymentName</em></td>
+                    <td>
+                      <p>The name of the deployment.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>roleName</em></td>
+                    <td>
+                      <p>The name of the role to add the data disk to.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">VirtualMachineDataDiskCreateParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters
+supplied to the Create Virtual Machine Data Disk operation.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>hostCaching</em></td>
+                            <td>
+                              <p>Specifies the platform caching
+behavior of data disk blob for read/write efficiency. The default vault
+is ReadOnly. Possible values are: None, ReadOnly, or ReadWrite. Warning:
+Setting this property impacts the consistency of the disk.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>label</em></td>
+                            <td>
+                              <p>Specifies the description of the data
+disk. When you attach a disk, either by directly referencing a media
+using the MediaLink element or specifying the target disk size, you can
+use the DiskLabel element to customize the name property of the target
+data disk.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              <p>Specifies the name of the disk. Azure
+uses the specified disk to create the data disk for the machine and
+populates this field with the disk name.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>logicalUnitNumber</em></td>
+                            <td>
+                              <p>Specifies the Logical Unit
+Number (LUN) for the disk. The LUN specifies the slot in which the data
+drive appears when mounted for usage by the virtual machine. Valid LUN
+values are 0 through 15.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>logicalDiskSizeInGB</em></td>
+                            <td>
+                              <p>Specifies the size, in
+GB, of an empty disk to be attached to the role. The disk can be created
+as part of disk attach or create VM role call by specifying the value for
+this property. Azure creates the empty disk based on size preference and
+attaches the newly created disk to the Role.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>mediaLinkUri</em></td>
+                            <td>
+                              <p>Specifies the location of the blob
+in Azure storage where the media for the disk is located. The blob
+location must belong to the storage account in the subscription specified
+by the SubscriptionId value in the operation call. Example:
+<a href="http://example.blob.core.windows.net/disks/mydisk.vhd">http://example.blob.core.windows.net/disks/mydisk.vhd</a>.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>sourceMediaLinkUri</em></td>
+                            <td>
+                              <p>Specifies the location of
+a blob in account storage which is mounted as a data disk when the
+virtual machine is created.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/superyyrrzz/Node2DocFX/new/master/apispec/new?filename=VirtualMachineDiskOperations_VirtualMachineDiskOperations_createDisk.md&amp;value=---%0Auid%3A%20VirtualMachineDiskOperations~VirtualMachineDiskOperations%23createDisk%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations_createDisk" data-uid="VirtualMachineDiskOperations~VirtualMachineDiskOperations#createDisk">createDisk(parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>The Create Disk operation adds a disk to the user image repository. The
+disk can be an operating system disk or a data disk.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createDisk(parameters, callback);</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">VirtualMachineDiskCreateParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied
+to the Create Virtual Machine Disk operation.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>operatingSystemType</em></td>
+                            <td>
+                              <p>The operating system type
+of the disk. Possible values are: Linux or Windows.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>label</em></td>
+                            <td>
+                              <p>Specifies the friendly name of the disk.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>mediaLinkUri</em></td>
+                            <td>
+                              <p>Specifies the location of the blob
+in Azure storage. The blob location must belong to a storage account in
+the subscription specified by the SubscriptionId value in the operation
+call. Example: <a href="http://example.blob.core.windows.net/disks/mydisk.vhd">http://example.blob.core.windows.net/disks/mydisk.vhd</a>.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              <p>Specifies a name for the disk. Azure uses
+the name to identify the disk when creating virtual machines from the
+disk.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/superyyrrzz/Node2DocFX/new/master/apispec/new?filename=VirtualMachineDiskOperations_VirtualMachineDiskOperations_deleteDataDisk.md&amp;value=---%0Auid%3A%20VirtualMachineDiskOperations~VirtualMachineDiskOperations%23deleteDataDisk%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations_deleteDataDisk" data-uid="VirtualMachineDiskOperations~VirtualMachineDiskOperations#deleteDataDisk">deleteDataDisk(serviceName, deploymentName, roleName, logicalUnitNumber, deleteFromStorage, callback)</h4>
+              <div class="markdown level1 summary"><p>The Delete Data Disk operation removes the specified data disk from a
+virtual machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157179.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157179.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteDataDisk(serviceName, deploymentName, roleName, logicalUnitNumber, deleteFromStorage, callback);</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>serviceName</em></td>
+                    <td>
+                      <p>The name of your service.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>deploymentName</em></td>
+                    <td>
+                      <p>The name of the deployment.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>roleName</em></td>
+                    <td>
+                      <p>The name of the role to delete the data disk from.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Number</span></td>
+                    <td><em>logicalUnitNumber</em></td>
+                    <td>
+                      <p>The logical unit number of the disk.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">boolean</span></td>
+                    <td><em>deleteFromStorage</em></td>
+                    <td>
+                      <p>Specifies that the source blob for
+the disk should also be deleted from storage.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/superyyrrzz/Node2DocFX/new/master/apispec/new?filename=VirtualMachineDiskOperations_VirtualMachineDiskOperations_deleteDisk.md&amp;value=---%0Auid%3A%20VirtualMachineDiskOperations~VirtualMachineDiskOperations%23deleteDisk%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations_deleteDisk" data-uid="VirtualMachineDiskOperations~VirtualMachineDiskOperations#deleteDisk">deleteDisk(name, deleteFromStorage, callback)</h4>
+              <div class="markdown level1 summary"><p>The Delete Disk operation deletes the specified data or operating system
+disk from your image repository.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157200.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157200.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteDisk(name, deleteFromStorage, callback);</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the disk to delete.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">boolean</span></td>
+                    <td><em>deleteFromStorage</em></td>
+                    <td>
+                      <p>Specifies that the source blob for
+the disk should also be deleted from storage.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/superyyrrzz/Node2DocFX/new/master/apispec/new?filename=VirtualMachineDiskOperations_VirtualMachineDiskOperations_getDataDisk.md&amp;value=---%0Auid%3A%20VirtualMachineDiskOperations~VirtualMachineDiskOperations%23getDataDisk%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations_getDataDisk" data-uid="VirtualMachineDiskOperations~VirtualMachineDiskOperations#getDataDisk">getDataDisk(serviceName, deploymentName, roleName, logicalUnitNumber, callback)</h4>
+              <div class="markdown level1 summary"><p>The Get Data Disk operation retrieves the specified data disk from a
+virtual machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157180.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157180.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getDataDisk(serviceName, deploymentName, roleName, logicalUnitNumber, callback);</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>serviceName</em></td>
+                    <td>
+                      <p>The name of your service.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>deploymentName</em></td>
+                    <td>
+                      <p>The name of the deployment.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>roleName</em></td>
+                    <td>
+                      <p>The name of the role.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Number</span></td>
+                    <td><em>logicalUnitNumber</em></td>
+                    <td>
+                      <p>The logical unit number of the disk.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/superyyrrzz/Node2DocFX/new/master/apispec/new?filename=VirtualMachineDiskOperations_VirtualMachineDiskOperations_getDisk.md&amp;value=---%0Auid%3A%20VirtualMachineDiskOperations~VirtualMachineDiskOperations%23getDisk%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations_getDisk" data-uid="VirtualMachineDiskOperations~VirtualMachineDiskOperations#getDisk">getDisk(name, callback)</h4>
+              <div class="markdown level1 summary"><p>The Get Disk operation retrieves a disk from the user image repository.
+The disk can be an operating system disk or a data disk.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getDisk(name, callback);</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the disk.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/superyyrrzz/Node2DocFX/new/master/apispec/new?filename=VirtualMachineDiskOperations_VirtualMachineDiskOperations_listDisks.md&amp;value=---%0Auid%3A%20VirtualMachineDiskOperations~VirtualMachineDiskOperations%23listDisks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations_listDisks" data-uid="VirtualMachineDiskOperations~VirtualMachineDiskOperations#listDisks">listDisks(callback)</h4>
+              <div class="markdown level1 summary"><p>The List Disks operation retrieves a list of the disks in your image
+repository.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157176.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157176.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listDisks(callback);</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/superyyrrzz/Node2DocFX/new/master/apispec/new?filename=VirtualMachineDiskOperations_VirtualMachineDiskOperations_updateDataDisk.md&amp;value=---%0Auid%3A%20VirtualMachineDiskOperations~VirtualMachineDiskOperations%23updateDataDisk%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations_updateDataDisk" data-uid="VirtualMachineDiskOperations~VirtualMachineDiskOperations#updateDataDisk">updateDataDisk(serviceName, deploymentName, roleName, logicalUnitNumber, parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>The Update Data Disk operation updates the specified data disk attached to
+the specified virtual machine.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157190.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157190.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function updateDataDisk(serviceName, deploymentName, roleName, logicalUnitNumber, parameters, callback);</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>serviceName</em></td>
+                    <td>
+                      <p>The name of your service.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>deploymentName</em></td>
+                    <td>
+                      <p>The name of the deployment.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>roleName</em></td>
+                    <td>
+                      <p>The name of the role to add the data disk to.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Number</span></td>
+                    <td><em>logicalUnitNumber</em></td>
+                    <td>
+                      <p>The logical unit number of the disk.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">VirtualMachineDataDiskUpdateParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters
+supplied to the Update Virtual Machine Data Disk operation.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>hostCaching</em></td>
+                            <td>
+                              <p>Specifies the platform caching
+behavior of data disk blob for read/write efficiency. The default vault
+is ReadOnly. Possible values are: None, ReadOnly, or ReadWrite. Warning:
+Setting this property impacts the consistency of the disk.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>label</em></td>
+                            <td>
+                              <p>Specifies the description of the data
+disk. When you attach a disk, either by directly referencing a media
+using the MediaLink element or specifying the target disk size, you can
+use the DiskLabel element to customize the name property of the target
+data disk.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              <p>Specifies the name of the disk. Azure
+uses the specified disk to create the data disk for the machine and
+populates this field with the disk name.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>logicalUnitNumber</em></td>
+                            <td>
+                              <p>Specifies the Logical Unit
+Number (LUN) for the disk. The LUN specifies the slot in which the data
+drive appears when mounted for usage by the virtual machine. Valid LUN
+values are 0 through 15.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>logicalDiskSizeInGB</em></td>
+                            <td>
+                              <p>Specifies the size, in
+GB, of an empty disk to be attached to the role. The disk can be created
+as part of disk attach or create VM role call by specifying the value for
+this property. Azure creates the empty disk based on size preference and
+attaches the newly created disk to the Role.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>mediaLinkUri</em></td>
+                            <td>
+                              <p>Specifies the location of the blob
+in Azure blob store where the media for the disk is located. The blob
+location must belong to the storage account in the subscription specified
+by the SubscriptionId value in the operation call. Example:
+<a href="http://example.blob.core.windows.net/disks/mydisk.vhd">http://example.blob.core.windows.net/disks/mydisk.vhd</a>.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/superyyrrzz/Node2DocFX/new/master/apispec/new?filename=VirtualMachineDiskOperations_VirtualMachineDiskOperations_updateDisk.md&amp;value=---%0Auid%3A%20VirtualMachineDiskOperations~VirtualMachineDiskOperations%23updateDisk%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations_updateDisk" data-uid="VirtualMachineDiskOperations~VirtualMachineDiskOperations#updateDisk">updateDisk(name, parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>The Add Disk operation adds a disk to the user image repository. The disk
+can be an operating system disk or a data disk.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function updateDisk(name, parameters, callback);</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the disk being updated.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">VirtualMachineDiskUpdateParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied
+to the Update Virtual Machine Disk operation.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>hasOperatingSystem</em></td>
+                            <td>
+                              <p>Specifies whether the
+disk contains an operating system. Note: Only a disk with an operating
+system installed can be mounted as OS Drive.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>operatingSystemType</em></td>
+                            <td>
+                              <p>The operating system type
+of the disk. Possible values are: Linux or Windows.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>label</em></td>
+                            <td>
+                              <p>Specifies the friendly name of the disk.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>mediaLinkUri</em></td>
+                            <td>
+                              <p>Specifies the location of the
+blob in Azure storage. The blob location must belong to a storage account
+in the subscription specified by the SubscriptionId value in the
+operation call. Example:
+<a href="http://example.blob.core.windows.net/disks/mydisk.vhd">http://example.blob.core.windows.net/disks/mydisk.vhd</a>.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              <p>Specifies a name for the disk. Azure uses
+the name to identify the disk when creating virtual machines from the
+disk.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>resizedSizeInGB</em></td>
+                            <td>
+                              <p>Resizes the underlying blob
+to the indicated size in GB.To use the ResizedSizeInGB property, the
+version header should be at least 2014-10-01.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/superyyrrzz/Node2DocFX/new/master/apispec/new?filename=VirtualMachineDiskOperations_VirtualMachineDiskOperations_updateDiskSize.md&amp;value=---%0Auid%3A%20VirtualMachineDiskOperations~VirtualMachineDiskOperations%23updateDiskSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="VirtualMachineDiskOperations_VirtualMachineDiskOperations_updateDiskSize" data-uid="VirtualMachineDiskOperations~VirtualMachineDiskOperations#updateDiskSize">updateDiskSize(name, parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>The Add Disk operation adds a disk to the user image repository. The disk
+can be an operating system disk or a data disk.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157178.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function updateDiskSize(name, parameters, callback);</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the disk being updated.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">VirtualMachineDiskUpdateParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied
+to the Update Virtual Machine Disk operation.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>hasOperatingSystem</em></td>
+                            <td>
+                              <p>Specifies whether the
+disk contains an operating system. Note: Only a disk with an operating
+system installed can be mounted as OS Drive.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>operatingSystemType</em></td>
+                            <td>
+                              <p>The operating system type
+of the disk. Possible values are: Linux or Windows.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>label</em></td>
+                            <td>
+                              <p>Specifies the friendly name of the disk.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>mediaLinkUri</em></td>
+                            <td>
+                              <p>Specifies the location of the
+blob in Azure storage. The blob location must belong to a storage account
+in the subscription specified by the SubscriptionId value in the
+operation call. Example:
+<a href="http://example.blob.core.windows.net/disks/mydisk.vhd">http://example.blob.core.windows.net/disks/mydisk.vhd</a>.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              <p>Specifies a name for the disk. Azure uses
+the name to identify the disk when creating virtual machines from the
+disk.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>resizedSizeInGB</em></td>
+                            <td>
+                              <p>Resizes the underlying blob
+to the indicated size in GB.To use the ResizedSizeInGB property, the
+version header should be at least 2014-10-01.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/superyyrrzz/Node2DocFX/new/master/apispec/new?filename=VirtualMachineDiskOperations_VirtualMachineDiskOperations.md&amp;value=---%0Auid%3A%20VirtualMachineDiskOperations~VirtualMachineDiskOperations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
