@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Microsoft Azure SDK for Node.js - Service Bus Management </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Microsoft Azure SDK for Node.js - Service Bus Management ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="microsoft-azure-sdk-for-nodejs---service-bus-management">Microsoft Azure SDK for Node.js - Service Bus Management</h1>
+              
+<p>This project provides a Node.js package that makes it easy to manage Microsoft Azure Service Bus. Right now it supports:</p>
+<ul>
+<li><strong>API version: 2013-08-01</strong></li>
+</ul>
+<h2 id="features">Features</h2>
+<ul>
+<li>Manage namespace</li>
+<li>Manage queue</li>
+<li>Manage topic</li>
+<li>Manage relay</li>
+<li>Manage notification hub</li>
+</ul>
+<h2 id="how-to-install">How to Install</h2>
+<pre><code class="lang-bash">npm install azure-asm-sb
+</code></pre><h2 id="how-to-use">How to Use</h2>
+<h3 id="authentication">Authentication</h3>
+<p>This library support management certificate authentication. To authenticate the library for the REST API calls, you need to</p>
+<ul>
+<li>Have a management certificate set up in your Microsoft Azure subscription. You can do this by<ul>
+<li>Either uploading a certificate in the <a href="https://manage.windowsazure.com">Microsoft Azure management portal</a>.</li>
+<li>Or use the <a href="https://github.com/Azure/azure-xplat-cli">Microsoft Azure Xplat-CLI</a>.</li>
+</ul>
+</li>
+<li>Obtain the .pem file of your certificate. If you used <a href="https://github.com/Azure/azure-xplat-cli">Microsoft Azure Xplat-CLI</a> to set it up. You can run <code>azure account cert export</code> to get the .pem file.</li>
+</ul>
+<h3 id="create-the-servicebusmanagementclient">Create the ServiceBusManagementClient</h3>
+<pre><code class="lang-javascript">var fs           = require(&#39;fs&#39;),
+    sbManagement = require(&#39;azure-asm-sb&#39;);
+
+var sbManagementClient = sbManagement.createServiceBusManagementClient(sbManagement.createCertificateCloudCredentials({
+  subscriptionId: &#39;&lt;your subscription id&gt;&#39;,
+  pem: fs.readFileSync(&#39;&lt;your pem file&gt;&#39;)
+}));
+</code></pre><h3 id="manage-namespace">Manage Namespace</h3>
+<pre><code class="lang-javascript">var namespaceName = &quot;namespace01&quot;;
+
+// Create a namespace.
+sbManagementClient.namespaces.create(namespaceName, &quot;West US&quot;, function (err, result) {
+  if (err) {
+    console.error(err);
+  } else {
+    console.info(result);
+  }
+});
+</code></pre><h2 id="related-projects">Related projects</h2>
+<ul>
+<li><a href="https://github.com/WindowsAzure/azure-sdk-for-node">Microsoft Azure SDK for Node.js</a></li>
+<li><a href="https://github.com/WindowsAzure/azure-sdk-for-node/tree/master/lib/services/serviceBus">Microsoft Azure SDK for Node.js - Service Bus</a></li>
+</ul>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

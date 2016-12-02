@@ -1,0 +1,1261 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WebsiteManagementService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WebsiteManagementService
+   ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="azure_asm_website_WebsiteManagementService" data-uid="azure-asm-website.WebsiteManagementService">Class WebsiteManagementService
+              </h1>
+              <div class="markdown level0 summary"><p>The WebsiteManagementService object allows you to perform management operations on Microsoft Azure Web Sites.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <h4 id="azure_asm_website_WebsiteManagementService__ctor" data-uid="azure-asm-website.WebsiteManagementService.#ctor">WebsiteManagementService(configOrSubscriptionId, authentication, hostOptions)</h4>
+              <div class="markdown level1 summary"><p>Creates a new WebsiteManagementService object.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">new WebsiteManagementService(configOrSubscriptionId, authentication, hostOptions)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>configOrSubscriptionId</em></td>
+                    <td>
+                      <p>Configuration information, subscription ID for the account or the connection string</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>authentication</em></td>
+                    <td>
+                      <p>The authentication object for the client.
+                                                                     You must use either keyfile/certfile or keyvalue/certvalue
+                                                                     to provide a management certificate to authenticate
+                                                                     service requests.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>keyfile</em></td>
+                            <td>
+                              <p>The path to a file that contains the PEM encoded key</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>certfile</em></td>
+                            <td>
+                              <p>The path to a file that contains the PEM encoded certificate</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>keyvalue</em></td>
+                            <td>
+                              <p>A string that contains the PEM encoded key</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>certvalue</em></td>
+                            <td>
+                              <p>A string that contains the PEM encoded certificate</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>hostOptions</em></td>
+                    <td>
+                      <p>The host options to override defaults.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>host</em></td>
+                            <td>
+                              <p>The management endpoint.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>apiversion</em></td>
+                            <td>
+                              <p>The API vesion to be used.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <h4 id="azure_asm_website_WebsiteManagementService_settings" data-uid="azure-asm-website.WebsiteManagementService~settings">settings</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">settings</code></pre>
+              </div>
+              <h4 id="azure_asm_website_WebsiteManagementService_apiversion" data-uid="azure-asm-website.WebsiteManagementService#apiversion">apiversion</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">apiversion</code></pre>
+              </div>
+              <h4 id="azure_asm_website_WebsiteManagementService_subscriptionId" data-uid="azure-asm-website.WebsiteManagementService#subscriptionId">subscriptionId</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">subscriptionId</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <h4 id="azure_asm_website_WebsiteManagementService_listWebspaces" data-uid="azure-asm-website.WebsiteManagementService#listWebspaces">listWebspaces(callback)</h4>
+              <div class="markdown level1 summary"><p>Lists the available webspaces.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listWebspaces(callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise <code>results</code> will contain
+                                                      the list of webspaces.
+                                                      <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_listGeoRegions" data-uid="azure-asm-website.WebsiteManagementService#listGeoRegions">listGeoRegions(callback)</h4>
+              <div class="markdown level1 summary"><p>Lists the available geographic regions that are available for hosting web sites.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listGeoRegions(callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise <code>results</code> will contain
+                                                      the list of regions.
+                                                      <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_listPublishingUsers" data-uid="azure-asm-website.WebsiteManagementService#listPublishingUsers">listPublishingUsers(callback)</h4>
+              <div class="markdown level1 summary"><p>Lists the available publishing users.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listPublishingUsers(callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise <code>results</code> will contain
+                                                      the list of users.
+                                                      <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_listDNSSuffix" data-uid="azure-asm-website.WebsiteManagementService#listDNSSuffix">listDNSSuffix(callback)</h4>
+              <div class="markdown level1 summary"><p>lists the DNS suffix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listDNSSuffix(callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise <code>results</code> will contain
+                                                      the DNS suffix information.
+                                                      <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_createPublishingUser" data-uid="azure-asm-website.WebsiteManagementService#createPublishingUser">createPublishingUser(username, password, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Creates a new publishing user.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createPublishingUser(username, password, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>username</em></td>
+                    <td>
+                      <p>The publishing user username.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>password</em></td>
+                    <td>
+                      <p>The publishing user password.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The options.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">azure-asm-website.int</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              <p>The publishing user name.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_listSites" data-uid="azure-asm-website.WebsiteManagementService#listSites">listSites(webspaceName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Retrieves the existing websites.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listSites(webspaceName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>webspaceName</em></td>
+                    <td>
+                      <p>The webspace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The options.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">array</span></td>
+                            <td><em>propertiesToInclude</em></td>
+                            <td>
+                              <p>The properties to include.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                            if an error occurs; otherwise <code>results</code> will contain
+                                                            the list of web sites.
+                                                            <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_getSite" data-uid="azure-asm-website.WebsiteManagementService#getSite">getSite(webspaceName, siteName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Retrieves the existing web site.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getSite(webspaceName, siteName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>webspaceName</em></td>
+                    <td>
+                      <p>The webspace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>siteName</em></td>
+                    <td>
+                      <p>The site name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The options.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">array</span></td>
+                            <td><em>propertiesToInclude</em></td>
+                            <td>
+                              <p>The properties to include.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                                      if an error occurs; otherwise <code>results</code> will contain
+                                                                      the the web site information.
+                                                                      <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_createSite" data-uid="azure-asm-website.WebsiteManagementService#createSite">createSite(webspaceName, siteName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Creates a new website.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createSite(webspaceName, siteName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>webspaceName</em></td>
+                    <td>
+                      <p>The webspace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>siteName</em></td>
+                    <td>
+                      <p>The site name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The options.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">array</span></td>
+                            <td><em>propertiesToInclude</em></td>
+                            <td>
+                              <p>The properties to include.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                            if an error occurs; otherwise <code>results</code> will contain
+                                                            the new site information.
+                                                            <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_deleteSite" data-uid="azure-asm-website.WebsiteManagementService#deleteSite">deleteSite(webspaceName, siteName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Deletes a website.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteSite(webspaceName, siteName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>webspaceName</em></td>
+                    <td>
+                      <p>The webspace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>siteName</em></td>
+                    <td>
+                      <p>The site name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The options.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                               if an error occurs; otherwise <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_updateSite" data-uid="azure-asm-website.WebsiteManagementService#updateSite">updateSite(webspaceName, siteName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Updates an existing web site.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function updateSite(webspaceName, siteName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>webspaceName</em></td>
+                    <td>
+                      <p>The webspace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>siteName</em></td>
+                    <td>
+                      <p>The site name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The options.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">array</span></td>
+                            <td><em>propertiesToInclude</em></td>
+                            <td>
+                              <p>The properties to include.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                            if an error occurs; otherwise <code>results</code> will contain
+                                                            the updated web site information.
+                                                            <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_getSiteConfiguration" data-uid="azure-asm-website.WebsiteManagementService#getSiteConfiguration">getSiteConfiguration(webspaceName, siteName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Retrieves a site configuration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getSiteConfiguration(webspaceName, siteName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>webspaceName</em></td>
+                    <td>
+                      <p>The webspace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>siteName</em></td>
+                    <td>
+                      <p>The site name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The options.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise <code>results</code> will contain
+                                                      the site configuration.
+                                                      <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_updateSiteConfiguration" data-uid="azure-asm-website.WebsiteManagementService#updateSiteConfiguration">updateSiteConfiguration(webspaceName, siteName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Updates a site configuration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function updateSiteConfiguration(webspaceName, siteName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>webspaceName</em></td>
+                    <td>
+                      <p>The webspace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>siteName</em></td>
+                    <td>
+                      <p>The site name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The options.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_createServerFarm" data-uid="azure-asm-website.WebsiteManagementService#createServerFarm">createServerFarm(webspaceName, serverFarmName, numberOfWorkers, workerSize, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Creates a new server farm.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createServerFarm(webspaceName, serverFarmName, numberOfWorkers, workerSize, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>webspaceName</em></td>
+                    <td>
+                      <p>The webspace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>serverFarmName</em></td>
+                    <td>
+                      <p>The server farm name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>numberOfWorkers</em></td>
+                    <td>
+                      <p>The number of workers.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>workerSize</em></td>
+                    <td>
+                      <p>The worker size.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The options.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_updateServerFarm" data-uid="azure-asm-website.WebsiteManagementService#updateServerFarm">updateServerFarm(webspaceName, serverFarmName, numberOfWorkers, workerSize, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Updates a server farm.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function updateServerFarm(webspaceName, serverFarmName, numberOfWorkers, workerSize, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>webspaceName</em></td>
+                    <td>
+                      <p>The webspace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>serverFarmName</em></td>
+                    <td>
+                      <p>The server farm name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>numberOfWorkers</em></td>
+                    <td>
+                      <p>The number of workers.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>workerSize</em></td>
+                    <td>
+                      <p>The worker size.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The options.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_getServerFarm" data-uid="azure-asm-website.WebsiteManagementService#getServerFarm">getServerFarm(webspaceName, serverFarmName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Retrieves a server farm.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getServerFarm(webspaceName, serverFarmName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>webspaceName</em></td>
+                    <td>
+                      <p>The webspace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>serverFarmName</em></td>
+                    <td>
+                      <p>The server farm name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The options.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_createSiteRepository" data-uid="azure-asm-website.WebsiteManagementService#createSiteRepository">createSiteRepository(webspaceName, siteName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Creates a website repository.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createSiteRepository(webspaceName, siteName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>webspaceName</em></td>
+                    <td>
+                      <p>The webspace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>siteName</em></td>
+                    <td>
+                      <p>The site name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The options.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_deleteSiteRepository" data-uid="azure-asm-website.WebsiteManagementService#deleteSiteRepository">deleteSiteRepository(webspaceName, siteName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Deletes a website repository.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteSiteRepository(webspaceName, siteName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>webspaceName</em></td>
+                    <td>
+                      <p>The webspace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>siteName</em></td>
+                    <td>
+                      <p>The site name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The options.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService_syncSiteRepository" data-uid="azure-asm-website.WebsiteManagementService#syncSiteRepository">syncSiteRepository(webspaceName, siteName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Sync a website repository.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function syncSiteRepository(webspaceName, siteName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>webspaceName</em></td>
+                    <td>
+                      <p>The webspace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>siteName</em></td>
+                    <td>
+                      <p>The site name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The options.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise <code>response</code> will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_website_WebsiteManagementService__makePath" data-uid="azure-asm-website.WebsiteManagementService#_makePath">_makePath()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function _makePath()</code></pre>
+              </div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

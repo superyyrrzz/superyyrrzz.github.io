@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Microsoft Azure SDK for Node.js - Legacy Storage </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Microsoft Azure SDK for Node.js - Legacy Storage ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="microsoft-azure-sdk-for-nodejs---legacy-storage">Microsoft Azure SDK for Node.js - Legacy Storage</h1>
+              
+<p>This project provides a Node.js package that lets you consume Azure storage services.
+This package exists to provide back compatibility with previous versions of the azure
+sdk for node.</p>
+<ul>
+<li><strong>API version: 2013-03-01</strong></li>
+</ul>
+<h2 id="features">Features</h2>
+<ul>
+<li>Blob client</li>
+<li>Table Store client</li>
+<li>Queue client</li>
+</ul>
+<h2 id="how-to-install">How to Install</h2>
+<pre><code class="lang-bash">npm install azure-storage-legacy
+</code></pre><h2 id="how-to-use">How to Use</h2>
+<h2 id="usage">Usage</h2>
+<h3 id="table-storage">Table Storage</h3>
+<p>To ensure a table exists, call <strong>createTableIfNotExists</strong>:</p>
+<pre><code class="lang-Javascript">var tableService = storage.createTableService();
+tableService.createTableIfNotExists(&#39;tasktable&#39;, function(error){
+    if(!error){
+        // Table exists
+    }
+});
+</code></pre><p>A new entity can be added by calling <strong>insertEntity</strong>:</p>
+<pre><code class="lang-Javascript">var tableService = storage.createTableService(),
+    task1 = {
+        PartitionKey : &#39;tasksSeattle&#39;,
+        RowKey: &#39;1&#39;,
+        Description: &#39;Take out the trash&#39;,
+        DueDate: new Date(2011, 12, 14, 12)
+    };
+tableService.insertEntity(&#39;tasktable&#39;, task1, function(error){
+    if(!error){
+        // Entity inserted
+    }
+});
+</code></pre><p>The method <strong>queryEntity</strong> can then be used to fetch the entity that was just inserted:</p>
+<pre><code class="lang-Javascript">var tableService = storage.createTableService();
+tableService.queryEntity(&#39;tasktable&#39;, &#39;tasksSeattle&#39;, &#39;1&#39;, function(error, serverEntity){
+    if(!error){
+        // Entity available in serverEntity variable
+    }
+});
+</code></pre><h2 id="blob-storage">Blob Storage</h2>
+<p>The <strong>createContainerIfNotExists</strong> method can be used to create a
+container in which to store a blob:</p>
+<pre><code class="lang-Javascript">var blobService = storage.createBlobService();
+blobService.createContainerIfNotExists(&#39;taskcontainer&#39;, {publicAccessLevel : &#39;blob&#39;}, function(error){
+    if(!error){
+        // Container exists and is public
+    }
+});
+</code></pre><p>To upload a file (assuming it is called task1-upload.txt and it is placed in the same folder as the script below), the method <strong>createBlob</strong> can be used. This method will return a writable stream which can be writen to, for instance, through piping:</p>
+<pre><code class="lang-Javascript">var blobService = storage.createBlobService();
+
+fs.createReadStream(&#39;task1-upload.txt&#39;).pipe(blobService.createBlob(&#39;taskcontainer&#39;, &#39;task1&#39;, storage.Constants.BlobConstants.BlobTypes.BLOCK));
+</code></pre><p>To download the blob and write it to the file system, a similar <strong>getBlob</strong> method can be used:</p>
+<pre><code class="lang-Javascript">var blobService = storage.createBlobService();
+
+blobService.getBlob(&#39;taskcontainer&#39;, &#39;task1&#39;).pipe(fs.createWriteStream(&#39;task1-download.txt&#39;));
+</code></pre><p>To create a SAS URL you can use the <strong>getBlobUrl</strong> method. Additionally you can use the <strong>date</strong> helper functions to easily create a SAS that expires at some point relative to the current time.</p>
+<pre><code class="lang-Javascript">var blobService = storage.createBlobService();
+
+//create a SAS that expires in an hour
+var sharedAccessPolicy = {
+    AccessPolicy: {
+        Expiry: storage.date.minutesFromNow(60);
+    }
+};
+
+var sasUrl = blobService.getBlobUrl(containerName, blobName, sharedAccessPolicy);
+</code></pre><h2 id="storage-queues">Storage Queues</h2>
+<p>The <strong>createQueueIfNotExists</strong> method can be used to ensure a queue exists:</p>
+<pre><code class="lang-Javascript">var queueService = storage.createQueueService();
+queueService.createQueueIfNotExists(&#39;taskqueue&#39;, function(error){
+    if(!error){
+        // Queue exists
+    }
+});
+</code></pre><p>The <strong>createMessage</strong> method can then be called to insert the message into the queue:</p>
+<pre><code class="lang-Javascript">var queueService = storage.createQueueService();
+queueService.createMessage(&#39;taskqueue&#39;, &#39;Hello world!&#39;, function(error){
+    if(!error){
+        // Message inserted
+    }
+});
+</code></pre><p>It is then possible to call the <strong>getMessage</strong> method, process the message and then call <strong>deleteMessage</strong> inside the callback. This two-step process ensures messages don&#39;t get lost when they are removed from the queue.</p>
+<pre><code class="lang-Javascript">var queueService = storage.createQueueService(),
+    queueName = &#39;taskqueue&#39;;
+queueService.getMessages(queueName, function(error, serverMessages){
+    if(!error){
+        // Process the message in less than 30 seconds, the message
+        // text is available in serverMessages[0].messagetext
+
+        queueService.deleteMessage(queueName, serverMessages[0].messageid, serverMessages[0].popreceipt, function(error){
+            if(!error){
+                // Message deleted
+            }
+        });
+    }
+});
+</code></pre><h2 id="related-projects">Related projects</h2>
+<ul>
+<li><a href="https://github.com/WindowsAzure/azure-sdk-for-node">Microsoft Azure SDK for Node.js</a></li>
+<li><a href="https://github.com/WindowsAzure/azure-sdk-for-node/tree/master/lib/services/blob">Microsoft Azure SDK for Node.js - Storage Blob</a></li>
+<li><a href="https://github.com/WindowsAzure/azure-sdk-for-node/tree/master/lib/services/table">Microsoft Azure SDK for Node.js - Storage Table</a></li>
+<li><a href="https://github.com/WindowsAzure/azure-sdk-for-node/tree/master/lib/services/queue">Microsoft Azure SDK for Node.js - Storage Queue</a></li>
+</ul>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

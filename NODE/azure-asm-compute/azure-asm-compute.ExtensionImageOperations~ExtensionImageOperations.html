@@ -1,0 +1,2103 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ExtensionImageOperations
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ExtensionImageOperations
+   ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="azure_asm_compute_ExtensionImageOperations_ExtensionImageOperations" data-uid="azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations">Class ExtensionImageOperations
+              </h1>
+              <div class="markdown level0 summary"><p>The Service Management API includes operations for managing the service
+and virtual machine extension images in your publisher subscription.
+<strong>NOTE</strong>: An instance of this class is automatically created for an
+instance of the [ComputeManagementClient] {@link
+ComputeManagementClient~ComputeManagementClient}.
+See [extensionImages] {@link
+ComputeManagementClient~ComputeManagementClient#extensionImages}.
+Initializes a new instance of the ExtensionImageOperations class.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <h4 id="azure_asm_compute_ExtensionImageOperations_ExtensionImageOperations__ctor" data-uid="azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations.#ctor">ExtensionImageOperations(client)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">new ExtensionImageOperations(client)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-compute.ComputeManagementClient</span></td>
+                    <td><em>client</em></td>
+                    <td>
+                      <p>Reference to the service client.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <h4 id="azure_asm_compute_ExtensionImageOperations_ExtensionImageOperations_client" data-uid="azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations#client">client</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">client</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <h4 id="azure_asm_compute_ExtensionImageOperations_ExtensionImageOperations_beginRegistering" data-uid="azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations#beginRegistering">beginRegistering(parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>Register a new extension. An extension is identified by the combination of
+its ProviderNamespace and Type (case-sensitive string). It is not allowed
+to register an extension with the same identity (i.e. combination of
+ProviderNamespace and Type) of an already-registered extension. To
+register new version of an existing extension, the Update Extension API
+should be used.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginRegistering(parameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-compute.ExtensionImageRegisterParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied
+to the Register Virtual Machine Extension Image operation.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>providerNameSpace</em></td>
+                            <td>
+                              <p>Required. The provider
+namespace of the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>type</em></td>
+                            <td>
+                              <p>Required. The type of the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>version</em></td>
+                            <td>
+                              <p>Required. The version of the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>label</em></td>
+                            <td>
+                              <p>Required. A one line label of the
+extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>hostingResources</em></td>
+                            <td>
+                              <p>Required. The supported
+hosting resources. It must contain &#39;WebRole&#39; and/or &#39;WorkerRole&#39;. E.g.
+&#39;WebRole|WorkerRole&#39; or &#39;WebRole|WorkerRole|VmRole&#39;.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>mediaLink</em></td>
+                            <td>
+                              <p>Required. URI string pointing to
+the ZIP package of the extension. The ZIP package has to include the
+extension executable and other supporting files, and the
+PluginManifest.xml manifest. MediaLink value must point to a URL (either
+Http or Https) in a Azure blob storage and is downloadable. Windows Azure
+will copy the extension package from this source location and replicate
+it to all regions. The typical time for replication to complete is 20
+minutes.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-compute.ExtensionCertificateConfiguration</span></td>
+                            <td><em>certificate</em></td>
+                            <td>
+                              <p>Optional. Parameters of the the certificate for encrypting the private
+configuration data. Supported on WebRole or WorkerRole, but ignored on
+VmRole.</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>storeLocation</em></td>
+                                    <td>
+                                      <p>Required for
+certificate declaration. The Windows certificate store location to
+install the certificate for encryption, if required. Its value has to be
+&#39;LocalMachine&#39; if present.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>storeName</em></td>
+                                    <td>
+                                      <p>Optional. The Windows
+certificate store name to install the certificate for encryption, if
+required. Its value has to be &#39;My&#39; if present.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">boolean</span></td>
+                                    <td><em>thumbprintRequired</em></td>
+                                    <td>
+                                      <p>Optional.
+Whether thumbprint is required for the certificate for encryption or not.
+Its value has to be &#39;true&#39; or &#39;false&#39; (case-sensitive) if present.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>thumbprintAlgorithm</em></td>
+                                    <td>
+                                      <p>Optional. The
+thumbprint algorithm of the certificate for encryption, if required. Its
+value has to be &#39;sha1&#39; if present.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-compute.ExtensionEndpointConfiguration</span></td>
+                            <td><em>extensionEndpoints</em></td>
+                            <td>
+                              <p>Optional. Declared endpoints to automatically add to each deployment with
+this extension added.</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">array</span></td>
+                                    <td><em>inputEndpoints</em></td>
+                                    <td>
+                                      <p>Optional. A
+list of input endpoints required by this extension. Supported on WebRole
+or WorkerRole, but ignored on VmRole. Each input endpoint will be
+automatically added to the service definition of the deployment utilizing
+this extension.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">array</span></td>
+                                    <td><em>internalEndpoints</em></td>
+                                    <td>
+                                      <p>Optional.
+A list of internal endpoints required by this extension. Supported on
+WebRole or WorkerRole, but ignored on VmRole. Each internal endpoint will
+be automatically added to the service definition of the deployment
+utilizing this extension.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">array</span></td>
+                                    <td><em>instanceInputEndpoints</em></td>
+                                    <td>
+                                      <p>Optional. A list of instance input endpoints required by this extension.
+Supported on WebRole or WorkerRole, but ignored on VmRole. Each instance
+input endpoint will be automatically added to the service definition of
+the deployment utilizing this extension.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>publicConfigurationSchema</em></td>
+                            <td>
+                              <p>Optional. The XSD
+schema of public configuration data.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>privateConfigurationSchema</em></td>
+                            <td>
+                              <p>Optional. The XSD
+schema of private configuration data.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>description</em></td>
+                            <td>
+                              <p>Required. Detailed description of
+the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>publisherName</em></td>
+                            <td>
+                              <p>Optional. Publisher name text.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">date</span></td>
+                            <td><em>publishedDate</em></td>
+                            <td>
+                              <p>Publisher can set it to any
+arbitrary date, and this is only for display purpose. If not specified by
+publisher, Azure will automatically assign the UTC time when the
+extension request was received.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">array</span></td>
+                            <td><em>localResources</em></td>
+                            <td>
+                              <p>Declared local resources used
+inside guest VM by the extension. Optional.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>blockRoleUponFailure</em></td>
+                            <td>
+                              <p>Optional. Its value has
+to be &#39;true&#39; or &#39;false&#39; (case-sensitive) When set to &#39;true&#39;, the role
+startup will be blocked till the extension installation completes. This
+flag should be set to &#39;true&#39; when the role cannot start without the
+extension being installed. If set to &#39;false&#39; (default value), the role
+will be started without waiting for the extension installation to
+complete. Supported on WebRole or WorkerRole, but ignored on VmRole.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>isInternalExtension</em></td>
+                            <td>
+                              <p>Optional. If this is set
+to &#39;true&#39; the extension is not visible for public use, i.e. being
+returned from list API&#39;s. It can be still accessed by referring to the
+ProviderNamespace, Type &amp; Version combo. Therefore an internal extension
+is intended only for testing purpose. Its value has to be &#39;true&#39; or
+&#39;false&#39; (case-sensitive) if present.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>sampleConfig</em></td>
+                            <td>
+                              <p>Optional. A sample configuration
+for the extension. It can be downloaded by users, and the user can
+replace with customized input parameters. The sample configuration should
+be sufficiently commented. If configuration data are in XML format, then
+the XML document-level element must be &#39;Configuration&#39;, and the optional
+public configuration data corresponds to a child element of
+&#39;PublicConfig&#39;, and the optional private configuration data corresponds
+to a child element of &#39;PrivateConfig&#39;. The sample configuration data
+should be validated against public and private configuration schema by
+the publisher.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>replicationCompleted</em></td>
+                            <td>
+                              <p>Indicates whether this
+version of extension has been replicated to all regions or not. If true,
+then the given extension version can be used in creating or updating
+deployments. Otherwise, the given extension version might cause failure
+in creating or updating deployments. The typical time is 20 minutes for a
+newly-registered or newly-updated extension to replicate completely by
+Azure.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>eula</em></td>
+                            <td>
+                              <p>Optional. URL string pointing to the
+EULA (End User License Agreement) of this version of extension. This is
+optionally specified by the third-party publishing the extension instead
+of Windows Azure. If the software requires any additional EULAs, a link
+to the EULA should be provided.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>privacyUri</em></td>
+                            <td>
+                              <p>Optional. URL string pointing to
+privacy document of this version of extension. This is optionally
+specified by the third-party publishing the extension instead of Azure.
+If the software collects any data and transfers out the guest VM, then an
+additional privacy document might be needed.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>homepageUri</em></td>
+                            <td>
+                              <p>Optional. URL string pointing to
+homepage of this version of extension. This is optionally specified by
+the third-party publishing the extension instead of Azure. The homepage
+should have usage information and contact information for customer
+support.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>isJsonExtension</em></td>
+                            <td>
+                              <p>Optional. If this is set to
+&#39;true&#39; the extension is expected to receive JSON based configuration. If
+this is set to &#39;false&#39; the extension is expected to receive XML based
+configuration. Its value has to be &#39;true&#39; or &#39;false&#39; (case-sensitive) if
+present.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>disallowMajorVersionUpgrade</em></td>
+                            <td>
+                              <p>Optional. If
+this is set to &#39;true&#39; the extension version cannot be upgraded to from
+other major versions in active deployments. If the value is &#39;false&#39; or
+nor present, the extension version can be upgraded to from any other
+version. Downgrade is not supported. The value has to be &#39;true&#39; or
+&#39;false&#39; (case-sensitive) if present.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>supportedOS</em></td>
+                            <td>
+                              <p>String property indicating the OS
+which the extension supports. Current values are &#39;Windows&#39; or &#39;Linux&#39;.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>companyName</em></td>
+                            <td>
+                              <p>String property containing the
+name of the company/organization who publishes the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>regions</em></td>
+                            <td>
+                              <p>String property containing the name
+of the regions required for the slice.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-compute.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_compute_ExtensionImageOperations_ExtensionImageOperations_beginUnregistering" data-uid="azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations#beginUnregistering">beginUnregistering(providerNamespace, type, version, callback)</h4>
+              <div class="markdown level1 summary"><p>Unregister a version of an extension that was previously registered using
+either the Register Extension or Update Extension APIs. An extension
+version is identified by the combination of its ProviderNamespace, Type
+and Version which are specified when registering the extension.
+Unregistering is only allowed for internal extensions, that is, the
+extensions for which the IsInternalExtension field is set to &#39;true&#39;
+during registration or during an update. There is a quota (15) on the
+number of extensions that can be registered per subscription. If your
+subscription runs out of quota, you will wither need to unregister some
+of the internal extensions or contact Azure (same email used to become a
+publisher)  to increase the quota.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginUnregistering(providerNamespace, type, version, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>providerNamespace</em></td>
+                    <td>
+                      <p>The provider namespace of the extension
+image to unregister.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>type</em></td>
+                    <td>
+                      <p>The type of the extension image to unregister.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>version</em></td>
+                    <td>
+                      <p>The version of the extension image to unregister.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-compute.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_compute_ExtensionImageOperations_ExtensionImageOperations_beginUpdating" data-uid="azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations#beginUpdating">beginUpdating(parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>Update a new extension. It is allowed to update an extension which had
+already been registered with the same identity (i.e. combination of
+ProviderNamespace and Type) but with different version. It will fail if
+the extension to update has an identity that has not been registered
+before, or there is already an extension with the same identity and same
+version.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginUpdating(parameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-compute.ExtensionImageUpdateParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied to
+the Update Virtual Machine Extension Image operation.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>providerNameSpace</em></td>
+                            <td>
+                              <p>Required. The provider
+namespace of the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>type</em></td>
+                            <td>
+                              <p>Required. The type of the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>version</em></td>
+                            <td>
+                              <p>Required. The version of the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>label</em></td>
+                            <td>
+                              <p>Required. A one line label of the
+extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>hostingResources</em></td>
+                            <td>
+                              <p>Required. The supported
+hosting resources. It must contain &#39;WebRole&#39; and/or &#39;WorkerRole&#39;. E.g.
+&#39;WebRole|WorkerRole&#39; or &#39;WebRole|WorkerRole|VmRole&#39;.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>mediaLink</em></td>
+                            <td>
+                              <p>Required. URI string pointing to
+the ZIP package of the extension. The ZIP package has to include the
+extension executable and other supporting files, and the
+PluginManifest.xml manifest. MediaLink value must point to a URL (either
+Http or Https) in a Azure blob storage and is downloadable. Windows Azure
+will copy the extension package from this source location and replicate
+it to all regions. The typical time for replication to complete is 20
+minutes.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-compute.ExtensionCertificateConfiguration</span></td>
+                            <td><em>certificate</em></td>
+                            <td>
+                              <p>Optional. Parameters of the the certificate for encrypting the private
+configuration data. Supported on WebRole or WorkerRole, but ignored on
+VmRole.</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>storeLocation</em></td>
+                                    <td>
+                                      <p>Required for
+certificate declaration. The Windows certificate store location to
+install the certificate for encryption, if required. Its value has to be
+&#39;LocalMachine&#39; if present.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>storeName</em></td>
+                                    <td>
+                                      <p>Optional. The Windows
+certificate store name to install the certificate for encryption, if
+required. Its value has to be &#39;My&#39; if present.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">boolean</span></td>
+                                    <td><em>thumbprintRequired</em></td>
+                                    <td>
+                                      <p>Optional.
+Whether thumbprint is required for the certificate for encryption or not.
+Its value has to be &#39;true&#39; or &#39;false&#39; (case-sensitive) if present.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>thumbprintAlgorithm</em></td>
+                                    <td>
+                                      <p>Optional. The
+thumbprint algorithm of the certificate for encryption, if required. Its
+value has to be &#39;sha1&#39; if present.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-compute.ExtensionEndpointConfiguration</span></td>
+                            <td><em>extensionEndpoints</em></td>
+                            <td>
+                              <p>Optional. Declared endpoints to automatically add to each deployment with
+this extension added.</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">array</span></td>
+                                    <td><em>inputEndpoints</em></td>
+                                    <td>
+                                      <p>Optional. A
+list of input endpoints required by this extension. Supported on WebRole
+or WorkerRole, but ignored on VmRole. Each input endpoint will be
+automatically added to the service definition of the deployment utilizing
+this extension.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">array</span></td>
+                                    <td><em>internalEndpoints</em></td>
+                                    <td>
+                                      <p>Optional.
+A list of internal endpoints required by this extension. Supported on
+WebRole or WorkerRole, but ignored on VmRole. Each internal endpoint will
+be automatically added to the service definition of the deployment
+utilizing this extension.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">array</span></td>
+                                    <td><em>instanceInputEndpoints</em></td>
+                                    <td>
+                                      <p>Optional. A list of instance input endpoints required by this extension.
+Supported on WebRole or WorkerRole, but ignored on VmRole. Each instance
+input endpoint will be automatically added to the service definition of
+the deployment utilizing this extension.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>publicConfigurationSchema</em></td>
+                            <td>
+                              <p>Optional. The XSD
+schema of public configuration data.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>privateConfigurationSchema</em></td>
+                            <td>
+                              <p>Optional. The XSD
+schema of private configuration data.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>description</em></td>
+                            <td>
+                              <p>Required. Detailed description of
+the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>publisherName</em></td>
+                            <td>
+                              <p>Optional. Publisher name text.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">date</span></td>
+                            <td><em>publishedDate</em></td>
+                            <td>
+                              <p>Publisher can set it to any
+arbitrary date, and this is only for display purpose. If not specified by
+publisher, Azure will automatically assign the UTC time when the
+extension request was received.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">array</span></td>
+                            <td><em>localResources</em></td>
+                            <td>
+                              <p>Declared local resources used
+inside guest VM by the extension. Optional.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>blockRoleUponFailure</em></td>
+                            <td>
+                              <p>Optional. Its value has
+to be &#39;true&#39; or &#39;false&#39; (case-sensitive) When set to &#39;true&#39;, the role
+startup will be blocked till the extension installation completes. This
+flag should be set to &#39;true&#39; when the role cannot start without the
+extension being installed. If set to &#39;false&#39; (default value), the role
+will be started without waiting for the extension installation to
+complete. Supported on WebRole or WorkerRole, but ignored on VmRole.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>isInternalExtension</em></td>
+                            <td>
+                              <p>Optional. If this is set
+to &#39;true&#39; the extension is not visible for public use, i.e. being
+returned from list API&#39;s. It can be still accessed by referring to the
+ProviderNamespace, Type &amp; Version combo. Therefore an internal extension
+is intended only for testing purpose. Its value has to be &#39;true&#39; or
+&#39;false&#39; (case-sensitive) if present.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>sampleConfig</em></td>
+                            <td>
+                              <p>Optional. A sample configuration
+for the extension. It can be downloaded by users, and the user can
+replace with customized input parameters. The sample configuration should
+be sufficiently commented. If configuration data are in XML format, then
+the XML document-level element must be &#39;Configuration&#39;, and the optional
+public configuration data corresponds to a child element of
+&#39;PublicConfig&#39;, and the optional private configuration data corresponds
+to a child element of &#39;PrivateConfig&#39;. The sample configuration data
+should be validated against public and private configuration schema by
+the publisher.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>replicationCompleted</em></td>
+                            <td>
+                              <p>Indicates whether this
+version of extension has been replicated to all regions or not. If true,
+then the given extension version can be used in creating or updating
+deployments. Otherwise, the given extension version might cause failure
+in creating or updating deployments. The typical time is 20 minutes for a
+newly-registered or newly-updated extension to replicate completely by
+Azure.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>eula</em></td>
+                            <td>
+                              <p>Optional. URL string pointing to the
+EULA (End User License Agreement) of this version of extension. This is
+optionally specified by the third-party publishing the extension instead
+of Windows Azure. If the software requires any additional EULAs, a link
+to the EULA should be provided.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>privacyUri</em></td>
+                            <td>
+                              <p>Optional. URL string pointing to
+privacy document of this version of extension. This is optionally
+specified by the third-party publishing the extension instead of Azure.
+If the software collects any data and transfers out the guest VM, then an
+additional privacy document might be needed.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>homepageUri</em></td>
+                            <td>
+                              <p>Optional. URL string pointing to
+homepage of this version of extension. This is optionally specified by
+the third-party publishing the extension instead of Azure. The homepage
+should have usage information and contact information for customer
+support.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>isJsonExtension</em></td>
+                            <td>
+                              <p>Optional. If this is set to
+&#39;true&#39; the extension is expected to receive JSON based configuration. If
+this is set to &#39;false&#39; the extension is expected to receive XML based
+configuration. Its value has to be &#39;true&#39; or &#39;false&#39; (case-sensitive) if
+present.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>disallowMajorVersionUpgrade</em></td>
+                            <td>
+                              <p>Optional. If
+this is set to &#39;true&#39; the extension version cannot be upgraded to from
+other major versions in active deployments. If the value is &#39;false&#39; or
+nor present, the extension version can be upgraded to from any other
+version. Downgrade is not supported. The value has to be &#39;true&#39; or
+&#39;false&#39; (case-sensitive) if present.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>supportedOS</em></td>
+                            <td>
+                              <p>String property indicating the OS
+which the extension supports. Current values are &#39;Windows&#39; or &#39;Linux&#39;.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>companyName</em></td>
+                            <td>
+                              <p>String property containing the
+name of the company/organization who publishes the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>regions</em></td>
+                            <td>
+                              <p>String property containing the name
+of the regions required for the slice.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-compute.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_compute_ExtensionImageOperations_ExtensionImageOperations_register" data-uid="azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations#register">register(parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>Register a new extension. An extension is identified by the combination of
+its ProviderNamespace and Type (case-sensitive string). It is not allowed
+to register an extension with the same identity (i.e. combination of
+ProviderNamespace and Type) of an already-registered extension. To
+register new version of an existing extension, the Update Extension API
+should be used.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function register(parameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-compute.ExtensionImageRegisterParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied
+to the Register Virtual Machine Extension Image operation.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>providerNameSpace</em></td>
+                            <td>
+                              <p>Required. The provider
+namespace of the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>type</em></td>
+                            <td>
+                              <p>Required. The type of the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>version</em></td>
+                            <td>
+                              <p>Required. The version of the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>label</em></td>
+                            <td>
+                              <p>Required. A one line label of the
+extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>hostingResources</em></td>
+                            <td>
+                              <p>Required. The supported
+hosting resources. It must contain &#39;WebRole&#39; and/or &#39;WorkerRole&#39;. E.g.
+&#39;WebRole|WorkerRole&#39; or &#39;WebRole|WorkerRole|VmRole&#39;.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>mediaLink</em></td>
+                            <td>
+                              <p>Required. URI string pointing to
+the ZIP package of the extension. The ZIP package has to include the
+extension executable and other supporting files, and the
+PluginManifest.xml manifest. MediaLink value must point to a URL (either
+Http or Https) in a Azure blob storage and is downloadable. Windows Azure
+will copy the extension package from this source location and replicate
+it to all regions. The typical time for replication to complete is 20
+minutes.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-compute.ExtensionCertificateConfiguration</span></td>
+                            <td><em>certificate</em></td>
+                            <td>
+                              <p>Optional. Parameters of the the certificate for encrypting the private
+configuration data. Supported on WebRole or WorkerRole, but ignored on
+VmRole.</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>storeLocation</em></td>
+                                    <td>
+                                      <p>Required for
+certificate declaration. The Windows certificate store location to
+install the certificate for encryption, if required. Its value has to be
+&#39;LocalMachine&#39; if present.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>storeName</em></td>
+                                    <td>
+                                      <p>Optional. The Windows
+certificate store name to install the certificate for encryption, if
+required. Its value has to be &#39;My&#39; if present.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">boolean</span></td>
+                                    <td><em>thumbprintRequired</em></td>
+                                    <td>
+                                      <p>Optional.
+Whether thumbprint is required for the certificate for encryption or not.
+Its value has to be &#39;true&#39; or &#39;false&#39; (case-sensitive) if present.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>thumbprintAlgorithm</em></td>
+                                    <td>
+                                      <p>Optional. The
+thumbprint algorithm of the certificate for encryption, if required. Its
+value has to be &#39;sha1&#39; if present.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-compute.ExtensionEndpointConfiguration</span></td>
+                            <td><em>extensionEndpoints</em></td>
+                            <td>
+                              <p>Optional. Declared endpoints to automatically add to each deployment with
+this extension added.</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">array</span></td>
+                                    <td><em>inputEndpoints</em></td>
+                                    <td>
+                                      <p>Optional. A
+list of input endpoints required by this extension. Supported on WebRole
+or WorkerRole, but ignored on VmRole. Each input endpoint will be
+automatically added to the service definition of the deployment utilizing
+this extension.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">array</span></td>
+                                    <td><em>internalEndpoints</em></td>
+                                    <td>
+                                      <p>Optional.
+A list of internal endpoints required by this extension. Supported on
+WebRole or WorkerRole, but ignored on VmRole. Each internal endpoint will
+be automatically added to the service definition of the deployment
+utilizing this extension.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">array</span></td>
+                                    <td><em>instanceInputEndpoints</em></td>
+                                    <td>
+                                      <p>Optional. A list of instance input endpoints required by this extension.
+Supported on WebRole or WorkerRole, but ignored on VmRole. Each instance
+input endpoint will be automatically added to the service definition of
+the deployment utilizing this extension.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>publicConfigurationSchema</em></td>
+                            <td>
+                              <p>Optional. The XSD
+schema of public configuration data.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>privateConfigurationSchema</em></td>
+                            <td>
+                              <p>Optional. The XSD
+schema of private configuration data.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>description</em></td>
+                            <td>
+                              <p>Required. Detailed description of
+the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>publisherName</em></td>
+                            <td>
+                              <p>Optional. Publisher name text.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">date</span></td>
+                            <td><em>publishedDate</em></td>
+                            <td>
+                              <p>Publisher can set it to any
+arbitrary date, and this is only for display purpose. If not specified by
+publisher, Azure will automatically assign the UTC time when the
+extension request was received.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">array</span></td>
+                            <td><em>localResources</em></td>
+                            <td>
+                              <p>Declared local resources used
+inside guest VM by the extension. Optional.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>blockRoleUponFailure</em></td>
+                            <td>
+                              <p>Optional. Its value has
+to be &#39;true&#39; or &#39;false&#39; (case-sensitive) When set to &#39;true&#39;, the role
+startup will be blocked till the extension installation completes. This
+flag should be set to &#39;true&#39; when the role cannot start without the
+extension being installed. If set to &#39;false&#39; (default value), the role
+will be started without waiting for the extension installation to
+complete. Supported on WebRole or WorkerRole, but ignored on VmRole.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>isInternalExtension</em></td>
+                            <td>
+                              <p>Optional. If this is set
+to &#39;true&#39; the extension is not visible for public use, i.e. being
+returned from list API&#39;s. It can be still accessed by referring to the
+ProviderNamespace, Type &amp; Version combo. Therefore an internal extension
+is intended only for testing purpose. Its value has to be &#39;true&#39; or
+&#39;false&#39; (case-sensitive) if present.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>sampleConfig</em></td>
+                            <td>
+                              <p>Optional. A sample configuration
+for the extension. It can be downloaded by users, and the user can
+replace with customized input parameters. The sample configuration should
+be sufficiently commented. If configuration data are in XML format, then
+the XML document-level element must be &#39;Configuration&#39;, and the optional
+public configuration data corresponds to a child element of
+&#39;PublicConfig&#39;, and the optional private configuration data corresponds
+to a child element of &#39;PrivateConfig&#39;. The sample configuration data
+should be validated against public and private configuration schema by
+the publisher.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>replicationCompleted</em></td>
+                            <td>
+                              <p>Indicates whether this
+version of extension has been replicated to all regions or not. If true,
+then the given extension version can be used in creating or updating
+deployments. Otherwise, the given extension version might cause failure
+in creating or updating deployments. The typical time is 20 minutes for a
+newly-registered or newly-updated extension to replicate completely by
+Azure.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>eula</em></td>
+                            <td>
+                              <p>Optional. URL string pointing to the
+EULA (End User License Agreement) of this version of extension. This is
+optionally specified by the third-party publishing the extension instead
+of Windows Azure. If the software requires any additional EULAs, a link
+to the EULA should be provided.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>privacyUri</em></td>
+                            <td>
+                              <p>Optional. URL string pointing to
+privacy document of this version of extension. This is optionally
+specified by the third-party publishing the extension instead of Azure.
+If the software collects any data and transfers out the guest VM, then an
+additional privacy document might be needed.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>homepageUri</em></td>
+                            <td>
+                              <p>Optional. URL string pointing to
+homepage of this version of extension. This is optionally specified by
+the third-party publishing the extension instead of Azure. The homepage
+should have usage information and contact information for customer
+support.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>isJsonExtension</em></td>
+                            <td>
+                              <p>Optional. If this is set to
+&#39;true&#39; the extension is expected to receive JSON based configuration. If
+this is set to &#39;false&#39; the extension is expected to receive XML based
+configuration. Its value has to be &#39;true&#39; or &#39;false&#39; (case-sensitive) if
+present.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>disallowMajorVersionUpgrade</em></td>
+                            <td>
+                              <p>Optional. If
+this is set to &#39;true&#39; the extension version cannot be upgraded to from
+other major versions in active deployments. If the value is &#39;false&#39; or
+nor present, the extension version can be upgraded to from any other
+version. Downgrade is not supported. The value has to be &#39;true&#39; or
+&#39;false&#39; (case-sensitive) if present.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>supportedOS</em></td>
+                            <td>
+                              <p>String property indicating the OS
+which the extension supports. Current values are &#39;Windows&#39; or &#39;Linux&#39;.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>companyName</em></td>
+                            <td>
+                              <p>String property containing the
+name of the company/organization who publishes the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>regions</em></td>
+                            <td>
+                              <p>String property containing the name
+of the regions required for the slice.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-compute.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_compute_ExtensionImageOperations_ExtensionImageOperations_unregister" data-uid="azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations#unregister">unregister(providerNamespace, type, version, callback)</h4>
+              <div class="markdown level1 summary"><p>Unregister a version of an extension that was previously registered using
+either the Register Extension or Update Extension APIs. An extension
+version is identified by the combination of its ProviderNamespace, Type
+and Version which are specified when registering the extension.
+Unregistering is only allowed for internal extensions, that is, the
+extensions for which the IsInternalExtension field is set to &#39;true&#39;
+during registration or during an update. There is a quota (15) on the
+number of extensions that can be registered per subscription. If your
+subscription runs out of quota, you will wither need to unregister some
+of the internal extensions or contact Azure (same email used to become a
+publisher)  to increase the quota.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function unregister(providerNamespace, type, version, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>providerNamespace</em></td>
+                    <td>
+                      <p>The provider namespace of the extension
+image to unregister.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>type</em></td>
+                    <td>
+                      <p>The type of the extension image to unregister.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>version</em></td>
+                    <td>
+                      <p>The version of the extension image to unregister.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-compute.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_compute_ExtensionImageOperations_ExtensionImageOperations_update" data-uid="azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations#update">update(parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>Update a new extension. It is allowed to update an extension which had
+already been registered with the same identity (i.e. combination of
+ProviderNamespace and Type) but with different version. It will fail if
+the extension to update has an identity that has not been registered
+before, or there is already an extension with the same identity and same
+version.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function update(parameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-compute.ExtensionImageUpdateParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied to
+the Update Virtual Machine Extension Image operation.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>providerNameSpace</em></td>
+                            <td>
+                              <p>Required. The provider
+namespace of the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>type</em></td>
+                            <td>
+                              <p>Required. The type of the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>version</em></td>
+                            <td>
+                              <p>Required. The version of the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>label</em></td>
+                            <td>
+                              <p>Required. A one line label of the
+extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>hostingResources</em></td>
+                            <td>
+                              <p>Required. The supported
+hosting resources. It must contain &#39;WebRole&#39; and/or &#39;WorkerRole&#39;. E.g.
+&#39;WebRole|WorkerRole&#39; or &#39;WebRole|WorkerRole|VmRole&#39;.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>mediaLink</em></td>
+                            <td>
+                              <p>Required. URI string pointing to
+the ZIP package of the extension. The ZIP package has to include the
+extension executable and other supporting files, and the
+PluginManifest.xml manifest. MediaLink value must point to a URL (either
+Http or Https) in a Azure blob storage and is downloadable. Windows Azure
+will copy the extension package from this source location and replicate
+it to all regions. The typical time for replication to complete is 20
+minutes.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-compute.ExtensionCertificateConfiguration</span></td>
+                            <td><em>certificate</em></td>
+                            <td>
+                              <p>Optional. Parameters of the the certificate for encrypting the private
+configuration data. Supported on WebRole or WorkerRole, but ignored on
+VmRole.</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>storeLocation</em></td>
+                                    <td>
+                                      <p>Required for
+certificate declaration. The Windows certificate store location to
+install the certificate for encryption, if required. Its value has to be
+&#39;LocalMachine&#39; if present.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>storeName</em></td>
+                                    <td>
+                                      <p>Optional. The Windows
+certificate store name to install the certificate for encryption, if
+required. Its value has to be &#39;My&#39; if present.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">boolean</span></td>
+                                    <td><em>thumbprintRequired</em></td>
+                                    <td>
+                                      <p>Optional.
+Whether thumbprint is required for the certificate for encryption or not.
+Its value has to be &#39;true&#39; or &#39;false&#39; (case-sensitive) if present.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>thumbprintAlgorithm</em></td>
+                                    <td>
+                                      <p>Optional. The
+thumbprint algorithm of the certificate for encryption, if required. Its
+value has to be &#39;sha1&#39; if present.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-compute.ExtensionEndpointConfiguration</span></td>
+                            <td><em>extensionEndpoints</em></td>
+                            <td>
+                              <p>Optional. Declared endpoints to automatically add to each deployment with
+this extension added.</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">array</span></td>
+                                    <td><em>inputEndpoints</em></td>
+                                    <td>
+                                      <p>Optional. A
+list of input endpoints required by this extension. Supported on WebRole
+or WorkerRole, but ignored on VmRole. Each input endpoint will be
+automatically added to the service definition of the deployment utilizing
+this extension.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">array</span></td>
+                                    <td><em>internalEndpoints</em></td>
+                                    <td>
+                                      <p>Optional.
+A list of internal endpoints required by this extension. Supported on
+WebRole or WorkerRole, but ignored on VmRole. Each internal endpoint will
+be automatically added to the service definition of the deployment
+utilizing this extension.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">array</span></td>
+                                    <td><em>instanceInputEndpoints</em></td>
+                                    <td>
+                                      <p>Optional. A list of instance input endpoints required by this extension.
+Supported on WebRole or WorkerRole, but ignored on VmRole. Each instance
+input endpoint will be automatically added to the service definition of
+the deployment utilizing this extension.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>publicConfigurationSchema</em></td>
+                            <td>
+                              <p>Optional. The XSD
+schema of public configuration data.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>privateConfigurationSchema</em></td>
+                            <td>
+                              <p>Optional. The XSD
+schema of private configuration data.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>description</em></td>
+                            <td>
+                              <p>Required. Detailed description of
+the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>publisherName</em></td>
+                            <td>
+                              <p>Optional. Publisher name text.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">date</span></td>
+                            <td><em>publishedDate</em></td>
+                            <td>
+                              <p>Publisher can set it to any
+arbitrary date, and this is only for display purpose. If not specified by
+publisher, Azure will automatically assign the UTC time when the
+extension request was received.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">array</span></td>
+                            <td><em>localResources</em></td>
+                            <td>
+                              <p>Declared local resources used
+inside guest VM by the extension. Optional.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>blockRoleUponFailure</em></td>
+                            <td>
+                              <p>Optional. Its value has
+to be &#39;true&#39; or &#39;false&#39; (case-sensitive) When set to &#39;true&#39;, the role
+startup will be blocked till the extension installation completes. This
+flag should be set to &#39;true&#39; when the role cannot start without the
+extension being installed. If set to &#39;false&#39; (default value), the role
+will be started without waiting for the extension installation to
+complete. Supported on WebRole or WorkerRole, but ignored on VmRole.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>isInternalExtension</em></td>
+                            <td>
+                              <p>Optional. If this is set
+to &#39;true&#39; the extension is not visible for public use, i.e. being
+returned from list API&#39;s. It can be still accessed by referring to the
+ProviderNamespace, Type &amp; Version combo. Therefore an internal extension
+is intended only for testing purpose. Its value has to be &#39;true&#39; or
+&#39;false&#39; (case-sensitive) if present.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>sampleConfig</em></td>
+                            <td>
+                              <p>Optional. A sample configuration
+for the extension. It can be downloaded by users, and the user can
+replace with customized input parameters. The sample configuration should
+be sufficiently commented. If configuration data are in XML format, then
+the XML document-level element must be &#39;Configuration&#39;, and the optional
+public configuration data corresponds to a child element of
+&#39;PublicConfig&#39;, and the optional private configuration data corresponds
+to a child element of &#39;PrivateConfig&#39;. The sample configuration data
+should be validated against public and private configuration schema by
+the publisher.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>replicationCompleted</em></td>
+                            <td>
+                              <p>Indicates whether this
+version of extension has been replicated to all regions or not. If true,
+then the given extension version can be used in creating or updating
+deployments. Otherwise, the given extension version might cause failure
+in creating or updating deployments. The typical time is 20 minutes for a
+newly-registered or newly-updated extension to replicate completely by
+Azure.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>eula</em></td>
+                            <td>
+                              <p>Optional. URL string pointing to the
+EULA (End User License Agreement) of this version of extension. This is
+optionally specified by the third-party publishing the extension instead
+of Windows Azure. If the software requires any additional EULAs, a link
+to the EULA should be provided.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>privacyUri</em></td>
+                            <td>
+                              <p>Optional. URL string pointing to
+privacy document of this version of extension. This is optionally
+specified by the third-party publishing the extension instead of Azure.
+If the software collects any data and transfers out the guest VM, then an
+additional privacy document might be needed.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>homepageUri</em></td>
+                            <td>
+                              <p>Optional. URL string pointing to
+homepage of this version of extension. This is optionally specified by
+the third-party publishing the extension instead of Azure. The homepage
+should have usage information and contact information for customer
+support.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>isJsonExtension</em></td>
+                            <td>
+                              <p>Optional. If this is set to
+&#39;true&#39; the extension is expected to receive JSON based configuration. If
+this is set to &#39;false&#39; the extension is expected to receive XML based
+configuration. Its value has to be &#39;true&#39; or &#39;false&#39; (case-sensitive) if
+present.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>disallowMajorVersionUpgrade</em></td>
+                            <td>
+                              <p>Optional. If
+this is set to &#39;true&#39; the extension version cannot be upgraded to from
+other major versions in active deployments. If the value is &#39;false&#39; or
+nor present, the extension version can be upgraded to from any other
+version. Downgrade is not supported. The value has to be &#39;true&#39; or
+&#39;false&#39; (case-sensitive) if present.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>supportedOS</em></td>
+                            <td>
+                              <p>String property indicating the OS
+which the extension supports. Current values are &#39;Windows&#39; or &#39;Linux&#39;.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>companyName</em></td>
+                            <td>
+                              <p>String property containing the
+name of the company/organization who publishes the extension.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>regions</em></td>
+                            <td>
+                              <p>String property containing the name
+of the regions required for the slice.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-compute.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

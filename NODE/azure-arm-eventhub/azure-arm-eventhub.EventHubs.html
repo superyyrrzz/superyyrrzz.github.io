@@ -1,0 +1,1598 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EventHubs
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EventHubs
+   ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="azure_arm_eventhub_EventHubs" data-uid="azure-arm-eventhub.EventHubs">Class EventHubs
+              </h1>
+              <div class="markdown level0 summary"><p>EventHubs
+<strong>NOTE</strong>: An instance of this class is automatically created for an
+instance of the EventHubManagementClient.
+Initializes a new instance of the EventHubs class.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <h4 id="azure_arm_eventhub_EventHubs__ctor" data-uid="azure-arm-eventhub.EventHubs.#ctor">EventHubs(client)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">new EventHubs(client)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="azure-arm-eventhub.EventHubManagementClient.html">EventHubManagementClient</a></td>
+                    <td><em>client</em></td>
+                    <td>
+                      <p>Reference to the service client.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <h4 id="azure_arm_eventhub_EventHubs_client" data-uid="azure-arm-eventhub.EventHubs#client">client</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">client</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <h4 id="azure_arm_eventhub_EventHubs_listAll" data-uid="azure-arm-eventhub.EventHubs#listAll">listAll(resourceGroupName, namespaceName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Enumerates the Event Hubs in a namespace.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listAll(resourceGroupName, namespaceName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>namespaceName</em></td>
+                    <td>
+                      <p>The namespace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:EventHubListResult&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_eventhub_EventHubs_createOrUpdate" data-uid="azure-arm-eventhub.EventHubs#createOrUpdate">createOrUpdate(resourceGroupName, namespaceName, eventHubName, parameters, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Creates/Updates a new Event Hub as a nested resource within a namespace.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createOrUpdate(resourceGroupName, namespaceName, eventHubName, parameters, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>namespaceName</em></td>
+                    <td>
+                      <p>The namespace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>eventHubName</em></td>
+                    <td>
+                      <p>The EventHub name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied to create a EventHub
+Resource.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>location</em></td>
+                            <td>
+                              <p>Location of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>type</em></td>
+                            <td>
+                              <p>ARM type of the namespace.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              <p>Name of the Event Hub.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>properties</em></td>
+                            <td>
+                              
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">date</span></td>
+                                    <td><em>createdAt</em></td>
+                                    <td>
+                                      <p>Exact time the Event was
+created.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">number</span></td>
+                                    <td><em>messageRetentionInDays</em></td>
+                                    <td>
+                                      <p>Number of
+days to retain the events for this Event Hub.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">number</span></td>
+                                    <td><em>partitionCount</em></td>
+                                    <td>
+                                      <p>Number of partitions
+created for EventHub.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">array</span></td>
+                                    <td><em>partitionIds</em></td>
+                                    <td>
+                                      <p>Current number of
+shards on the Event Hub.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>status</em></td>
+                                    <td>
+                                      <p>Enumerates the possible
+values for the status of the EventHub. Possible values include: &#39;Active&#39;,
+&#39;Disabled&#39;, &#39;Restoring&#39;, &#39;SendDisabled&#39;, &#39;ReceiveDisabled&#39;, &#39;Creating&#39;,
+&#39;Deleting&#39;, &#39;Renaming&#39;, &#39;Unknown&#39;</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">date</span></td>
+                                    <td><em>updatedAt</em></td>
+                                    <td>
+                                      <p>The exact time the message
+has been updated.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:EventHubResource&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_eventhub_EventHubs_deleteMethod" data-uid="azure-arm-eventhub.EventHubs#deleteMethod">deleteMethod(resourceGroupName, namespaceName, eventHubName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Deletes an Event hub from the specified namespace and resource group.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteMethod(resourceGroupName, namespaceName, eventHubName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>namespaceName</em></td>
+                    <td>
+                      <p>The namespace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>eventHubName</em></td>
+                    <td>
+                      <p>The EventHub name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_eventhub_EventHubs_get" data-uid="azure-arm-eventhub.EventHubs#get">get(resourceGroupName, namespaceName, eventHubName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Returns an Event Hub description for the specified Event Hub.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function get(resourceGroupName, namespaceName, eventHubName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>namespaceName</em></td>
+                    <td>
+                      <p>The namespace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>eventHubName</em></td>
+                    <td>
+                      <p>The EventHub name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:EventHubResource&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_eventhub_EventHubs_listAuthorizationRules" data-uid="azure-arm-eventhub.EventHubs#listAuthorizationRules">listAuthorizationRules(resourceGroupName, namespaceName, eventHubName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Authorization rules for a EventHub.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listAuthorizationRules(resourceGroupName, namespaceName, eventHubName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>namespaceName</em></td>
+                    <td>
+                      <p>The NameSpace name</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>eventHubName</em></td>
+                    <td>
+                      <p>The EventHub name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:SharedAccessAuthorizationRuleListResult&gt;
+                 for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_eventhub_EventHubs_createOrUpdateAuthorizationRule" data-uid="azure-arm-eventhub.EventHubs#createOrUpdateAuthorizationRule">createOrUpdateAuthorizationRule(resourceGroupName, namespaceName, eventHubName, authorizationRuleName, parameters, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Creates an authorization rule for the specified Event Hub.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createOrUpdateAuthorizationRule(resourceGroupName, namespaceName, eventHubName, authorizationRuleName, parameters, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>namespaceName</em></td>
+                    <td>
+                      <p>The namespace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>eventHubName</em></td>
+                    <td>
+                      <p>The Event Hub name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>authorizationRuleName</em></td>
+                    <td>
+                      <p>Aauthorization Rule Name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>The shared access authorization rule.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>location</em></td>
+                            <td>
+                              <p>data center location.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              <p>Name of the AuthorizationRule.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">array</span></td>
+                            <td><em>rights</em></td>
+                            <td>
+                              <p>The rights associated with the rule.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:SharedAccessAuthorizationRuleResource&gt; for
+                 more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_eventhub_EventHubs_getAuthorizationRule" data-uid="azure-arm-eventhub.EventHubs#getAuthorizationRule">getAuthorizationRule(resourceGroupName, namespaceName, eventHubName, authorizationRuleName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Authorization rule for a EventHub by name.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getAuthorizationRule(resourceGroupName, namespaceName, eventHubName, authorizationRuleName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>namespaceName</em></td>
+                    <td>
+                      <p>The namespace name</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>eventHubName</em></td>
+                    <td>
+                      <p>The Event Hub name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>authorizationRuleName</em></td>
+                    <td>
+                      <p>Authorization rule name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:SharedAccessAuthorizationRuleResource&gt; for
+                 more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_eventhub_EventHubs_deleteAuthorizationRule" data-uid="azure-arm-eventhub.EventHubs#deleteAuthorizationRule">deleteAuthorizationRule(resourceGroupName, namespaceName, eventHubName, authorizationRuleName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Deletes a EventHub authorization rule</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteAuthorizationRule(resourceGroupName, namespaceName, eventHubName, authorizationRuleName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>namespaceName</em></td>
+                    <td>
+                      <p>The namespace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>eventHubName</em></td>
+                    <td>
+                      <p>The Eventhub name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>authorizationRuleName</em></td>
+                    <td>
+                      <p>Authorization Rule Name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_eventhub_EventHubs_listKeys" data-uid="azure-arm-eventhub.EventHubs#listKeys">listKeys(resourceGroupName, namespaceName, eventHubName, authorizationRuleName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Returns the ACS and SAS connection strings for the Event Hub.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listKeys(resourceGroupName, namespaceName, eventHubName, authorizationRuleName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>namespaceName</em></td>
+                    <td>
+                      <p>The namespace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>eventHubName</em></td>
+                    <td>
+                      <p>The event hub name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>authorizationRuleName</em></td>
+                    <td>
+                      <p>The connection string of the
+namespace for the specified authorizationRule.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:ResourceListKeys&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_eventhub_EventHubs_regenerateKeys" data-uid="azure-arm-eventhub.EventHubs#regenerateKeys">regenerateKeys(resourceGroupName, namespaceName, eventHubName, authorizationRuleName, parameters, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Regenerates the ACS and SAS connection strings for the Event Hub.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function regenerateKeys(resourceGroupName, namespaceName, eventHubName, authorizationRuleName, parameters, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>namespaceName</em></td>
+                    <td>
+                      <p>The namespace name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>eventHubName</em></td>
+                    <td>
+                      <p>The event hub name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>authorizationRuleName</em></td>
+                    <td>
+                      <p>The connection string of the EventHub
+for the specified authorizationRule.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied to regenerate Auth Rule.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>policykey</em></td>
+                            <td>
+                              <p>Key that needs to be regenerated .
+Possible values include: &#39;PrimaryKey&#39;, &#39;SecondaryKey&#39;</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:ResourceListKeys&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_eventhub_EventHubs_listAllNext" data-uid="azure-arm-eventhub.EventHubs#listAllNext">listAllNext(nextPageLink, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Enumerates the Event Hubs in a namespace.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listAllNext(nextPageLink, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>nextPageLink</em></td>
+                    <td>
+                      <p>The NextLink from the previous successful call
+to List operation.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:EventHubListResult&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_eventhub_EventHubs_listAuthorizationRulesNext" data-uid="azure-arm-eventhub.EventHubs#listAuthorizationRulesNext">listAuthorizationRulesNext(nextPageLink, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Authorization rules for a EventHub.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listAuthorizationRulesNext(nextPageLink, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>nextPageLink</em></td>
+                    <td>
+                      <p>The NextLink from the previous successful call
+to List operation.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:SharedAccessAuthorizationRuleListResult&gt;
+                 for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

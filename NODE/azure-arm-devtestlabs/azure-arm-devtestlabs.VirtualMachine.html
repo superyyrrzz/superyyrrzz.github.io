@@ -1,0 +1,2685 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VirtualMachine
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VirtualMachine
+   ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="azure_arm_devtestlabs_VirtualMachine" data-uid="azure-arm-devtestlabs.VirtualMachine">Class VirtualMachine
+              </h1>
+              <div class="markdown level0 summary"><p>VirtualMachine
+<strong>NOTE</strong>: An instance of this class is automatically created for an
+instance of the DevTestLabsClient.
+Initializes a new instance of the VirtualMachine class.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine__ctor" data-uid="azure-arm-devtestlabs.VirtualMachine.#ctor">VirtualMachine(client)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">new VirtualMachine(client)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="azure-arm-devtestlabs.DevTestLabsClient.html">DevTestLabsClient</a></td>
+                    <td><em>client</em></td>
+                    <td>
+                      <p>Reference to the service client.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine_client" data-uid="azure-arm-devtestlabs.VirtualMachine#client">client</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">client</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine_list" data-uid="azure-arm-devtestlabs.VirtualMachine#list">list(resourceGroupName, labName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>List virtual machines in a given lab.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function list(resourceGroupName, labName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>labName</em></td>
+                    <td>
+                      <p>The name of the lab.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>filter</em></td>
+                            <td>
+                              <p>The filter to apply on the operation.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>top</em></td>
+                            <td>
+                              <p>The maximum number of resources to return
+from the operation.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>orderBy</em></td>
+                            <td>
+                              <p>The ordering expression for the results,
+using OData notation.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:ResponseWithContinuationLabVirtualMachine&gt;
+                 for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine_getResource" data-uid="azure-arm-devtestlabs.VirtualMachine#getResource">getResource(resourceGroupName, labName, name, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Get virtual machine.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getResource(resourceGroupName, labName, name, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>labName</em></td>
+                    <td>
+                      <p>The name of the lab.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the virtual Machine.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:LabVirtualMachine&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine_createOrUpdateResource" data-uid="azure-arm-devtestlabs.VirtualMachine#createOrUpdateResource">createOrUpdateResource(resourceGroupName, labName, name, labVirtualMachine, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Create or replace an existing Virtual Machine. This operation can take a
+while to complete.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createOrUpdateResource(resourceGroupName, labName, name, labVirtualMachine, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>labName</em></td>
+                    <td>
+                      <p>The name of the lab.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the virtual Machine.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>labVirtualMachine</em></td>
+                    <td>
+                      
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>notes</em></td>
+                            <td>
+                              <p>The notes of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>ownerObjectId</em></td>
+                            <td>
+                              <p>The object identifier of
+the owner of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>createdByUserId</em></td>
+                            <td>
+                              <p>The object identifier
+of the creator of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>createdByUser</em></td>
+                            <td>
+                              <p>The email address of
+creator of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>computeId</em></td>
+                            <td>
+                              <p>The resource identifier
+(Microsoft.Compute) of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>customImageId</em></td>
+                            <td>
+                              <p>The custom image
+identifier of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>osType</em></td>
+                            <td>
+                              <p>The OS type of the virtual
+machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>size</em></td>
+                            <td>
+                              <p>The size of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>userName</em></td>
+                            <td>
+                              <p>The user name of the virtual
+machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>password</em></td>
+                            <td>
+                              <p>The password of the virtual
+machine administrator.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>sshKey</em></td>
+                            <td>
+                              <p>The SSH key of the virtual
+machine administrator.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>isAuthenticationWithSshKey</em></td>
+                            <td>
+                              <p>A value
+indicating whether this virtual machine uses an SSH key for authentication.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>fqdn</em></td>
+                            <td>
+                              <p>The fully-qualified domain name of
+the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>labSubnetName</em></td>
+                            <td>
+                              <p>The lab subnet name of
+the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>labVirtualNetworkId</em></td>
+                            <td>
+                              <p>The lab virtual
+network identifier of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>disallowPublicIpAddress</em></td>
+                            <td>
+                              <p>Indicates
+whether the virtual machine is to be created without a public IP address.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">array</span></td>
+                            <td><em>artifacts</em></td>
+                            <td>
+                              <p>The artifacts to be installed
+on the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>artifactDeploymentStatus</em></td>
+                            <td>
+                              <p>The artifact
+deployment status for the virtual machine.</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>deploymentStatus</em></td>
+                                    <td>
+                                      <p>The
+deployment status of the artifact.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">number</span></td>
+                                    <td><em>artifactsApplied</em></td>
+                                    <td>
+                                      <p>The total
+count of the artifacts that were successfully applied.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">number</span></td>
+                                    <td><em>totalArtifacts</em></td>
+                                    <td>
+                                      <p>The total count of the artifacts that were tentatively applied.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>galleryImageReference</em></td>
+                            <td>
+                              <p>The Microsoft
+Azure Marketplace image reference of the virtual machine.</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>offer</em></td>
+                                    <td>
+                                      <p>The offer
+of the gallery image.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>publisher</em></td>
+                                    <td>
+                                      <p>The
+publisher of the gallery image.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>sku</em></td>
+                                    <td>
+                                      <p>The SKU of
+the gallery image.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>osType</em></td>
+                                    <td>
+                                      <p>The OS
+type of the gallery image.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>version</em></td>
+                                    <td>
+                                      <p>The
+version of the gallery image.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>provisioningState</em></td>
+                            <td>
+                              <p>The provisioning
+status of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>uniqueIdentifier</em></td>
+                            <td>
+                              <p>The unique immutable
+identifier of a resource (Guid).</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>id</em></td>
+                            <td>
+                              <p>The identifier of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              <p>The name of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>type</em></td>
+                            <td>
+                              <p>The type of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>location</em></td>
+                            <td>
+                              <p>The location of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>tags</em></td>
+                            <td>
+                              <p>The tags of the resource.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:LabVirtualMachine&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine_beginCreateOrUpdateResource" data-uid="azure-arm-devtestlabs.VirtualMachine#beginCreateOrUpdateResource">beginCreateOrUpdateResource(resourceGroupName, labName, name, labVirtualMachine, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Create or replace an existing Virtual Machine. This operation can take a
+while to complete.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginCreateOrUpdateResource(resourceGroupName, labName, name, labVirtualMachine, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>labName</em></td>
+                    <td>
+                      <p>The name of the lab.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the virtual Machine.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>labVirtualMachine</em></td>
+                    <td>
+                      
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>notes</em></td>
+                            <td>
+                              <p>The notes of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>ownerObjectId</em></td>
+                            <td>
+                              <p>The object identifier of
+the owner of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>createdByUserId</em></td>
+                            <td>
+                              <p>The object identifier
+of the creator of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>createdByUser</em></td>
+                            <td>
+                              <p>The email address of
+creator of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>computeId</em></td>
+                            <td>
+                              <p>The resource identifier
+(Microsoft.Compute) of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>customImageId</em></td>
+                            <td>
+                              <p>The custom image
+identifier of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>osType</em></td>
+                            <td>
+                              <p>The OS type of the virtual
+machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>size</em></td>
+                            <td>
+                              <p>The size of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>userName</em></td>
+                            <td>
+                              <p>The user name of the virtual
+machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>password</em></td>
+                            <td>
+                              <p>The password of the virtual
+machine administrator.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>sshKey</em></td>
+                            <td>
+                              <p>The SSH key of the virtual
+machine administrator.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>isAuthenticationWithSshKey</em></td>
+                            <td>
+                              <p>A value
+indicating whether this virtual machine uses an SSH key for authentication.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>fqdn</em></td>
+                            <td>
+                              <p>The fully-qualified domain name of
+the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>labSubnetName</em></td>
+                            <td>
+                              <p>The lab subnet name of
+the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>labVirtualNetworkId</em></td>
+                            <td>
+                              <p>The lab virtual
+network identifier of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>disallowPublicIpAddress</em></td>
+                            <td>
+                              <p>Indicates
+whether the virtual machine is to be created without a public IP address.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">array</span></td>
+                            <td><em>artifacts</em></td>
+                            <td>
+                              <p>The artifacts to be installed
+on the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>artifactDeploymentStatus</em></td>
+                            <td>
+                              <p>The artifact
+deployment status for the virtual machine.</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>deploymentStatus</em></td>
+                                    <td>
+                                      <p>The
+deployment status of the artifact.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">number</span></td>
+                                    <td><em>artifactsApplied</em></td>
+                                    <td>
+                                      <p>The total
+count of the artifacts that were successfully applied.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">number</span></td>
+                                    <td><em>totalArtifacts</em></td>
+                                    <td>
+                                      <p>The total count of the artifacts that were tentatively applied.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>galleryImageReference</em></td>
+                            <td>
+                              <p>The Microsoft
+Azure Marketplace image reference of the virtual machine.</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>offer</em></td>
+                                    <td>
+                                      <p>The offer
+of the gallery image.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>publisher</em></td>
+                                    <td>
+                                      <p>The
+publisher of the gallery image.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>sku</em></td>
+                                    <td>
+                                      <p>The SKU of
+the gallery image.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>osType</em></td>
+                                    <td>
+                                      <p>The OS
+type of the gallery image.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>version</em></td>
+                                    <td>
+                                      <p>The
+version of the gallery image.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>provisioningState</em></td>
+                            <td>
+                              <p>The provisioning
+status of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>uniqueIdentifier</em></td>
+                            <td>
+                              <p>The unique immutable
+identifier of a resource (Guid).</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>id</em></td>
+                            <td>
+                              <p>The identifier of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              <p>The name of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>type</em></td>
+                            <td>
+                              <p>The type of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>location</em></td>
+                            <td>
+                              <p>The location of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>tags</em></td>
+                            <td>
+                              <p>The tags of the resource.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:LabVirtualMachine&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine_deleteResource" data-uid="azure-arm-devtestlabs.VirtualMachine#deleteResource">deleteResource(resourceGroupName, labName, name, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Delete virtual machine. This operation can take a while to complete.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteResource(resourceGroupName, labName, name, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>labName</em></td>
+                    <td>
+                      <p>The name of the lab.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the virtual Machine.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine_beginDeleteResource" data-uid="azure-arm-devtestlabs.VirtualMachine#beginDeleteResource">beginDeleteResource(resourceGroupName, labName, name, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Delete virtual machine. This operation can take a while to complete.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginDeleteResource(resourceGroupName, labName, name, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>labName</em></td>
+                    <td>
+                      <p>The name of the lab.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the virtual Machine.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine_patchResource" data-uid="azure-arm-devtestlabs.VirtualMachine#patchResource">patchResource(resourceGroupName, labName, name, labVirtualMachine, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Modify properties of virtual machines.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function patchResource(resourceGroupName, labName, name, labVirtualMachine, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>labName</em></td>
+                    <td>
+                      <p>The name of the lab.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the virtual Machine.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>labVirtualMachine</em></td>
+                    <td>
+                      
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>notes</em></td>
+                            <td>
+                              <p>The notes of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>ownerObjectId</em></td>
+                            <td>
+                              <p>The object identifier of
+the owner of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>createdByUserId</em></td>
+                            <td>
+                              <p>The object identifier
+of the creator of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>createdByUser</em></td>
+                            <td>
+                              <p>The email address of
+creator of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>computeId</em></td>
+                            <td>
+                              <p>The resource identifier
+(Microsoft.Compute) of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>customImageId</em></td>
+                            <td>
+                              <p>The custom image
+identifier of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>osType</em></td>
+                            <td>
+                              <p>The OS type of the virtual
+machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>size</em></td>
+                            <td>
+                              <p>The size of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>userName</em></td>
+                            <td>
+                              <p>The user name of the virtual
+machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>password</em></td>
+                            <td>
+                              <p>The password of the virtual
+machine administrator.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>sshKey</em></td>
+                            <td>
+                              <p>The SSH key of the virtual
+machine administrator.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>isAuthenticationWithSshKey</em></td>
+                            <td>
+                              <p>A value
+indicating whether this virtual machine uses an SSH key for authentication.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>fqdn</em></td>
+                            <td>
+                              <p>The fully-qualified domain name of
+the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>labSubnetName</em></td>
+                            <td>
+                              <p>The lab subnet name of
+the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>labVirtualNetworkId</em></td>
+                            <td>
+                              <p>The lab virtual
+network identifier of the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>disallowPublicIpAddress</em></td>
+                            <td>
+                              <p>Indicates
+whether the virtual machine is to be created without a public IP address.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">array</span></td>
+                            <td><em>artifacts</em></td>
+                            <td>
+                              <p>The artifacts to be installed
+on the virtual machine.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>artifactDeploymentStatus</em></td>
+                            <td>
+                              <p>The artifact
+deployment status for the virtual machine.</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>deploymentStatus</em></td>
+                                    <td>
+                                      <p>The
+deployment status of the artifact.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">number</span></td>
+                                    <td><em>artifactsApplied</em></td>
+                                    <td>
+                                      <p>The total
+count of the artifacts that were successfully applied.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">number</span></td>
+                                    <td><em>totalArtifacts</em></td>
+                                    <td>
+                                      <p>The total count of the artifacts that were tentatively applied.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>galleryImageReference</em></td>
+                            <td>
+                              <p>The Microsoft
+Azure Marketplace image reference of the virtual machine.</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>offer</em></td>
+                                    <td>
+                                      <p>The offer
+of the gallery image.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>publisher</em></td>
+                                    <td>
+                                      <p>The
+publisher of the gallery image.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>sku</em></td>
+                                    <td>
+                                      <p>The SKU of
+the gallery image.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>osType</em></td>
+                                    <td>
+                                      <p>The OS
+type of the gallery image.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>version</em></td>
+                                    <td>
+                                      <p>The
+version of the gallery image.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>provisioningState</em></td>
+                            <td>
+                              <p>The provisioning
+status of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>uniqueIdentifier</em></td>
+                            <td>
+                              <p>The unique immutable
+identifier of a resource (Guid).</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>id</em></td>
+                            <td>
+                              <p>The identifier of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              <p>The name of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>type</em></td>
+                            <td>
+                              <p>The type of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>location</em></td>
+                            <td>
+                              <p>The location of the resource.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>tags</em></td>
+                            <td>
+                              <p>The tags of the resource.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:LabVirtualMachine&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine_applyArtifacts" data-uid="azure-arm-devtestlabs.VirtualMachine#applyArtifacts">applyArtifacts(resourceGroupName, labName, name, applyArtifactsRequest, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Apply artifacts to Lab VM. This operation can take a while to complete.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function applyArtifacts(resourceGroupName, labName, name, applyArtifactsRequest, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>labName</em></td>
+                    <td>
+                      <p>The name of the lab.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the virtual Machine.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>applyArtifactsRequest</em></td>
+                    <td>
+                      
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">array</span></td>
+                            <td><em>artifacts</em></td>
+                            <td>
+                              <p>The list of artifacts to
+apply.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine_beginApplyArtifacts" data-uid="azure-arm-devtestlabs.VirtualMachine#beginApplyArtifacts">beginApplyArtifacts(resourceGroupName, labName, name, applyArtifactsRequest, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Apply artifacts to Lab VM. This operation can take a while to complete.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginApplyArtifacts(resourceGroupName, labName, name, applyArtifactsRequest, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>labName</em></td>
+                    <td>
+                      <p>The name of the lab.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the virtual Machine.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>applyArtifactsRequest</em></td>
+                    <td>
+                      
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">array</span></td>
+                            <td><em>artifacts</em></td>
+                            <td>
+                              <p>The list of artifacts to
+apply.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine_start" data-uid="azure-arm-devtestlabs.VirtualMachine#start">start(resourceGroupName, labName, name, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Start a Lab VM. This operation can take a while to complete.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function start(resourceGroupName, labName, name, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>labName</em></td>
+                    <td>
+                      <p>The name of the lab.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the virtual Machine.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine_beginStart" data-uid="azure-arm-devtestlabs.VirtualMachine#beginStart">beginStart(resourceGroupName, labName, name, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Start a Lab VM. This operation can take a while to complete.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginStart(resourceGroupName, labName, name, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>labName</em></td>
+                    <td>
+                      <p>The name of the lab.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the virtual Machine.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine_stop" data-uid="azure-arm-devtestlabs.VirtualMachine#stop">stop(resourceGroupName, labName, name, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Stop a Lab VM. This operation can take a while to complete.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function stop(resourceGroupName, labName, name, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>labName</em></td>
+                    <td>
+                      <p>The name of the lab.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the virtual Machine.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine_beginStop" data-uid="azure-arm-devtestlabs.VirtualMachine#beginStop">beginStop(resourceGroupName, labName, name, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Stop a Lab VM. This operation can take a while to complete.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginStop(resourceGroupName, labName, name, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>labName</em></td>
+                    <td>
+                      <p>The name of the lab.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The name of the virtual Machine.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_devtestlabs_VirtualMachine_listNext" data-uid="azure-arm-devtestlabs.VirtualMachine#listNext">listNext(nextPageLink, options, callback)</h4>
+              <div class="markdown level1 summary"><p>List virtual machines in a given lab.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listNext(nextPageLink, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>nextPageLink</em></td>
+                    <td>
+                      <p>The NextLink from the previous successful call
+to List operation.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:ResponseWithContinuationLabVirtualMachine&gt;
+                 for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

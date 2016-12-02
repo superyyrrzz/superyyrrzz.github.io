@@ -1,0 +1,1153 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NotificationHubService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NotificationHubService
+   ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="azure_sb_NotificationHubService" data-uid="azure-sb.NotificationHubService">Class NotificationHubService
+              </h1>
+              <div class="markdown level0 summary"><p>The NotificationHubService allows you to send push notifications to iOS, Android, and Windows Store devices.</p>
+<p>For more information on Notification Hubs, as well as task focused information on using them from Node.js applications, see
+<a href="https://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/service-bus-notification-hubs/">How to Use Service Bus Notification Hubs</a>.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <h4 id="azure_sb_NotificationHubService__ctor" data-uid="azure-sb.NotificationHubService.#ctor">NotificationHubService(hubName, endpointOrConnectionString, sharedAccessKeyName, sharedAccessKeyValue)</h4>
+              <div class="markdown level1 summary"><p>Creates a new NotificationHubService object.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">new NotificationHubService(hubName, endpointOrConnectionString, sharedAccessKeyName, sharedAccessKeyValue)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>hubName</em></td>
+                    <td>
+                      <p>The notification hub name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>endpointOrConnectionString</em></td>
+                    <td>
+                      <p>The service bus endpoint or connection string.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>sharedAccessKeyName</em></td>
+                    <td>
+                      <p>The notification hub shared access key name.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>sharedAccessKeyValue</em></td>
+                    <td>
+                      <p>The notification hub shared access key value.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <h4 id="azure_sb_NotificationHubService_settingsOrConnectionString" data-uid="azure-sb.NotificationHubService~settingsOrConnectionString">settingsOrConnectionString</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">settingsOrConnectionString</code></pre>
+              </div>
+              <h4 id="azure_sb_NotificationHubService_settingsOrConnectionString" data-uid="azure-sb.NotificationHubService~settingsOrConnectionString">settingsOrConnectionString</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">settingsOrConnectionString</code></pre>
+              </div>
+              <h4 id="azure_sb_NotificationHubService_hubName" data-uid="azure-sb.NotificationHubService#hubName">hubName</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">hubName</code></pre>
+              </div>
+              <h4 id="azure_sb_NotificationHubService_wns" data-uid="azure-sb.NotificationHubService#wns">wns</h4>
+              <div class="markdown level1 summary"><p>Provides access to methods to send notifications to WNS (for Windows Store apps) and create/update registrations for Windows Store apps.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">wns</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">WnsService</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService_apns" data-uid="azure-sb.NotificationHubService#apns">apns</h4>
+              <div class="markdown level1 summary"><p>Provides access to methods to send notifications to APNs (for iOS apps) and create/update registrations for iOS apps.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">apns</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ApnsService</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService_gcm" data-uid="azure-sb.NotificationHubService#gcm">gcm</h4>
+              <div class="markdown level1 summary"><p>Provides access to methods to send notifications to GCM (for Android apps) and create/update registrations for Android apps.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">gcm</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">GcmService</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService_mpns" data-uid="azure-sb.NotificationHubService#mpns">mpns</h4>
+              <div class="markdown level1 summary"><p>Provides access to methods to send notifications to MPNS (for Windows Phone apps) and create/update registrations for Windows Phone apps.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">mpns</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">MpnsService</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <h4 id="azure_sb_NotificationHubService_send" data-uid="azure-sb.NotificationHubService#send">send(tags, payload, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Sends a template message.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function send(tags, payload, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>tags</em></td>
+                    <td>
+                      <p>A single tag or tag expression.
+                                                         If null it will broadcast to all registrations in this hub</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>payload</em></td>
+                    <td>
+                      <p>The message&#39;s payload.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The request options or callback function.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>headers</em></td>
+                            <td>
+                              <p>Additional headers.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                        if an error occurs; otherwise, <code>response</code>
+                                                        will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService_createRegistrationId" data-uid="azure-sb.NotificationHubService#createRegistrationId">createRegistrationId(callback)</h4>
+              <div class="markdown level1 summary"><p>Creates a registration identifier.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createRegistrationId(callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                 if an error occurs; otherwise, <code>response</code>
+                                                 will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService_getRegistration" data-uid="azure-sb.NotificationHubService#getRegistration">getRegistration(registrationId, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Retrieves a registration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getRegistration(registrationId, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>registrationId</em></td>
+                    <td>
+                      <p>The registration identifier.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The request options or callback function. Additional properties will be passed as headers.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                 if an error occurs; otherwise, <code>response</code>
+                                                 will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService_deleteRegistration" data-uid="azure-sb.NotificationHubService#deleteRegistration">deleteRegistration(registrationId, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Deletes a registration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteRegistration(registrationId, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>registrationId</em></td>
+                    <td>
+                      <p>The registration identifier.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The request options or callback function. Additional properties will be passed as headers.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>etag</em></td>
+                            <td>
+                              <p>The etag.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise, <code>response</code>
+                                                      will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService_updateRegistration" data-uid="azure-sb.NotificationHubService#updateRegistration">updateRegistration(registration, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Updates a registration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function updateRegistration(registration, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>registration</em></td>
+                    <td>
+                      <p>The registration to update.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>RegistrationId</em></td>
+                            <td>
+                              <p>Registration id to update</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>_.ContentRootElement</em></td>
+                            <td>
+                              <p>Type of the registration. Types allowed: WindowsRegistrationDescription, WindowsTemplateRegistrationDescription,
+                                                      AppleRegistrationDescription, AppleTemplateRegistrationDescription,
+                                                      GcmRegistrationDescription, GcmTemplateRegistrationDescription,
+                                                      MpnsRegistrationDescription, MpnsTemplateRegistrationDescription.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>ChannelUri</em></td>
+                            <td>
+                              <p>Only if Windows or Mpns registration</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>DeviceToken</em></td>
+                            <td>
+                              <p>Only if Apple registration</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>GcmRegistrationId</em></td>
+                            <td>
+                              <p>Only if Gcm registration</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>Tags</em></td>
+                            <td>
+                              <p>Comma-separated list of tags (no spaces)</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>BodyTemplate</em></td>
+                            <td>
+                              <p>Only if template registration</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>WnsHeaders</em></td>
+                            <td>
+                              <p>Only if Windows template registration</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>MpnsHeaders</em></td>
+                            <td>
+                              <p>Only if Mpns template registration</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>Expiry</em></td>
+                            <td>
+                              <p>Only if Apple template registration</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The request options or callback function. Additional properties will be passed as headers.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>etag</em></td>
+                            <td>
+                              <p>The etag.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise, <code>response</code>
+                                                      will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService_createOrUpdateRegistration" data-uid="azure-sb.NotificationHubService#createOrUpdateRegistration">createOrUpdateRegistration(registration, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Creates or updates a registration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createOrUpdateRegistration(registration, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>registration</em></td>
+                    <td>
+                      <p>The registration to update.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The request options or callback function. Additional properties will be passed as headers.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>etag</em></td>
+                            <td>
+                              <p>The etag.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise, <code>response</code>
+                                                      will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService_listRegistrations" data-uid="azure-sb.NotificationHubService#listRegistrations">listRegistrations(options, callback)</h4>
+              <div class="markdown level1 summary"><p>List registrations.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listRegistrations(options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The request options or callback function. Additional properties will be passed as headers.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>top</em></td>
+                            <td>
+                              <p>Specifies the maximum number of registration to obtain from the call.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>skip</em></td>
+                            <td>
+                              <p>Specifies the number of registrations to skip in the call.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                        if an error occurs; otherwise, <code>response</code>
+                                                        will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService_listRegistrationsByTag" data-uid="azure-sb.NotificationHubService#listRegistrationsByTag">listRegistrationsByTag(tag, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Retrieves a registration by tag.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listRegistrationsByTag(tag, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>tag</em></td>
+                    <td>
+                      <p>The registration tag.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The request options or callback function. Additional properties will be passed as headers.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>top</em></td>
+                            <td>
+                              <p>Specifies the maximum number of registration to obtain from the call.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>skip</em></td>
+                            <td>
+                              <p>Specifies the number of registrations to skip in the call.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise, <code>response</code>
+                                                      will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService__sendNotification" data-uid="azure-sb.NotificationHubService#_sendNotification">_sendNotification(payload, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Sends a message.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function _sendNotification(payload, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>payload</em></td>
+                    <td>
+                      <p>The message&#39;s payload.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The request options or callback function. Additional properties will be passed as headers.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>ServiceBusNotification-Tags</em></td>
+                            <td>
+                              <p>Comma-separated list of tag identifiers.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>ServiceBusNotification-Format</em></td>
+                            <td>
+                              <p>String. &#39;apple&#39;, &#39;windows&#39;, &#39;gcm&#39;, or &#39;windowsphone&#39;.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>ServiceBusNotification-ApnsExpiry</em></td>
+                            <td>
+                              <p>The expiry date.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                                         if an error occurs; otherwise, <code>response</code>
+                                                                         will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService_createOrUpdateInstallation" data-uid="azure-sb.NotificationHubService#createOrUpdateInstallation">createOrUpdateInstallation(installation, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Creates or updates a installation.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createOrUpdateInstallation(installation, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>installation</em></td>
+                    <td>
+                      <p>The installation to create/update.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The request options or callback function. Additional properties will be passed as headers.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise, <code>response</code>
+                                                      will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService_patchInstallation" data-uid="azure-sb.NotificationHubService#patchInstallation">patchInstallation(installationId, partialUpdateOperations, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Patches an existing installation.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function patchInstallation(installationId, partialUpdateOperations, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>installationId</em></td>
+                    <td>
+                      <p>Installation Id</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">array</span></td>
+                    <td><em>partialUpdateOperations</em></td>
+                    <td>
+                      <p>List of partial operations to patch an existing installation</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The request options or callback function. Additional properties will be passed as headers.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise, <code>response</code>
+                                                      will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService_deleteInstallation" data-uid="azure-sb.NotificationHubService#deleteInstallation">deleteInstallation(installationId, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Deletes an existing installation.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteInstallation(installationId, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>installationId</em></td>
+                    <td>
+                      <p>Installation Id</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The request options or callback function. Additional properties will be passed as headers.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise, <code>response</code>
+                                                      will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService_getInstallation" data-uid="azure-sb.NotificationHubService#getInstallation">getInstallation(installationId, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Gets an installation by its Id</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getInstallation(installationId, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>installationId</em></td>
+                    <td>
+                      <p>Installation Id</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The request options or callback function. Additional properties will be passed as headers.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      <p><code>error</code> will contain information
+                                                      if an error occurs; otherwise, <code>response</code>
+                                                      will contain information related to this operation.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_sb_NotificationHubService__joinTags" data-uid="azure-sb.NotificationHubService#_joinTags">_joinTags()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function _joinTags()</code></pre>
+              </div>
+              <h4 id="azure_sb_NotificationHubService__joinTagsSend" data-uid="azure-sb.NotificationHubService#_joinTagsSend">_joinTagsSend()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function _joinTagsSend()</code></pre>
+              </div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

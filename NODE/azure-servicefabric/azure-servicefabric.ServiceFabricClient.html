@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ServiceFabricClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ServiceFabricClient
+   ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="azure_servicefabric_ServiceFabricClient" data-uid="azure-servicefabric.ServiceFabricClient">Class ServiceFabricClient
+              </h1>
+              <div class="markdown level0 summary"><p>Initializes a new instance of the ServiceFabricClient class.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <h4 id="azure_servicefabric_ServiceFabricClient__ctor" data-uid="azure-servicefabric.ServiceFabricClient.#ctor">ServiceFabricClient(apiVersion, baseUri, options)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">new ServiceFabricClient(apiVersion, baseUri, options)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>apiVersion</em></td>
+                    <td>
+                      <p>The version of the api</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>baseUri</em></td>
+                    <td>
+                      <p>The base URI of the service.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The parameter options</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">Array</span></td>
+                            <td><em>filters</em></td>
+                            <td>
+                              <p>Filters to be added to the request pipeline</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>requestOptions</em></td>
+                            <td>
+                              <p>Options for the underlying request object
+<a href="https://github.com/request/request#requestoptions-callback">Options doc</a></p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>noRetryPolicy</em></td>
+                            <td>
+                              <p>If set to true, turn off default retry policy</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <h4 id="azure_servicefabric_ServiceFabricClient_options" data-uid="azure-servicefabric.ServiceFabricClient~options">options</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">options</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_baseUri" data-uid="azure-servicefabric.ServiceFabricClient#baseUri">baseUri</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">baseUri</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_baseUri" data-uid="azure-servicefabric.ServiceFabricClient#baseUri">baseUri</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">baseUri</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_apiVersion" data-uid="azure-servicefabric.ServiceFabricClient#apiVersion">apiVersion</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">apiVersion</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_clusterManifests" data-uid="azure-servicefabric.ServiceFabricClient#clusterManifests">clusterManifests</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">clusterManifests</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_clusterHealths" data-uid="azure-servicefabric.ServiceFabricClient#clusterHealths">clusterHealths</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">clusterHealths</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_nodes" data-uid="azure-servicefabric.ServiceFabricClient#nodes">nodes</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">nodes</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_nodeStates" data-uid="azure-servicefabric.ServiceFabricClient#nodeStates">nodeStates</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">nodeStates</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_nodeHealths" data-uid="azure-servicefabric.ServiceFabricClient#nodeHealths">nodeHealths</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">nodeHealths</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_deployedApplications" data-uid="azure-servicefabric.ServiceFabricClient#deployedApplications">deployedApplications</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">deployedApplications</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_deployedApplicationHealths" data-uid="azure-servicefabric.ServiceFabricClient#deployedApplicationHealths">deployedApplicationHealths</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">deployedApplicationHealths</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_nodeLoadInformations" data-uid="azure-servicefabric.ServiceFabricClient#nodeLoadInformations">nodeLoadInformations</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">nodeLoadInformations</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_deployedCodePackages" data-uid="azure-servicefabric.ServiceFabricClient#deployedCodePackages">deployedCodePackages</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">deployedCodePackages</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_deployedReplicas" data-uid="azure-servicefabric.ServiceFabricClient#deployedReplicas">deployedReplicas</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">deployedReplicas</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_deployedReplicaDetails" data-uid="azure-servicefabric.ServiceFabricClient#deployedReplicaDetails">deployedReplicaDetails</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">deployedReplicaDetails</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_deployedServicePackages" data-uid="azure-servicefabric.ServiceFabricClient#deployedServicePackages">deployedServicePackages</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">deployedServicePackages</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_deployedServicePackageHealths" data-uid="azure-servicefabric.ServiceFabricClient#deployedServicePackageHealths">deployedServicePackageHealths</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">deployedServicePackageHealths</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_deployedServiceTypes" data-uid="azure-servicefabric.ServiceFabricClient#deployedServiceTypes">deployedServiceTypes</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">deployedServiceTypes</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_applicationTypes" data-uid="azure-servicefabric.ServiceFabricClient#applicationTypes">applicationTypes</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">applicationTypes</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_serviceManifests" data-uid="azure-servicefabric.ServiceFabricClient#serviceManifests">serviceManifests</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">serviceManifests</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_serviceTypes" data-uid="azure-servicefabric.ServiceFabricClient#serviceTypes">serviceTypes</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">serviceTypes</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_applicationManifests" data-uid="azure-servicefabric.ServiceFabricClient#applicationManifests">applicationManifests</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">applicationManifests</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_applications" data-uid="azure-servicefabric.ServiceFabricClient#applications">applications</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">applications</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_services" data-uid="azure-servicefabric.ServiceFabricClient#services">services</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">services</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_serviceGroupDescriptions" data-uid="azure-servicefabric.ServiceFabricClient#serviceGroupDescriptions">serviceGroupDescriptions</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">serviceGroupDescriptions</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_serviceGroupMembers" data-uid="azure-servicefabric.ServiceFabricClient#serviceGroupMembers">serviceGroupMembers</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">serviceGroupMembers</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_applicationHealths" data-uid="azure-servicefabric.ServiceFabricClient#applicationHealths">applicationHealths</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">applicationHealths</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_applicationUpgrades" data-uid="azure-servicefabric.ServiceFabricClient#applicationUpgrades">applicationUpgrades</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">applicationUpgrades</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_serviceFromTemplates" data-uid="azure-servicefabric.ServiceFabricClient#serviceFromTemplates">serviceFromTemplates</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">serviceFromTemplates</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_serviceGroups" data-uid="azure-servicefabric.ServiceFabricClient#serviceGroups">serviceGroups</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">serviceGroups</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_serviceGroupFromTemplates" data-uid="azure-servicefabric.ServiceFabricClient#serviceGroupFromTemplates">serviceGroupFromTemplates</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">serviceGroupFromTemplates</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_applicationUpgradeRollbacks" data-uid="azure-servicefabric.ServiceFabricClient#applicationUpgradeRollbacks">applicationUpgradeRollbacks</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">applicationUpgradeRollbacks</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_serviceDescriptions" data-uid="azure-servicefabric.ServiceFabricClient#serviceDescriptions">serviceDescriptions</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">serviceDescriptions</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_serviceHealths" data-uid="azure-servicefabric.ServiceFabricClient#serviceHealths">serviceHealths</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">serviceHealths</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_partitions" data-uid="azure-servicefabric.ServiceFabricClient#partitions">partitions</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">partitions</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_partitionLists" data-uid="azure-servicefabric.ServiceFabricClient#partitionLists">partitionLists</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">partitionLists</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_partitionLoads" data-uid="azure-servicefabric.ServiceFabricClient#partitionLoads">partitionLoads</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">partitionLoads</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_replicas" data-uid="azure-servicefabric.ServiceFabricClient#replicas">replicas</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">replicas</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_partitionHealths" data-uid="azure-servicefabric.ServiceFabricClient#partitionHealths">partitionHealths</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">partitionHealths</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_replicaHealths" data-uid="azure-servicefabric.ServiceFabricClient#replicaHealths">replicaHealths</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">replicaHealths</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_partitionLoadInformations" data-uid="azure-servicefabric.ServiceFabricClient#partitionLoadInformations">partitionLoadInformations</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">partitionLoadInformations</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_replicaLoadInformations" data-uid="azure-servicefabric.ServiceFabricClient#replicaLoadInformations">replicaLoadInformations</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">replicaLoadInformations</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_clusterLoadInformations" data-uid="azure-servicefabric.ServiceFabricClient#clusterLoadInformations">clusterLoadInformations</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">clusterLoadInformations</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_upgradeProgresses" data-uid="azure-servicefabric.ServiceFabricClient#upgradeProgresses">upgradeProgresses</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">upgradeProgresses</code></pre>
+              </div>
+              <h4 id="azure_servicefabric_ServiceFabricClient_models" data-uid="azure-servicefabric.ServiceFabricClient#models">models</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">models</code></pre>
+              </div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

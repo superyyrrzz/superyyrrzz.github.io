@@ -1,0 +1,1891 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ApplicationGatewayOperations
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ApplicationGatewayOperations
+   ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations">Class ApplicationGatewayOperations
+              </h1>
+              <div class="markdown level0 summary"><p>The Application Gateway Management API includes operations for managing
+application gateways in your subscription.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154113.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154113.aspx</a> for
+more information)
+<strong>NOTE</strong>: An instance of this class is automatically created for an
+instance of the [NetworkManagementClient] {@link
+NetworkManagementClient~NetworkManagementClient}.
+See [applicationGateways] {@link
+NetworkManagementClient~NetworkManagementClient#applicationGateways}.
+Initializes a new instance of the ApplicationGatewayOperations class.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations__ctor" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.#ctor">ApplicationGatewayOperations(client)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">new ApplicationGatewayOperations(client)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.NetworkManagementClient</span></td>
+                    <td><em>client</em></td>
+                    <td>
+                      <p>Reference to the service client.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_client" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#client">client</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">client</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_addCertificate" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#addCertificate">addCertificate(gatewayName, certificateName, certificate, callback)</h4>
+              <div class="markdown level1 summary"><p>The Add certificate operation adds the ssl certificate to the application
+gateway  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function addCertificate(gatewayName, certificateName, certificate, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>Gateway name</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>certificateName</em></td>
+                    <td>
+                      <p>Certificate name</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.ApplicationGatewayCertificate</span></td>
+                    <td><em>certificate</em></td>
+                    <td>
+                      <p>The application gateway
+ssl certificate</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>data</em></td>
+                            <td>
+                              <p>Certificate file data.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>certificateFormat</em></td>
+                            <td>
+                              <p>Certificate file format.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>password</em></td>
+                            <td>
+                              <p>Certificate file password.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.HttpStatusCode</span></td>
+                            <td><em>statusCode</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>requestId</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_beginAddCertificate" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#beginAddCertificate">beginAddCertificate(gatewayName, certificateName, certificate, callback)</h4>
+              <div class="markdown level1 summary"><p>The Begin Add certificate operation adds the ssl certificate to the
+application gateway  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginAddCertificate(gatewayName, certificateName, certificate, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>Gateway name</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>certificateName</em></td>
+                    <td>
+                      <p>Certificate name</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.ApplicationGatewayCertificate</span></td>
+                    <td><em>certificate</em></td>
+                    <td>
+                      <p>The application gateway
+ssl certificate</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>data</em></td>
+                            <td>
+                              <p>Certificate file data.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>certificateFormat</em></td>
+                            <td>
+                              <p>Certificate file format.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>password</em></td>
+                            <td>
+                              <p>Certificate file password.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.HttpStatusCode</span></td>
+                            <td><em>statusCode</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>requestId</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_beginCreateApplicationGateway" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#beginCreateApplicationGateway">beginCreateApplicationGateway(parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>The Begin Create Application Gateway operation  creates Application
+Gateway with the specified  parameters.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginCreateApplicationGateway(parameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.CreateApplicationGatewayParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied
+to the Begin CreateApplication Gateway request.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>description</em></td>
+                            <td>
+                              <p>Gateway Description.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>gatewaySize</em></td>
+                            <td>
+                              <p>The size of each gateway instance.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>instanceCount</em></td>
+                            <td>
+                              <p>The number of instances to
+create for this gateway.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              <p>Friendly Name of the gateway.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>subnets</em></td>
+                            <td>
+                              <p>Subnets in the vnet to which the
+gateway belongs.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>vnetName</em></td>
+                            <td>
+                              <p>The vnet to which the gateway
+belongs.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_beginDeleteApplicationGateway" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#beginDeleteApplicationGateway">beginDeleteApplicationGateway(gatewayName, callback)</h4>
+              <div class="markdown level1 summary"><p>The Begin Delete Application Gateway operation  deletes Application
+Gateway with the specified  parameters.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginDeleteApplicationGateway(gatewayName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>The name of the gateway.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_beginDeleteApplicationGatewayCertificate" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#beginDeleteApplicationGatewayCertificate">beginDeleteApplicationGatewayCertificate(gatewayName, certificateName, callback)</h4>
+              <div class="markdown level1 summary"><p>The Begin Delete Application Gateway certificate.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginDeleteApplicationGatewayCertificate(gatewayName, certificateName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>The name of the gateway.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>certificateName</em></td>
+                    <td>
+                      <p>The name of the certificate.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_beginExecuteOperation" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#beginExecuteOperation">beginExecuteOperation(gatewayName, parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>The Execute Application Gateway Operation executes specified operation on
+Application Gateway .  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginExecuteOperation(gatewayName, parameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>Name of the gateway</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.ApplicationGatewayOperation</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied to the
+Begin Execute Operation request.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>operationType</em></td>
+                            <td>
+                              <p>Operation Type.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_beginSetConfig" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#beginSetConfig">beginSetConfig(gatewayName, config, callback)</h4>
+              <div class="markdown level1 summary"><p>The Begin Set Application Gateway config operation  sets the specified
+config on the application gateway  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginSetConfig(gatewayName, config, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>Gateway name</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.ApplicationGatewaySetConfiguration</span></td>
+                    <td><em>config</em></td>
+                    <td>
+                      <p>The Begin Set
+Application Gateway Config operation  sets the specified config on the
+application gateway</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>frontendIPConfigurations</em></td>
+                            <td>
+                              <p>Frontend IPs of
+application gateway.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>frontendPorts</em></td>
+                            <td>
+                              <p>Frontend ports on the
+application gateway.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>probes</em></td>
+                            <td>
+                              <p>Probes of application gateway.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>backendAddressPools</em></td>
+                            <td>
+                              <p>Backend Address Pool</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>backendHttpSettingsList</em></td>
+                            <td>
+                              <p>Backend Http Setting</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>httpListeners</em></td>
+                            <td>
+                              <p>Backend Http Setting</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>httpLoadBalancingRules</em></td>
+                            <td>
+                              <p>Backend Http Setting</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.HttpStatusCode</span></td>
+                            <td><em>statusCode</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>requestId</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_beginUpdateApplicationGateway" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#beginUpdateApplicationGateway">beginUpdateApplicationGateway(gatewayName, updateParameters, callback)</h4>
+              <div class="markdown level1 summary"><p>The Begin Update Application Gateway operation  updates Application
+Gateway with the specified  parameters.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginUpdateApplicationGateway(gatewayName, updateParameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>Gateway name</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.UpdateApplicationGatewayParameters</span></td>
+                    <td><em>updateParameters</em></td>
+                    <td>
+                      <p>Parameters
+supplied to the Begin UpdateApplication Gateway request.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>description</em></td>
+                            <td>
+                              <p>Gateway Description.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>gatewaySize</em></td>
+                            <td>
+                              <p>The size of each gateway
+instance.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>instanceCount</em></td>
+                            <td>
+                              <p>The number of instances
+to create for this gateway.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>subnets</em></td>
+                            <td>
+                              <p>Subnets in the vnet to
+which the gateway belongs.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>vnetName</em></td>
+                            <td>
+                              <p>The vnet to which the gateway
+belongs.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_create" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#create">create(parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>The Create Application Gateway operation  creates Application Gateway with
+the specified parameters.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function create(parameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.CreateApplicationGatewayParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied
+to CreateApplication Gateway request.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>description</em></td>
+                            <td>
+                              <p>Gateway Description.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>gatewaySize</em></td>
+                            <td>
+                              <p>The size of each gateway instance.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>instanceCount</em></td>
+                            <td>
+                              <p>The number of instances to
+create for this gateway.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              <p>Friendly Name of the gateway.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>subnets</em></td>
+                            <td>
+                              <p>Subnets in the vnet to which the
+gateway belongs.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>vnetName</em></td>
+                            <td>
+                              <p>The vnet to which the gateway
+belongs.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_deleteMethod" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#deleteMethod">deleteMethod(gatewayName, callback)</h4>
+              <div class="markdown level1 summary"><p>The Delete Application Gateway operation  deletes Application Gateway with
+the specified  parameters.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteMethod(gatewayName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>The name of the gateway.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_deleteCertificate" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#deleteCertificate">deleteCertificate(gatewayName, certificateName, callback)</h4>
+              <div class="markdown level1 summary"><p>The Delete Application Gateway certificate operation.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteCertificate(gatewayName, certificateName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>The name of the gateway.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>certificateName</em></td>
+                    <td>
+                      <p>The name of the certificate.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_executeOperation" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#executeOperation">executeOperation(gatewayName, parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>The Execute Application Gateway Operation executes specofoed operation in
+the Application Gateway.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function executeOperation(gatewayName, parameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>Name of the gateway</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.ApplicationGatewayOperation</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied to
+Execute Operation request.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>operationType</em></td>
+                            <td>
+                              <p>Operation Type.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_get" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#get">get(gatewayName, callback)</h4>
+              <div class="markdown level1 summary"><p>The Get Application Gateway operation retrieves the application gateway
+provisioned for the given subscription.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157196.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157196.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function get(gatewayName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>The name of the gateway.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_getCertificate" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#getCertificate">getCertificate(gatewayName, certificateName, callback)</h4>
+              <div class="markdown level1 summary"><p>The Get Application Gateway certificate operation retrieves the ssl
+certificate provisioned for the given gateway.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157196.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157196.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getCertificate(gatewayName, certificateName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>The name of the gateway.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>certificateName</em></td>
+                    <td>
+                      <p>The name of the certificate.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_getConfig" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#getConfig">getConfig(gatewayName, callback)</h4>
+              <div class="markdown level1 summary"><p>The Get Application Gateway Configuration operation retrieves the
+configuration of the gateway.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157196.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157196.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getConfig(gatewayName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>The id  of the gateway.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_getOperationStatus" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#getOperationStatus">getOperationStatus(requestId, callback)</h4>
+              <div class="markdown level1 summary"><p>The Get Operation Status operation returns the status of the specified
+operation. After calling an asynchronous operation, you can call Get
+Operation Status to determine whether the operation has succeeded,
+failed, or is still in progress.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/ee460783.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/ee460783.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getOperationStatus(requestId, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>requestId</em></td>
+                    <td>
+                      <p>The request ID for the request you wish to
+track. The request ID is returned in the x-ms-request-id response header
+for every request.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_list" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#list">list(callback)</h4>
+              <div class="markdown level1 summary"><p>The List Application Gateway operation retrieves all application gateays
+for the given subscription.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157196.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157196.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function list(callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_listCertificate" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#listCertificate">listCertificate(gatewayName, callback)</h4>
+              <div class="markdown level1 summary"><p>The List Application Gateway certificates.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj157196.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj157196.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listCertificate(gatewayName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>Gateway name</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_setConfig" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#setConfig">setConfig(gatewayName, config, callback)</h4>
+              <div class="markdown level1 summary"><p>The Set Application Gateway Config operation  sets the specified config on
+the application gateway  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function setConfig(gatewayName, config, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>Gateway name</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.ApplicationGatewaySetConfiguration</span></td>
+                    <td><em>config</em></td>
+                    <td>
+                      <p>Parameters supplied to
+Set Application Gateway config request.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>frontendIPConfigurations</em></td>
+                            <td>
+                              <p>Frontend IPs of
+application gateway.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>frontendPorts</em></td>
+                            <td>
+                              <p>Frontend ports on the
+application gateway.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>probes</em></td>
+                            <td>
+                              <p>Probes of application gateway.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>backendAddressPools</em></td>
+                            <td>
+                              <p>Backend Address Pool</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>backendHttpSettingsList</em></td>
+                            <td>
+                              <p>Backend Http Setting</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>httpListeners</em></td>
+                            <td>
+                              <p>Backend Http Setting</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>httpLoadBalancingRules</em></td>
+                            <td>
+                              <p>Backend Http Setting</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.HttpStatusCode</span></td>
+                            <td><em>statusCode</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>requestId</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_ApplicationGatewayOperations_ApplicationGatewayOperations_update" data-uid="azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#update">update(gatewayName, updateParameters, callback)</h4>
+              <div class="markdown level1 summary"><p>The Update Application Gateway operation  updates Application Gateway with
+the specified  parameters.  (see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx">http://msdn.microsoft.com/en-us/library/windowsazure/jj154114.aspx</a> for
+more information)</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function update(gatewayName, updateParameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>gatewayName</em></td>
+                    <td>
+                      <p>Gateway name</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.UpdateApplicationGatewayParameters</span></td>
+                    <td><em>updateParameters</em></td>
+                    <td>
+                      <p>Parameters
+supplied to UpdateApplication Gateway request.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>description</em></td>
+                            <td>
+                              <p>Gateway Description.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>gatewaySize</em></td>
+                            <td>
+                              <p>The size of each gateway
+instance.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>instanceCount</em></td>
+                            <td>
+                              <p>The number of instances
+to create for this gateway.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.IEnumerable</span></td>
+                            <td><em>subnets</em></td>
+                            <td>
+                              <p>Subnets in the vnet to
+which the gateway belongs.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>vnetName</em></td>
+                            <td>
+                              <p>The vnet to which the gateway
+belongs.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

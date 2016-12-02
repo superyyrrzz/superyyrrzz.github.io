@@ -1,0 +1,959 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Users
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Users
+   ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="azure_graph_Users" data-uid="azure-graph.Users">Class Users
+              </h1>
+              <div class="markdown level0 summary"><p>Users
+<strong>NOTE</strong>: An instance of this class is automatically created for an
+instance of the GraphRbacManagementClient.
+Initializes a new instance of the Users class.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <h4 id="azure_graph_Users__ctor" data-uid="azure-graph.Users.#ctor">Users(client)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">new Users(client)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="azure-graph.GraphRbacManagementClient.html">GraphRbacManagementClient</a></td>
+                    <td><em>client</em></td>
+                    <td>
+                      <p>Reference to the service client.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <h4 id="azure_graph_Users_client" data-uid="azure-graph.Users#client">client</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">client</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <h4 id="azure_graph_Users_create" data-uid="azure-graph.Users#create">create(parameters, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Create a new user. Reference:
+<a href="https://msdn.microsoft.com/library/azure/ad/graph/api/users-operations#CreateUser">https://msdn.microsoft.com/library/azure/ad/graph/api/users-operations#CreateUser</a></p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function create(parameters, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters to create a user.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>accountEnabled</em></td>
+                            <td>
+                              <p>Enable the account. If it is
+enabled then true else false.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>displayName</em></td>
+                            <td>
+                              <p>User display name</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>passwordProfile</em></td>
+                            <td>
+                              <p>Password Profile</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>password</em></td>
+                                    <td>
+                                      <p>Password</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">boolean</span></td>
+                                    <td><em>forceChangePasswordNextLogin</em></td>
+                                    <td>
+                                      <p>Force change password on next login</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>userPrincipalName</em></td>
+                            <td>
+                              <p>The user principal name
+(someuser@contoso.com). It must contain one of the verified domains for
+the tenant.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>mailNickname</em></td>
+                            <td>
+                              <p>The mail alias for the user</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>immutableId</em></td>
+                            <td>
+                              <p>Needs to be specified if you are
+using a federated domain for the user&#39;s userPrincipalName (UPN) property
+while creating a new user account. It is used to associate an on-premises
+Active Directory user account to their Azure AD user object.</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:User&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_graph_Users_list" data-uid="azure-graph.Users#list">list(options, callback)</h4>
+              <div class="markdown level1 summary"><p>Gets list of users for the current tenant. Reference
+<a href="https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/users-operations#GetUsers">https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/users-operations#GetUsers</a></p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function list(options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>filter</em></td>
+                            <td>
+                              <p>The filter to apply on the operation.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:UserListResult&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_graph_Users_get" data-uid="azure-graph.Users#get">get(upnOrObjectId, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Gets user information from the directory. Reference:
+<a href="https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/users-operations#GetAUser">https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/users-operations#GetAUser</a></p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function get(upnOrObjectId, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>upnOrObjectId</em></td>
+                    <td>
+                      <p>User object Id or user principal name to get
+user information.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:User&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_graph_Users_update" data-uid="azure-graph.Users#update">update(upnOrObjectId, parameters, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Updates an exisitng user. Reference:
+<a href="https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/users-operations#UpdateUser">https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/users-operations#UpdateUser</a></p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function update(upnOrObjectId, parameters, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>upnOrObjectId</em></td>
+                    <td>
+                      <p>User object Id or user principal name to get
+user information.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters to update an exisitng user.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>accountEnabled</em></td>
+                            <td>
+                              <p>Enable the account. If it is
+enabled then true else false.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>displayName</em></td>
+                            <td>
+                              <p>User display name</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>passwordProfile</em></td>
+                            <td>
+                              <p>Password Profile</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>password</em></td>
+                                    <td>
+                                      <p>Password</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">boolean</span></td>
+                                    <td><em>forceChangePasswordNextLogin</em></td>
+                                    <td>
+                                      <p>Force change password on next login</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>mailNickname</em></td>
+                            <td>
+                              <p>The mail alias for the user</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_graph_Users_deleteMethod" data-uid="azure-graph.Users#deleteMethod">deleteMethod(upnOrObjectId, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Delete a user. Reference:
+<a href="https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/users-operations#DeleteUser">https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/users-operations#DeleteUser</a></p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteMethod(upnOrObjectId, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>upnOrObjectId</em></td>
+                    <td>
+                      <p>user object id or user principal name (upn)</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_graph_Users_getMemberGroups" data-uid="azure-graph.Users#getMemberGroups">getMemberGroups(objectId, securityEnabledOnly, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Gets a collection that contains the Object IDs of the groups of which the
+user is a member.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getMemberGroups(objectId, securityEnabledOnly, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>objectId</em></td>
+                    <td>
+                      <p>User filtering parameters.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">boolean</span></td>
+                    <td><em>securityEnabledOnly</em></td>
+                    <td>
+                      <p>If true only membership in security
+enabled groups should be checked. Otherwise membership in all groups
+should be checked</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:UserGetMemberGroupsResult&gt; for more
+                 information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_graph_Users_listNext" data-uid="azure-graph.Users#listNext">listNext(nextLink, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Gets list of users for the current tenant.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listNext(nextLink, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>nextLink</em></td>
+                    <td>
+                      <p>Next link for list operation.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:UserListResult&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1320 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PublicIPAddresses
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PublicIPAddresses
+   ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="azure_arm_network_PublicIPAddresses" data-uid="azure-arm-network.PublicIPAddresses">Class PublicIPAddresses
+              </h1>
+              <div class="markdown level0 summary"><p>PublicIPAddresses
+<strong>NOTE</strong>: An instance of this class is automatically created for an
+instance of the NetworkManagementClient.
+Initializes a new instance of the PublicIPAddresses class.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <h4 id="azure_arm_network_PublicIPAddresses__ctor" data-uid="azure-arm-network.PublicIPAddresses.#ctor">PublicIPAddresses(client)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">new PublicIPAddresses(client)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="azure-arm-network.NetworkManagementClient.html">NetworkManagementClient</a></td>
+                    <td><em>client</em></td>
+                    <td>
+                      <p>Reference to the service client.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <h4 id="azure_arm_network_PublicIPAddresses_client" data-uid="azure-arm-network.PublicIPAddresses#client">client</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">client</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <h4 id="azure_arm_network_PublicIPAddresses_deleteMethod" data-uid="azure-arm-network.PublicIPAddresses#deleteMethod">deleteMethod(resourceGroupName, publicIpAddressName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>The delete publicIpAddress operation deletes the specified publicIpAddress.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteMethod(resourceGroupName, publicIpAddressName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>publicIpAddressName</em></td>
+                    <td>
+                      <p>The name of the subnet.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_network_PublicIPAddresses_beginDeleteMethod" data-uid="azure-arm-network.PublicIPAddresses#beginDeleteMethod">beginDeleteMethod(resourceGroupName, publicIpAddressName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>The delete publicIpAddress operation deletes the specified publicIpAddress.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginDeleteMethod(resourceGroupName, publicIpAddressName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>publicIpAddressName</em></td>
+                    <td>
+                      <p>The name of the subnet.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_network_PublicIPAddresses_get" data-uid="azure-arm-network.PublicIPAddresses#get">get(resourceGroupName, publicIpAddressName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>The Get publicIpAddress operation retrieves information about the specified
+pubicIpAddress</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function get(resourceGroupName, publicIpAddressName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>publicIpAddressName</em></td>
+                    <td>
+                      <p>The name of the subnet.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>expand</em></td>
+                            <td>
+                              <p>expand references resources.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:PublicIPAddress&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_network_PublicIPAddresses_createOrUpdate" data-uid="azure-arm-network.PublicIPAddresses#createOrUpdate">createOrUpdate(resourceGroupName, publicIpAddressName, parameters, options, callback)</h4>
+              <div class="markdown level1 summary"><p>The Put PublicIPAddress operation creates/updates a stable/dynamic PublicIP
+address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createOrUpdate(resourceGroupName, publicIpAddressName, parameters, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>publicIpAddressName</em></td>
+                    <td>
+                      <p>The name of the publicIpAddress.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied to the create/update
+PublicIPAddress operation</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>publicIPAllocationMethod</em></td>
+                            <td>
+                              <p>Gets or sets PublicIP
+allocation method (Static/Dynamic). Possible values include: &#39;Static&#39;,
+&#39;Dynamic&#39;</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>publicIPAddressVersion</em></td>
+                            <td>
+                              <p>Gets or sets PublicIP
+address version (IPv4/IPv6). Possible values include: &#39;IPv4&#39;, &#39;IPv6&#39;</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>dnsSettings</em></td>
+                            <td>
+                              <p>Gets or sets FQDN of the DNS
+record associated with the public IP address</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>domainNameLabel</em></td>
+                                    <td>
+                                      <p>Gets or sets the
+Domain name label.The concatenation of the domain name label and the
+regionalized DNS zone make up the fully qualified domain name associated
+with the public IP address. If a domain name label is specified, an A DNS
+record is created for the public IP in the Microsoft Azure DNS system.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>fqdn</em></td>
+                                    <td>
+                                      <p>Gets the FQDN, Fully
+qualified domain name of the A DNS record associated with the public IP.
+This is the concatenation of the domainNameLabel and the regionalized DNS
+zone.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>reverseFqdn</em></td>
+                                    <td>
+                                      <p>Gets or Sets the
+Reverse FQDN. A user-visible, fully qualified domain name that resolves to
+this public IP address. If the reverseFqdn is specified, then a PTR DNS
+record is created pointing from the IP address in the in-addr.arpa domain
+to the reverse FQDN.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>ipAddress</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>idleTimeoutInMinutes</em></td>
+                            <td>
+                              <p>Gets or sets the
+Idletimeout of the public IP address</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>resourceGuid</em></td>
+                            <td>
+                              <p>Gets or sets resource guid
+property of the PublicIP resource</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>provisioningState</em></td>
+                            <td>
+                              <p>Gets provisioning state of
+the PublicIP resource Updating/Deleting/Failed</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>etag</em></td>
+                            <td>
+                              <p>Gets a unique read-only string that
+changes whenever the resource is updated</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>id</em></td>
+                            <td>
+                              <p>Resource Id</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>location</em></td>
+                            <td>
+                              <p>Resource location</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>tags</em></td>
+                            <td>
+                              <p>Resource tags</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:PublicIPAddress&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_network_PublicIPAddresses_beginCreateOrUpdate" data-uid="azure-arm-network.PublicIPAddresses#beginCreateOrUpdate">beginCreateOrUpdate(resourceGroupName, publicIpAddressName, parameters, options, callback)</h4>
+              <div class="markdown level1 summary"><p>The Put PublicIPAddress operation creates/updates a stable/dynamic PublicIP
+address</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginCreateOrUpdate(resourceGroupName, publicIpAddressName, parameters, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>publicIpAddressName</em></td>
+                    <td>
+                      <p>The name of the publicIpAddress.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>Parameters supplied to the create/update
+PublicIPAddress operation</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>publicIPAllocationMethod</em></td>
+                            <td>
+                              <p>Gets or sets PublicIP
+allocation method (Static/Dynamic). Possible values include: &#39;Static&#39;,
+&#39;Dynamic&#39;</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>publicIPAddressVersion</em></td>
+                            <td>
+                              <p>Gets or sets PublicIP
+address version (IPv4/IPv6). Possible values include: &#39;IPv4&#39;, &#39;IPv6&#39;</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>dnsSettings</em></td>
+                            <td>
+                              <p>Gets or sets FQDN of the DNS
+record associated with the public IP address</p>
+
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>domainNameLabel</em></td>
+                                    <td>
+                                      <p>Gets or sets the
+Domain name label.The concatenation of the domain name label and the
+regionalized DNS zone make up the fully qualified domain name associated
+with the public IP address. If a domain name label is specified, an A DNS
+record is created for the public IP in the Microsoft Azure DNS system.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>fqdn</em></td>
+                                    <td>
+                                      <p>Gets the FQDN, Fully
+qualified domain name of the A DNS record associated with the public IP.
+This is the concatenation of the domainNameLabel and the regionalized DNS
+zone.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>reverseFqdn</em></td>
+                                    <td>
+                                      <p>Gets or Sets the
+Reverse FQDN. A user-visible, fully qualified domain name that resolves to
+this public IP address. If the reverseFqdn is specified, then a PTR DNS
+record is created pointing from the IP address in the in-addr.arpa domain
+to the reverse FQDN.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>ipAddress</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>idleTimeoutInMinutes</em></td>
+                            <td>
+                              <p>Gets or sets the
+Idletimeout of the public IP address</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>resourceGuid</em></td>
+                            <td>
+                              <p>Gets or sets resource guid
+property of the PublicIP resource</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>provisioningState</em></td>
+                            <td>
+                              <p>Gets provisioning state of
+the PublicIP resource Updating/Deleting/Failed</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>etag</em></td>
+                            <td>
+                              <p>Gets a unique read-only string that
+changes whenever the resource is updated</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>id</em></td>
+                            <td>
+                              <p>Resource Id</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>location</em></td>
+                            <td>
+                              <p>Resource location</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>tags</em></td>
+                            <td>
+                              <p>Resource tags</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:PublicIPAddress&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_network_PublicIPAddresses_listAll" data-uid="azure-arm-network.PublicIPAddresses#listAll">listAll(options, callback)</h4>
+              <div class="markdown level1 summary"><p>The List publicIpAddress operation retrieves all the publicIpAddresses in a
+subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listAll(options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:PublicIPAddressListResult&gt; for more
+                 information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_network_PublicIPAddresses_list" data-uid="azure-arm-network.PublicIPAddresses#list">list(resourceGroupName, options, callback)</h4>
+              <div class="markdown level1 summary"><p>The List publicIpAddress operation retrieves all the publicIpAddresses in a
+resource group.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function list(resourceGroupName, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>resourceGroupName</em></td>
+                    <td>
+                      <p>The name of the resource group.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:PublicIPAddressListResult&gt; for more
+                 information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_network_PublicIPAddresses_listAllNext" data-uid="azure-arm-network.PublicIPAddresses#listAllNext">listAllNext(nextPageLink, options, callback)</h4>
+              <div class="markdown level1 summary"><p>The List publicIpAddress operation retrieves all the publicIpAddresses in a
+subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listAllNext(nextPageLink, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>nextPageLink</em></td>
+                    <td>
+                      <p>The NextLink from the previous successful call
+to List operation.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:PublicIPAddressListResult&gt; for more
+                 information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_network_PublicIPAddresses_listNext" data-uid="azure-arm-network.PublicIPAddresses#listNext">listNext(nextPageLink, options, callback)</h4>
+              <div class="markdown level1 summary"><p>The List publicIpAddress operation retrieves all the publicIpAddresses in a
+resource group.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listNext(nextPageLink, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>nextPageLink</em></td>
+                    <td>
+                      <p>The NextLink from the previous successful call
+to List operation.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:PublicIPAddressListResult&gt; for more
+                 information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

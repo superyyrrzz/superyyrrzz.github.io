@@ -1,0 +1,1844 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RouteOperations
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RouteOperations
+   ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="azure_asm_network_RouteOperations_RouteOperations" data-uid="azure-asm-network.RouteOperations~RouteOperations">Class RouteOperations
+              </h1>
+              <div class="markdown level0 summary"><p>The Network Management API includes operations for managing the routes for
+your subscription.
+<strong>NOTE</strong>: An instance of this class is automatically created for an
+instance of the [NetworkManagementClient] {@link
+NetworkManagementClient~NetworkManagementClient}.
+See [routes] {@link
+NetworkManagementClient~NetworkManagementClient#routes}.
+Initializes a new instance of the RouteOperations class.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations__ctor" data-uid="azure-asm-network.RouteOperations~RouteOperations.#ctor">RouteOperations(client)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">new RouteOperations(client)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.NetworkManagementClient</span></td>
+                    <td><em>client</em></td>
+                    <td>
+                      <p>Reference to the service client.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_client" data-uid="azure-asm-network.RouteOperations~RouteOperations#client">client</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">client</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_abortMigration" data-uid="azure-asm-network.RouteOperations~RouteOperations#abortMigration">abortMigration(routeTableName, callback)</h4>
+              <div class="markdown level1 summary"><p>Abort routetable migration api validates and aborts the given routetable
+for IaaS Classic to ARM migration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function abortMigration(routeTableName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeTableName</em></td>
+                    <td>
+                      <p>Name of the routetable to be migrated.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_addRouteTableToSubnet" data-uid="azure-asm-network.RouteOperations~RouteOperations#addRouteTableToSubnet">addRouteTableToSubnet(vnetName, subnetName, parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>Set the specified route table for the provided subnet in the provided
+virtual network in this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function addRouteTableToSubnet(vnetName, subnetName, parameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>vnetName</em></td>
+                    <td>
+                      <p>The name of the virtual network that contains the
+provided subnet.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>subnetName</em></td>
+                    <td>
+                      <p>The name of the subnet that the route table
+will be added to.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.AddRouteTableToSubnetParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>The parameters
+necessary to add a route table to the provided subnet.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>routeTableName</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_beginAbortMigration" data-uid="azure-asm-network.RouteOperations~RouteOperations#beginAbortMigration">beginAbortMigration(routeTableName, callback)</h4>
+              <div class="markdown level1 summary"><p>Abort routetable migration api validates and aborts the given routetable
+for IaaS Classic to ARM migration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginAbortMigration(routeTableName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeTableName</em></td>
+                    <td>
+                      <p>Name of the routetable to be migrated.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_beginAddRouteTableToSubnet" data-uid="azure-asm-network.RouteOperations~RouteOperations#beginAddRouteTableToSubnet">beginAddRouteTableToSubnet(vnetName, subnetName, parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>Set the specified route table for the provided subnet in the provided
+virtual network in this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginAddRouteTableToSubnet(vnetName, subnetName, parameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>vnetName</em></td>
+                    <td>
+                      <p>The name of the virtual network that contains the
+provided subnet.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>subnetName</em></td>
+                    <td>
+                      <p>The name of the subnet that the route table
+will be added to.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.AddRouteTableToSubnetParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>The parameters
+necessary to add a route table to the provided subnet.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>routeTableName</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_beginCommitMigration" data-uid="azure-asm-network.RouteOperations~RouteOperations#beginCommitMigration">beginCommitMigration(routeTableName, callback)</h4>
+              <div class="markdown level1 summary"><p>Commit routetable migration api validates and commits the given routetable
+for IaaS Classic to ARM migration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginCommitMigration(routeTableName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeTableName</em></td>
+                    <td>
+                      <p>Name of the routetable to be migrated.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_beginCreateRouteTable" data-uid="azure-asm-network.RouteOperations~RouteOperations#beginCreateRouteTable">beginCreateRouteTable(parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>Create the specified route table for this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginCreateRouteTable(parameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.CreateRouteTableParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>The parameters necessary to
+create a new route table.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>label</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>location</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_beginDeleteRoute" data-uid="azure-asm-network.RouteOperations~RouteOperations#beginDeleteRoute">beginDeleteRoute(routeTableName, routeName, callback)</h4>
+              <div class="markdown level1 summary"><p>Set the specified route for the provided table in this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginDeleteRoute(routeTableName, routeName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeTableName</em></td>
+                    <td>
+                      <p>The name of the route table where the
+provided route will be set.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeName</em></td>
+                    <td>
+                      <p>The name of the route that will be set on the
+provided route table.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_beginDeleteRouteTable" data-uid="azure-asm-network.RouteOperations~RouteOperations#beginDeleteRouteTable">beginDeleteRouteTable(routeTableName, callback)</h4>
+              <div class="markdown level1 summary"><p>Delete the specified route table for this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginDeleteRouteTable(routeTableName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeTableName</em></td>
+                    <td>
+                      <p>The name of the route table to delete.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_beginPrepareMigration" data-uid="azure-asm-network.RouteOperations~RouteOperations#beginPrepareMigration">beginPrepareMigration(routeTableName, callback)</h4>
+              <div class="markdown level1 summary"><p>Prepare routetable migration api validates and prepares the given
+routetable for IaaS Classic to ARM migration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginPrepareMigration(routeTableName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeTableName</em></td>
+                    <td>
+                      <p>Name of the routetable to be migrated.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_beginRemoveRouteTableFromSubnet" data-uid="azure-asm-network.RouteOperations~RouteOperations#beginRemoveRouteTableFromSubnet">beginRemoveRouteTableFromSubnet(vnetName, subnetName, callback)</h4>
+              <div class="markdown level1 summary"><p>Remove the route table from the provided subnet in the provided virtual
+network in this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginRemoveRouteTableFromSubnet(vnetName, subnetName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>vnetName</em></td>
+                    <td>
+                      <p>The name of the virtual network that contains the
+provided subnet.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>subnetName</em></td>
+                    <td>
+                      <p>The name of the subnet that the route table
+will be removed from.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_beginSetRoute" data-uid="azure-asm-network.RouteOperations~RouteOperations#beginSetRoute">beginSetRoute(routeTableName, routeName, parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>Set the specified route for the provided table in this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function beginSetRoute(routeTableName, routeName, parameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeTableName</em></td>
+                    <td>
+                      <p>The name of the route table where the
+provided route will be set.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeName</em></td>
+                    <td>
+                      <p>The name of the route that will be set on the
+provided route table.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.SetRouteParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>The parameters necessary to create
+a new route table.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>addressPrefix</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.NextHop</span></td>
+                            <td><em>nextHop</em></td>
+                            <td>
+                              
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>type</em></td>
+                                    <td>
+                                      <p>Gets or sets the type of the
+next hop.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>ipAddress</em></td>
+                                    <td>
+                                      <p>Gets or sets the next hop
+IP addresses.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_commitMigration" data-uid="azure-asm-network.RouteOperations~RouteOperations#commitMigration">commitMigration(routeTableName, callback)</h4>
+              <div class="markdown level1 summary"><p>Commit routetable migration api validates and commits the given routetable
+for IaaS Classic to ARM migration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function commitMigration(routeTableName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeTableName</em></td>
+                    <td>
+                      <p>Name of the routetable to be migrated.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_createRouteTable" data-uid="azure-asm-network.RouteOperations~RouteOperations#createRouteTable">createRouteTable(parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>Create the specified route table for this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createRouteTable(parameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.CreateRouteTableParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>The parameters necessary to
+create a new route table.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>label</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>location</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_deleteRoute" data-uid="azure-asm-network.RouteOperations~RouteOperations#deleteRoute">deleteRoute(routeTableName, routeName, callback)</h4>
+              <div class="markdown level1 summary"><p>Set the specified route for the provided table in this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteRoute(routeTableName, routeName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeTableName</em></td>
+                    <td>
+                      <p>The name of the route table where the
+provided route will be set.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeName</em></td>
+                    <td>
+                      <p>The name of the route that will be set on the
+provided route table.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_deleteRouteTable" data-uid="azure-asm-network.RouteOperations~RouteOperations#deleteRouteTable">deleteRouteTable(routeTableName, callback)</h4>
+              <div class="markdown level1 summary"><p>Delete the specified route table for this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteRouteTable(routeTableName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeTableName</em></td>
+                    <td>
+                      <p>The name of the route table to delete.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_getEffectiveRouteTableForNetworkInterface" data-uid="azure-asm-network.RouteOperations~RouteOperations#getEffectiveRouteTableForNetworkInterface">getEffectiveRouteTableForNetworkInterface(serviceName, deploymentName, roleinstanceName, networkInterfaceName, callback)</h4>
+              <div class="markdown level1 summary"><p>Get the effective route table for the provided network interface in this
+subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getEffectiveRouteTableForNetworkInterface(serviceName, deploymentName, roleinstanceName, networkInterfaceName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>serviceName</em></td>
+                    <td>
+                      <p>The name of the cloud service.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>deploymentName</em></td>
+                    <td>
+                      <p>The name of the deployment.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>roleinstanceName</em></td>
+                    <td>
+                      <p>The name of the role instance.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>networkInterfaceName</em></td>
+                    <td>
+                      <p>The name of the network interface.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_getEffectiveRouteTableForRoleInstance" data-uid="azure-asm-network.RouteOperations~RouteOperations#getEffectiveRouteTableForRoleInstance">getEffectiveRouteTableForRoleInstance(serviceName, deploymentName, roleinstanceName, callback)</h4>
+              <div class="markdown level1 summary"><p>Get the effective route table for the provided role instance in this
+subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getEffectiveRouteTableForRoleInstance(serviceName, deploymentName, roleinstanceName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>serviceName</em></td>
+                    <td>
+                      <p>The name of the cloud service.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>deploymentName</em></td>
+                    <td>
+                      <p>The name of the deployment.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>roleinstanceName</em></td>
+                    <td>
+                      <p>The name of the role instance.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_getRouteTable" data-uid="azure-asm-network.RouteOperations~RouteOperations#getRouteTable">getRouteTable(routeTableName, callback)</h4>
+              <div class="markdown level1 summary"><p>Get the specified route table for this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getRouteTable(routeTableName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeTableName</em></td>
+                    <td>
+                      <p>The name of the route table in this
+subscription to retrieve.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_getRouteTableForSubnet" data-uid="azure-asm-network.RouteOperations~RouteOperations#getRouteTableForSubnet">getRouteTableForSubnet(vnetName, subnetName, callback)</h4>
+              <div class="markdown level1 summary"><p>Get the specified route table for the provided subnet in the provided
+virtual network in this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getRouteTableForSubnet(vnetName, subnetName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>vnetName</em></td>
+                    <td>
+                      <p>The name of the virtual network that contains the
+provided subnet.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>subnetName</em></td>
+                    <td>
+                      <p>The name of the subnet.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_getRouteTableWithDetails" data-uid="azure-asm-network.RouteOperations~RouteOperations#getRouteTableWithDetails">getRouteTableWithDetails(routeTableName, detailLevel, callback)</h4>
+              <div class="markdown level1 summary"><p>Get the specified route table for this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getRouteTableWithDetails(routeTableName, detailLevel, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeTableName</em></td>
+                    <td>
+                      <p>The name of the route table in this
+subscription to retrieve.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>detailLevel</em></td>
+                    <td>
+                      <p>The amount of detail about the requested route
+table that will be returned.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_listRouteTables" data-uid="azure-asm-network.RouteOperations~RouteOperations#listRouteTables">listRouteTables(callback)</h4>
+              <div class="markdown level1 summary"><p>List the existing route tables for this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listRouteTables(callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_prepareMigration" data-uid="azure-asm-network.RouteOperations~RouteOperations#prepareMigration">prepareMigration(routeTableName, callback)</h4>
+              <div class="markdown level1 summary"><p>Prepare routetable migration api validates and prepares the given
+routetable for IaaS Classic to ARM migration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function prepareMigration(routeTableName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeTableName</em></td>
+                    <td>
+                      <p>Name of the routetable to be migrated.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_removeRouteTableFromSubnet" data-uid="azure-asm-network.RouteOperations~RouteOperations#removeRouteTableFromSubnet">removeRouteTableFromSubnet(vnetName, subnetName, callback)</h4>
+              <div class="markdown level1 summary"><p>Remove the route table from the provided subnet in the provided virtual
+network in this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function removeRouteTableFromSubnet(vnetName, subnetName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>vnetName</em></td>
+                    <td>
+                      <p>The name of the virtual network that contains the
+provided subnet.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>subnetName</em></td>
+                    <td>
+                      <p>The name of the subnet that the route table
+will be removed from.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_setRoute" data-uid="azure-asm-network.RouteOperations~RouteOperations#setRoute">setRoute(routeTableName, routeName, parameters, callback)</h4>
+              <div class="markdown level1 summary"><p>Set the specified route for the provided table in this subscription.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function setRoute(routeTableName, routeName, parameters, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeTableName</em></td>
+                    <td>
+                      <p>The name of the route table where the
+provided route will be set.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeName</em></td>
+                    <td>
+                      <p>The name of the route that will be set on the
+provided route table.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.SetRouteParameters</span></td>
+                    <td><em>parameters</em></td>
+                    <td>
+                      <p>The parameters necessary to create
+a new route table.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>name</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>addressPrefix</em></td>
+                            <td>
+                              
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">azure-asm-network.NextHop</span></td>
+                            <td><em>nextHop</em></td>
+                            <td>
+                              
+                              <h6 class="parameters">Properties</h6>
+                              <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                  <tr>
+                                    <th>Type</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>type</em></td>
+                                    <td>
+                                      <p>Gets or sets the type of the
+next hop.</p>
+
+                                            </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="xref">string</span></td>
+                                    <td><em>ipAddress</em></td>
+                                    <td>
+                                      <p>Gets or sets the next hop
+IP addresses.</p>
+
+                                            </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_asm_network_RouteOperations_RouteOperations_validateMigration" data-uid="azure-asm-network.RouteOperations~RouteOperations#validateMigration">validateMigration(routeTableName, callback)</h4>
+              <div class="markdown level1 summary"><p>Validate routetable migration api validates the given routetable for IaaS
+Classic to ARM migration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function validateMigration(routeTableName, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>routeTableName</em></td>
+                    <td>
+                      <p>Name of the routetable to be migrated.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">azure-asm-network.Stream</span></td>
+                    <td><p>The response stream.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

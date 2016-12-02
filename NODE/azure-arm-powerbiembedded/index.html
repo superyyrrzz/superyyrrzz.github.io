@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Microsoft Azure SDK for Node.js - Power BI Embedded </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Microsoft Azure SDK for Node.js - Power BI Embedded ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="microsoft-azure-sdk-for-nodejs---power-bi-embedded">Microsoft Azure SDK for Node.js - Power BI Embedded</h1>
+              
+<p>This project provides a Node.js package for managing Azure Power BI Embedded.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Manage Power BI Embedded:<ol>
+<li>Create new Workspace Collection</li>
+<li>Get workspace collections by subscription</li>
+<li>Get workspace collections by resource group</li>
+<li>Get workspace collection by resource group &amp; name</li>
+<li>Get access keys for workspace collection</li>
+<li>Regenerate access key for workspace collection</li>
+<li>Get workspaces within workspace collection</li>
+</ol>
+</li>
+</ul>
+<h2 id="how-to-install">How to Install</h2>
+<pre><code class="lang-bash">npm install azure-arm-powerbiembedded
+</code></pre><h2 id="how-to-use">How to Use</h2>
+<h3 id="authentication-client-creation-and-listing-workspaces-within-a-workspace-collection-in-a-resource-group-as-an-example">Authentication, client creation and listing workspaces within a workspace collection in a resource group as an example</h3>
+<pre><code class="lang-javascript"> var msRestAzure = require(&#39;ms-rest-azure&#39;);
+ var PowerBIEmbeddedManagementClient = require(&#39;azure-arm-powerbiembedded&#39;);
+
+ // Interactive Login
+ // It provides a url and code that needs to be copied and pasted in a browser and authenticated over there. If successful, 
+ // the user will get a DeviceTokenCredentials object.
+ msRestAzure.interactiveLogin(function(err, credentials) {
+  var client = new PowerBIEmbeddedManagementClient(credentials, subscriptionId);
+  client.workspaces.list(resourceGroupName, workspaceCollectionName, function(err, result, request, response) {
+    if (err) console.log(err);
+    console.log(result);
+  });
+ });
+</code></pre><h3 id="create-new-workspace-collection">Create new Workspace Collection</h3>
+<pre><code class="lang-javascript">const creationOptions = {
+  location: &quot;southcentral&quot;,
+  tags: {
+    key1: &#39;value1&#39;,
+    key2: &#39;value2&#39;
+  },
+  sku: {
+    name: &quot;S1&quot;,
+    teir: &quot;Standard&quot;
+  }
+};
+
+client.workspaceCollections.create(resourceGroupName, workspaceCollectionName, creationOptions, (error, result, request, response) =&gt; {
+  ...
+});
+</code></pre><p><code>workspaceCollection</code>:</p>
+<pre><code class="lang-javascript">{
+  id: &quot;...&quot;,
+  name: &quot;...&quot;,
+  type: &quot;...&quot;,
+  location: &quot;...&quot;,
+  tags: { ... },
+  sku: {
+    name: &quot;S1&quot;,
+    teir: &quot;Standard&quot;
+  },
+  properties: {
+    ...
+  }
+}
+</code></pre><h3 id="update-workspace-collection">Update Workspace Collection</h3>
+<pre><code class="lang-javascript">const updateBody = {
+  tags: {
+    newTag: &#39;newValue&#39;,
+    removeTag: &#39;&#39;
+  }
+};
+
+client.workspaceCollections.update(resourceGroupName, workspaceCollectionName, updateBody, (error, result, request, response) =&gt; {
+  ...
+});
+</code></pre><h3 id="delete-workspace-collection">Delete Workspace Collection</h3>
+<pre><code class="lang-javascript">client.workspaceCollections.deleteMethod(resourceGroupName, workspaceCollectionName, (error, result, request, response) =&gt; {
+  ...
+});
+</code></pre><h3 id="get-workspace-collections-by-subscription">Get workspace collections by subscription</h3>
+<pre><code class="lang-javascript">client.workspaceCollections.listBySubscription((error, result, request, response) =&gt; {
+  ...
+});
+</code></pre><h3 id="get-workspace-collections-by-resource-group">Get workspace collections by resource group</h3>
+<pre><code class="lang-javascript">client.workspaceCollections.listByResourceGroup(resourceGroupName, (error, result, request, response) =&gt; {
+  ...
+});
+</code></pre><h3 id="get-workspace-collection-by-resource-group--workspace-collection-name">Get workspace collection by resource group &amp; workspace collection name</h3>
+<pre><code class="lang-javascript">client.workspaceCollections.getByName(resourceGroupName, workspaceCollectionName, (error, result, request, response) =&gt; {
+  ...
+});
+</code></pre><h3 id="get-access-keys-for-workspace-collection">Get access keys for workspace collection</h3>
+<pre><code class="lang-javascript">client.workspaceCollections.getAccessKeys(resourceGroupName, workspaceCollectionName, (error, result, request, response) =&gt; {
+  ...
+});
+</code></pre><p><code>accessKeys</code>:</p>
+<pre><code class="lang-javascript">{
+  key1: &quot;...&quot;,
+  key2: &quot;...&quot;
+}
+</code></pre><h3 id="regenerate-access-key-for-workspace-collection">Regenerate access key for workspace collection</h3>
+<pre><code class="lang-javascript">const body = {
+  keyName: &quot;key1&quot;
+};
+
+client.workspaceCollections.regenerateKey(resourceGroupName, workspaceCollectionName, body, (error, result, request, response) =&gt; {
+  ...
+});
+</code></pre><p><code>accessKeys</code>:</p>
+<pre><code class="lang-javascript">{
+  key1: &quot;...&quot;, // Regenerated
+  key2: &quot;...&quot;
+}
+</code></pre><h3 id="get-workspaces-within-workspace-collection">Get workspaces within workspace collection</h3>
+<pre><code class="lang-javascript">client.workspaces.list(resourceGroupName, workspaceCollectionName, (error, result, request, response) =&gt; {
+  ...
+});
+</code></pre><p><code>workspaces</code>:</p>
+<pre><code class="lang-javascript">[
+  {
+    id: &quot;...&quot;,
+    name: &quot;...&quot;,
+    type: &quot;...&quot;,
+    properties: { ... }
+  },
+  {
+    id: &quot;...&quot;,
+    name: &quot;...&quot;,
+    type: &quot;...&quot;,
+    properties: { ... }
+  },
+  ...
+]
+</code></pre><h2 id="related-projects">Related projects</h2>
+<ul>
+<li><a href="https://github.com/Azure/azure-sdk-for-node">Microsoft Azure SDK for Node.js</a></li>
+<li><a href="https://github.com/Azure/autorest">AutoRest</a></li>
+</ul>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

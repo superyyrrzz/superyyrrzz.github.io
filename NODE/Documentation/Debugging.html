@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Using console.log() </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Using console.log() ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              
+              <p>Different ways to debug azure-sdk-for-node</p>
+<h2 id="using-consolelog">Using console.log()</h2>
+<p>This is always handy and is guaranteed to work.
+It is a good practice to use util.inspect() to dump well formatted objects.
+In your script:</p>
+<pre><code>var util = require(&#39;util&#39;);
+. . .
+console.log(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Some Identifier   &quot; + util.inspect(some_object, {depth: null}));
+. . .
+</code></pre><p>Providing <strong>{depth: null}</strong> is optional. By default, it will dump object upto 3 levels deep. Setting depth  to null will dump the complete object.</p>
+<h2 id="using-visual-studio">Using Visual Studio</h2>
+<p>The Visual Studio plugin for node.js can be downloaded from <a href="https://github.com/Microsoft/nodejstools/releases">here</a>.</p>
+<h3 id="setting-up-the-project">Setting up the project</h3>
+<ul>
+<li>Open the <strong>nodeSDK.sln</strong> file present at the root of the cloned repo.</li>
+<li>Set the Tab size and Indentation to 2 spaces by going to <ul>
+<li>Tools --&gt; Options --&gt; TextEditor --&gt; Node.js --&gt; Tabs --&gt; [Tab size: 2, Indent size: 2]</li>
+<li>Tools --&gt; Options --&gt; TextEditor --&gt; Javascript --&gt; Tabs --&gt; [Tab size: 2, Indent size: 2]</li>
+</ul>
+</li>
+</ul>
+<h3 id="for-debugging-the-tests">For debugging the tests:</h3>
+<ul>
+<li>From the menu bar go to Project --&gt; Properties and set the environment variables required for running tests.<ul>
+<li>The list of environment variables can be found over <a href="EnvironmentVariables.html">here</a></li>
+<li>If the need arises to add a new environment variable for tests please update the <a href="EnvironmentVariables.html">Documentation</a> to keep the list current</li>
+<li>Visual Studio can also be opened from <strong>&quot;Visual Studio Debugger Cmd Prompt&quot;</strong> usually located at &quot;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\Shortcuts\Developer Command Prompt for VS2013.lnk&quot; to set the environment variables. Then open the .sln file from the prompt.</li>
+</ul>
+</li>
+<li>In the Solution Explorer, click on a test that needs to be debugged. For example: &quot;azure-sdk-for-node\test\services\storageManagement\storageManagementClient-tests.js&quot;</li>
+<li>In the <strong>Properties</strong> pane select <strong>&quot;Mocha&quot;</strong> as the Test Framework. Save All the changes. </li>
+<li>The tests shall be seen in the &quot;Test Explorer&quot;. Right Click on any Test and Select &quot;Debug Selected Test&quot;.<ul>
+<li><strong>Note:</strong> If the test file has any errors then you might not see the tests in the TestExplorer. In the Properties pane select <strong>ExportRunner</strong> as the test framework and save the solution. You will see the error in the output pane. Once the errors are resolved change the test framework back to <strong>Mocha</strong> in the Properties pane for that test file. When you save the solution, you should see your tests in the test explorer.</li>
+</ul>
+</li>
+<li>You can also run <code>npm -s run-script jshint</code> in the cmd prompt from the root of the repo to find errors if any. </li>
+</ul>
+<h2 id="using-node-inspector">Using node inspector</h2>
+<p>This will open a debugging session in a browser (chrome or opera). It is super easy to use.
+Steps to get it working:</p>
+<ul>
+<li><code>npm install -g node-inspector</code></li>
+<li>Assuming this is being executing in the cmd prompt from the root directory of the cloned repo &quot;azure-sdk-for-node/&quot;<ul>
+<li><code>node-debug some-test-script-that-calls-your-service.js</code></li>
+</ul>
+</li>
+<li>A browser (Chrome/Opera) should pop up, or it can be manually browsed at this url - <a href="http://127.0.0.1:8080/debug?port=5858">http://127.0.0.1:8080/debug?port=5858</a></li>
+<li>Now breakpoints can be set at desired location.</li>
+<li>It may happen that files with extension &quot;.<em>js&quot; are not seen initially in the left pane. Please set a break point anywhere in lib\azure.js and keep on pressing &quot;F10&quot;. After some time, files with extension &quot;</em>.js&quot; can be seen. Breakpoints can now be set at desired line in &quot;*._js&quot; file.</li>
+</ul>
+<h3 id="for-debugging-tests">For debugging tests:</h3>
+<p>Please follow the below mentioned steps for the debugger to accept breakpoints set in your test file:</p>
+<ul>
+<li>In the file azure-sdk-for-node/scripts/unit.js
+<code>modify the last line 
+from  - require(&#39;../node_modules/mocha/bin/mocha&#39;);
+to    - require(&#39;../node_modules/mocha/bin/_mocha&#39;);</code></li>
+<li><p>set a breakpoint at runTest() method of mocha&#39;s runner.
+In the file &quot;azure-sdk-for-node\node_modules\mocha\lib\runner.js&quot; in the &quot;runTest()&quot; method around Line 378.</p>
+<ul>
+<li><strong>Note</strong>: &quot;node_modules&quot; directory is not a part of &quot;azure-sdk-for-node&quot; repository.  If the <strong>&quot;node_modules&quot;</strong> directory or the <strong>&quot;mocha&quot;</strong> directory inside <strong>&quot;node_modules&quot;</strong> directory is not present, then <code>npm install</code> needs to be executed from the root directory of the cloned &quot;azure-sdk-for-node&quot; repo.
+```
+Runner.prototype.runTest = function(fn){
+var test = this.test
+, self = this;</li>
+</ul>
+<p>if (this.asyncOnly) test.asyncOnly = true;</p>
+<p>try {
+  test.on(&#39;error&#39;, function(err){
+    self.fail(test, err);
+  });
+  test.run(fn); &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;-------- set a breakpoint here
+} catch (err) {
+  fn(err);
+}
+};
+```</p>
+</li>
+<li>Set a breakpoint in your test which should be located under &quot;azure-sdk-for-node/test/commands&quot; directory</li>
+</ul>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

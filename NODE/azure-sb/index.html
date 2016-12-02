@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Microsoft Azure SDK for Node.js - Gallery </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Microsoft Azure SDK for Node.js - Gallery ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="microsoft-azure-sdk-for-nodejs---gallery">Microsoft Azure SDK for Node.js - Gallery</h1>
+              
+<p>This project provides a Node.js package for accessing the Azure ServiceBus service.</p>
+<h2 id="how-to-install">How to Install</h2>
+<pre><code class="lang-bash">npm install azure-sb
+</code></pre><h2 id="how-to-use">How to Use</h2>
+<pre><code class="lang-node">var azure = require(&#39;azure&#39;);
+
+function checkForMessages(sbService, queueName, callback) {
+  sbService.receiveQueueMessage(queueName, { isPeekLock: true }, function (err, lockedMessage) {
+    if (err) {
+      if (err == &#39;No messages to receive&#39;) {
+        console.log(&#39;No messages&#39;);
+      } else {
+        callback(err);
+      }
+    } else {
+      callback(null, lockedMessage);
+    }
+  });
+}
+
+function processMessage(sbService, err, lockedMsg) {
+  if (err) {
+    console.log(&#39;Error on Rx: &#39;, err);
+  } else {
+    console.log(&#39;Rx: &#39;, lockedMsg);
+    sbService.deleteMessage(lockedMsg, function(err2) {
+      if (err2) {
+        console.log(&#39;Failed to delete message: &#39;, err2);
+      } else {
+        console.log(&#39;Deleted message.&#39;);
+      }
+    })
+  }
+}
+
+var idx = 0;
+function sendMessages(sbService, queueName) {
+  var msg = &#39;Message # &#39; + (++idx);
+  sbService.sendQueueMessage(queueName, msg, function (err) {
+   if (err) {
+     console.log(&#39;Failed Tx: &#39;, err);
+   } else {
+     console.log(&#39;Sent &#39; + msg);
+   }
+  });
+}
+
+var connStr = process.argv[2] || process.env.CONNECTION_STRING;
+if (!connStr) throw new Error(&#39;Must provide connection string&#39;);
+var queueName = &#39;sbqtest&#39;;
+
+console.log(&#39;Connecting to &#39; + connStr + &#39; queue &#39; + queueName);
+var sbService = azure.createServiceBusService(connStr);
+sbService.createQueueIfNotExists(queueName, function (err) {
+  if (err) {
+   console.log(&#39;Failed to create queue: &#39;, err);
+  } else {
+   setInterval(checkForMessages.bind(null, sbService, queueName, processMessage.bind(null, sbService)), 5000);
+   setInterval(sendMessages.bind(null, sbService, queueName), 15000);
+  }
+});
+</code></pre><p>Thanks to <a href="https://github.com/noodlefrenzy">@noodlefrenzy</a> for the great example. The original is <a href="https://github.com/noodlefrenzy/node-cerulean/blob/master/examples/servicebus_send_receive.js">here</a>.</p>
+<h2 id="related-projects">Related projects</h2>
+<ul>
+<li><a href="https://github.com/WindowsAzure/azure-sdk-for-node">Microsoft Azure SDK for Node.js</a></li>
+</ul>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

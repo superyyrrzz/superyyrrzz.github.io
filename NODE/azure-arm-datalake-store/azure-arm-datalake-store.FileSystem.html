@@ -1,0 +1,2577 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FileSystem
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FileSystem
+   ">
+    <meta name="generator" content="docfx 2.8.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="azure_arm_datalake_store_FileSystem" data-uid="azure-arm-datalake-store.FileSystem">Class FileSystem
+              </h1>
+              <div class="markdown level0 summary"><p>FileSystem
+<strong>NOTE</strong>: An instance of this class is automatically created for an
+instance of the DataLakeStoreFileSystemManagementClient.
+Initializes a new instance of the FileSystem class.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <h4 id="azure_arm_datalake_store_FileSystem__ctor" data-uid="azure-arm-datalake-store.FileSystem.#ctor">FileSystem(client)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">new FileSystem(client)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="azure-arm-datalake-store.DataLakeStoreFileSystemManagementClient.html">DataLakeStoreFileSystemManagementClient</a></td>
+                    <td><em>client</em></td>
+                    <td>
+                      <p>Reference to the service client.</p>
+
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              <h4 id="azure_arm_datalake_store_FileSystem_client" data-uid="azure-arm-datalake-store.FileSystem#client">client</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">client</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <h4 id="azure_arm_datalake_store_FileSystem_concurrentAppend" data-uid="azure-arm-datalake-store.FileSystem#concurrentAppend">concurrentAppend(accountName, filePath, streamContents, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Appends to the specified file. This method supports multiple concurrent
+appends to the file. NOTE: ConcurrentAppend and normal (serial) Append
+CANNOT be used interchangeably; once a file has been appended to using
+either of these append options, it can only be appended to using that append
+option. ConcurrentAppend DOES NOT guarantee order and can result in
+duplicated data landing in the target file.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function concurrentAppend(accountName, filePath, streamContents, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>filePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with &#39;/&#39;) of the
+file to which to append using concurrent append.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>streamContents</em></td>
+                    <td>
+                      <p>The file contents to include when appending
+to the file.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>appendMode</em></td>
+                            <td>
+                              <p>Indicates the concurrent append call
+should create the file if it doesn&#39;t exist or just open the existing file
+for append. Possible values include: &#39;autocreate&#39;</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_setFileExpiry" data-uid="azure-arm-datalake-store.FileSystem#setFileExpiry">setFileExpiry(accountName, filePath, expiryOption, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Sets or removes the expiration time on the specified file. This operation
+can only be executed against files. Folders are not supported.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function setFileExpiry(accountName, filePath, expiryOption, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>filePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with &#39;/&#39;) of the
+file on which to set or remove the expiration time.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>expiryOption</em></td>
+                    <td>
+                      <p>Indicates the type of expiration to use for the
+file: 1. NeverExpire: ExpireTime is ignored. 2. RelativeToNow: ExpireTime is
+an integer in milliseconds representing the expiration date relative to when
+file expiration is updated. 3. RelativeToCreationDate: ExpireTime is an
+integer in milliseconds representing the expiration date relative to file
+creation. 4. Absolute: ExpireTime is an integer in milliseconds, as a Unix
+timestamp relative to 1/1/1970 00:00:00. Possible values include:
+&#39;NeverExpire&#39;, &#39;RelativeToNow&#39;, &#39;RelativeToCreationDate&#39;, &#39;Absolute&#39;</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>expireTime</em></td>
+                            <td>
+                              <p>The time that the file will expire,
+corresponding to the ExpiryOption that was set.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_checkAccess" data-uid="azure-arm-datalake-store.FileSystem#checkAccess">checkAccess(accountName, path, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Checks if the specified access is available at the given path.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function checkAccess(accountName, path, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>path</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with &#39;/&#39;) of the
+file or directory for which to check access.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>fsaction</em></td>
+                            <td>
+                              <p>File system operation read/write/execute
+in string form, matching regex pattern &#39;[rwx-]{3}&#39;</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_mkdirs" data-uid="azure-arm-datalake-store.FileSystem#mkdirs">mkdirs(accountName, path, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Creates a directory.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function mkdirs(accountName, path, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>path</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with &#39;/&#39;) of the
+directory to create.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:FileOperationResult&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_concat" data-uid="azure-arm-datalake-store.FileSystem#concat">concat(accountName, destinationPath, sources, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Concatenates the list of source files into the destination file, removing
+all source files upon success.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function concat(accountName, destinationPath, sources, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>destinationPath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with &#39;/&#39;)
+of the destination file resulting from the concatenation.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">array</span></td>
+                    <td><em>sources</em></td>
+                    <td>
+                      <p>A list of comma seperated Data Lake Store paths
+(starting with &#39;/&#39;) of the files to concatenate, in the order in which they
+should be concatenated.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_msConcat" data-uid="azure-arm-datalake-store.FileSystem#msConcat">msConcat(accountName, msConcatDestinationPath, streamContents, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Concatenates the list of source files into the destination file, deleting
+all source files upon success. This method accepts more source file paths
+than the Concat method. This method and the parameters it accepts are
+subject to change for usability in an upcoming version.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function msConcat(accountName, msConcatDestinationPath, streamContents, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>msConcatDestinationPath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting
+with &#39;/&#39;) of the destination file resulting from the concatenation.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>streamContents</em></td>
+                    <td>
+                      <p>A list of Data Lake Store paths (starting
+with &#39;/&#39;) of the source files. Must be in the format: sources=<comma separated="" list=""><p>
+</comma>
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>deleteSourceDirectory</em></td>
+                            <td>
+                              <p>Indicates that as an
+optimization instead of deleting each individual source stream, delete the
+source stream folder if all streams are in the same folder instead. This
+results in a substantial performance improvement when the only streams in
+the folder are part of the concatenation operation. WARNING: This includes
+the deletion of any other files that are not source files. Only set this to
+true when source files are the only files in the source directory.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_listFileStatus" data-uid="azure-arm-datalake-store.FileSystem#listFileStatus">listFileStatus(accountName, listFilePath, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Get the list of file status objects specified by the file path, with
+optional pagination parameters</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function listFileStatus(accountName, listFilePath, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>listFilePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with &#39;/&#39;) of
+the directory to list.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>listSize</em></td>
+                            <td>
+                              <p>Gets or sets the number of items to
+return. Optional.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>listAfter</em></td>
+                            <td>
+                              <p>Gets or sets the item or lexographical
+index after which to begin returning results. For example, a file list of
+&#39;a&#39;,&#39;b&#39;,&#39;d&#39; and listAfter=&#39;b&#39; will return &#39;d&#39;, and a listAfter=&#39;c&#39; will also
+return &#39;d&#39;. Optional.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>listBefore</em></td>
+                            <td>
+                              <p>Gets or sets the item or lexographical
+index before which to begin returning results. For example, a file list of
+&#39;a&#39;,&#39;b&#39;,&#39;d&#39; and listBefore=&#39;d&#39; will return &#39;a&#39;,&#39;b&#39;, and a listBefore=&#39;c&#39;
+will also return &#39;a&#39;,&#39;b&#39;. Optional.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:FileStatusesResult&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_getContentSummary" data-uid="azure-arm-datalake-store.FileSystem#getContentSummary">getContentSummary(accountName, getContentSummaryFilePath, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Gets the file content summary object specified by the file path.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getContentSummary(accountName, getContentSummaryFilePath, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>getContentSummaryFilePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting
+with &#39;/&#39;) of the file for which to retrieve the summary.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:ContentSummaryResult&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_getFileStatus" data-uid="azure-arm-datalake-store.FileSystem#getFileStatus">getFileStatus(accountName, getFilePath, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Get the file status object specified by the file path.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getFileStatus(accountName, getFilePath, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>getFilePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with &#39;/&#39;) of
+the file or directory for which to retrieve the status.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:FileStatusResult&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_append" data-uid="azure-arm-datalake-store.FileSystem#append">append(accountName, directFilePath, streamContents, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Appends to the specified file. This method does not support multiple
+concurrent appends to the file. NOTE: Concurrent append and normal (serial)
+append CANNOT be used interchangeably. Once a file has been appended to
+using either append option, it can only be appended to using that append
+option. Use the ConcurrentAppend option if you would like support for
+concurrent appends.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function append(accountName, directFilePath, streamContents, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>directFilePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with &#39;/&#39;)
+of the file to which to append.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>streamContents</em></td>
+                    <td>
+                      <p>The file contents to include when appending
+to the file.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>offset</em></td>
+                            <td>
+                              <p>The optional offset in the stream to begin
+the append operation. Default is to append at the end of the stream.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>syncFlag</em></td>
+                            <td>
+                              <p>Optionally indicates what to do after
+completion of the append. DATA indicates more data is coming so no sync
+takes place, METADATA indicates a sync should be done to refresh metadata of
+the file only. CLOSE indicates that both the stream and metadata should be
+refreshed upon append completion. Possible values include: &#39;DATA&#39;,
+&#39;METADATA&#39;, &#39;CLOSE&#39;</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_create" data-uid="azure-arm-datalake-store.FileSystem#create">create(accountName, directFilePath, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Creates a file with optionally specified content.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function create(accountName, directFilePath, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>directFilePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with &#39;/&#39;)
+of the file to create.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>streamContents</em></td>
+                            <td>
+                              <p>The file contents to include when
+creating the file. This parameter is optional, resulting in an empty file if
+not specified.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>overwrite</em></td>
+                            <td>
+                              <p>The indication of if the file should be
+overwritten.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>syncFlag</em></td>
+                            <td>
+                              <p>Optionally indicates what to do after
+completion of the append. DATA indicates more data is coming so no sync
+takes place, METADATA indicates a sync should be done to refresh metadata of
+the file only. CLOSE indicates that both the stream and metadata should be
+refreshed upon append completion. Possible values include: &#39;DATA&#39;,
+&#39;METADATA&#39;, &#39;CLOSE&#39;</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_open" data-uid="azure-arm-datalake-store.FileSystem#open">open(accountName, directFilePath, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Opens and reads from the specified file.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function open(accountName, directFilePath, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>directFilePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with &#39;/&#39;)
+of the file to open.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>length</em></td>
+                            <td>
+                              <p>The number of bytes that the server will
+attempt to retrieve. It will retrieve &lt;= length bytes.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">number</span></td>
+                            <td><em>offset</em></td>
+                            <td>
+                              <p>The byte offset to start reading data from.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_setAcl" data-uid="azure-arm-datalake-store.FileSystem#setAcl">setAcl(accountName, setAclFilePath, aclspec, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Sets the Access Control List (ACL) for a file or folder.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function setAcl(accountName, setAclFilePath, aclspec, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>setAclFilePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with &#39;/&#39;)
+of the file or directory on which to set the ACL.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>aclspec</em></td>
+                    <td>
+                      <p>The ACL spec included in ACL creation operations in
+the format &#39;[default:]user|group|other::r|-w|-x|-&#39;</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_modifyAclEntries" data-uid="azure-arm-datalake-store.FileSystem#modifyAclEntries">modifyAclEntries(accountName, modifyAclFilePath, aclspec, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Modifies existing Access Control List (ACL) entries on a file or folder.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function modifyAclEntries(accountName, modifyAclFilePath, aclspec, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>modifyAclFilePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with
+&#39;/&#39;) of the file or directory with the ACL being modified.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>aclspec</em></td>
+                    <td>
+                      <p>The ACL specification included in ACL modification
+operations in the format &#39;[default:]user|group|other::r|-w|-x|-&#39;</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_removeAclEntries" data-uid="azure-arm-datalake-store.FileSystem#removeAclEntries">removeAclEntries(accountName, removeAclFilePath, aclspec, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Removes existing Access Control List (ACL) entries for a file or folder.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function removeAclEntries(accountName, removeAclFilePath, aclspec, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>removeAclFilePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with
+&#39;/&#39;) of the file or directory with the ACL being removed.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>aclspec</em></td>
+                    <td>
+                      <p>The ACL spec included in ACL removal operations in
+the format &#39;[default:]user|group|other&#39;</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_removeDefaultAcl" data-uid="azure-arm-datalake-store.FileSystem#removeDefaultAcl">removeDefaultAcl(accountName, defaultAclFilePath, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Removes the existing Default Access Control List (ACL) of the specified
+directory.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function removeDefaultAcl(accountName, defaultAclFilePath, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>defaultAclFilePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with
+&#39;/&#39;) of the directory with the default ACL being removed.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_removeAcl" data-uid="azure-arm-datalake-store.FileSystem#removeAcl">removeAcl(accountName, aclFilePath, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Removes the existing Access Control List (ACL) of the specified file or
+directory.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function removeAcl(accountName, aclFilePath, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>aclFilePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with &#39;/&#39;) of
+the file or directory with the ACL being removed.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_getAclStatus" data-uid="azure-arm-datalake-store.FileSystem#getAclStatus">getAclStatus(accountName, aclFilePath, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Gets Access Control List (ACL) entries for the specified file or directory.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getAclStatus(accountName, aclFilePath, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>aclFilePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with &#39;/&#39;) of
+the file or directory for which to get the ACL.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:AclStatusResult&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_deleteMethod" data-uid="azure-arm-datalake-store.FileSystem#deleteMethod">deleteMethod(accountName, filePath, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Deletes the requested file or directory, optionally recursively.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deleteMethod(accountName, filePath, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>filePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with &#39;/&#39;) of the
+file or directory to delete.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>recursive</em></td>
+                            <td>
+                              <p>The optional switch indicating if the
+delete should be recursive</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:FileOperationResult&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_rename" data-uid="azure-arm-datalake-store.FileSystem#rename">rename(accountName, renameFilePath, destination, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Rename a file or directory.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function rename(accountName, renameFilePath, destination, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>renameFilePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with &#39;/&#39;)
+of the file or directory to move/rename.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>destination</em></td>
+                    <td>
+                      <p>The path to move/rename the file or folder to</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {object} [result]   - The deserialized result object.
+                 See &lt;xref:FileOperationResult&gt; for more information.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_setOwner" data-uid="azure-arm-datalake-store.FileSystem#setOwner">setOwner(accountName, setOwnerFilePath, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Sets the owner of a file or directory.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function setOwner(accountName, setOwnerFilePath, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>setOwnerFilePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting with
+&#39;/&#39;) of the file or directory for which to set the owner.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>owner</em></td>
+                            <td>
+                              <p>The AAD Object ID of the user owner of the
+file or directory. If empty, the property will remain unchanged.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>group</em></td>
+                            <td>
+                              <p>The AAD Object ID of the group owner of the
+file or directory. If empty, the property will remain unchanged.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="azure_arm_datalake_store_FileSystem_setPermission" data-uid="azure-arm-datalake-store.FileSystem#setPermission">setPermission(accountName, setPermissionFilePath, options, callback)</h4>
+              <div class="markdown level1 summary"><p>Sets the permission of the file or folder.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function setPermission(accountName, setPermissionFilePath, options, callback)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>accountName</em></td>
+                    <td>
+                      <p>The Azure Data Lake Store account to execute
+filesystem operations on.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>setPermissionFilePath</em></td>
+                    <td>
+                      <p>The Data Lake Store path (starting
+with &#39;/&#39;) of the file or directory for which to set the permission.</p>
+
+                            </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>Optional Parameters.</p>
+
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>permission</em></td>
+                            <td>
+                              <p>A string representation of the
+permission (i.e &#39;rwx&#39;). If empty, this property remains unchanged.</p>
+
+                                    </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">object</span></td>
+                            <td><em>customHeaders</em></td>
+                            <td>
+                              <p>Headers that will be added to the
+request</p>
+
+                                    </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>callback</em></td>
+                    <td>
+                      
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><p>callback(err, result, request, response)</p>
+<pre><code>                 {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                 {null} [result]   - The deserialized result object.
+
+                 {object} [request]  - The HTTP Request object if an error did not occur.
+
+                 {stream} [response] - The HTTP Response stream if an error did not occur.
+</code></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
