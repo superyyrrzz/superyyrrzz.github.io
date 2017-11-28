@@ -1,0 +1,1018 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TableQuery
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TableQuery
+   ">
+    <meta name="generator" content="docfx 1.0.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="TableQuery" data-uid="TableQuery">Class TableQuery
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <h4 id="TableQuery__ctor" data-uid="TableQuery.#ctor">TableQuery()</h4>
+              <div class="markdown level1 summary"><p>Creates a new TableQuery object.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">new TableQuery()</code></pre>
+              </div>
+              <h3 id="functions">Functions
+              </h3>
+              
+              
+              <h4 id="TableQuery_select" data-uid="TableQuery#select">select(fields)</h4>
+              <div class="markdown level1 summary"><p>Specifies the select clause. If no arguments are given, all fields will be selected.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function select(fields)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">array</span></td>
+                    <td><em>fields</em></td>
+                    <td>
+                      <p>The fields to be selected.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="TableQuery.html">TableQuery</a></td>
+                    <td><p>A table query object with the select clause.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="TableQuery_top" data-uid="TableQuery#top">top(top)</h4>
+              <div class="markdown level1 summary"><p>Specifies the top clause.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function top(top)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">int</span></td>
+                    <td><em>top</em></td>
+                    <td>
+                      <p>The number of items to fetch.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="TableQuery.html">TableQuery</a></td>
+                    <td><p>A table query object with the top clause.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="TableQuery_where" data-uid="TableQuery#where">where(condition, value)</h4>
+              <div class="markdown level1 summary"><p>Specifies the where clause.</p>
+<p>Valid type specifier strings include: ?string?, ?bool?, ?int32?, ?double?, ?date?, ?guid?, ?int64?, ?binary?
+A type must be specified for guid, int64, and binaries or the filter produced will be incorrect.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function where(condition, value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>condition</em></td>
+                    <td>
+                      <p>The condition string.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">array</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>Value(s) to insert in question mark (?) parameters.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="TableQuery.html">TableQuery</a></td>
+                    <td><p>A table query object with the where clause.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="TableQuery_int32Filter" data-uid="TableQuery.int32Filter">int32Filter(propertyName, operation, value)</h4>
+              <div class="markdown level1 summary"><p>Generates a property filter condition string for an &#39;int&#39; value.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function int32Filter(propertyName, operation, value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>propertyName</em></td>
+                    <td>
+                      <p>A string containing the name of the property to compare.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>operation</em></td>
+                    <td>
+                      <p>A string containing the comparison operator to use. 
+                                     See Constants.TableConstants.QueryComparisons for a list of allowed operations.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">int</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>An &#39;int&#39; containing the value to compare with the property.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>A string containing the formatted filter condition.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="TableQuery_int64Filter" data-uid="TableQuery.int64Filter">int64Filter(propertyName, operation, value)</h4>
+              <div class="markdown level1 summary"><p>Generates a property filter condition string for a &#39;int64&#39; value.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function int64Filter(propertyName, operation, value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>propertyName</em></td>
+                    <td>
+                      <p>A string containing the name of the property to compare.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>operation</em></td>
+                    <td>
+                      <p>A string containing the comparison operator to use. 
+                                     See Constants.TableConstants.QueryComparisons for a list of allowed operations.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">int64</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>An &#39;int64&#39; containing the value to compare with the property.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>A string containing the formatted filter condition.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="TableQuery_doubleFilter" data-uid="TableQuery.doubleFilter">doubleFilter(propertyName, operation, value)</h4>
+              <div class="markdown level1 summary"><p>Generates a property filter condition string for a &#39;double&#39; value.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function doubleFilter(propertyName, operation, value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>propertyName</em></td>
+                    <td>
+                      <p>A string containing the name of the property to compare.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>operation</em></td>
+                    <td>
+                      <p>A string containing the comparison operator to use. 
+                                     See Constants.TableConstants.QueryComparisons for a list of allowed operations.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">double</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>A &#39;double&#39; containing the value to compare with the property.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>A string containing the formatted filter condition.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="TableQuery_booleanFilter" data-uid="TableQuery.booleanFilter">booleanFilter(propertyName, operation, value)</h4>
+              <div class="markdown level1 summary"><p>Generates a property filter condition string for a &#39;boolean&#39; value.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function booleanFilter(propertyName, operation, value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>propertyName</em></td>
+                    <td>
+                      <p>A string containing the name of the property to compare.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>operation</em></td>
+                    <td>
+                      <p>A string containing the comparison operator to use. 
+                                     See Constants.TableConstants.QueryComparisons for a list of allowed operations.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">boolean</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>A &#39;boolean&#39; containing the value to compare with the property.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>A string containing the formatted filter condition.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="TableQuery_dateFilter" data-uid="TableQuery.dateFilter">dateFilter(propertyName, operation, value)</h4>
+              <div class="markdown level1 summary"><p>Generates a property filter condition string for a &#39;datetime&#39; value.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function dateFilter(propertyName, operation, value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>propertyName</em></td>
+                    <td>
+                      <p>A string containing the name of the property to compare.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>operation</em></td>
+                    <td>
+                      <p>A string containing the comparison operator to use. 
+                                     See Constants.TableConstants.QueryComparisons for a list of allowed operations.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">date</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>A &#39;datetime&#39; containing the value to compare with the property.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>A string containing the formatted filter condition.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="TableQuery_guidFilter" data-uid="TableQuery.guidFilter">guidFilter(propertyName, operation, value)</h4>
+              <div class="markdown level1 summary"><p>Generates a property filter condition string for a &#39;guid&#39; value.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function guidFilter(propertyName, operation, value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>propertyName</em></td>
+                    <td>
+                      <p>A string containing the name of the property to compare.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>operation</em></td>
+                    <td>
+                      <p>A string containing the comparison operator to use. 
+                                     See Constants.TableConstants.QueryComparisons for a list of allowed operations.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">guid</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>A &#39;guid&#39; containing the value to compare with the property.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>A string containing the formatted filter condition.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="TableQuery_binaryFilter" data-uid="TableQuery.binaryFilter">binaryFilter(propertyName, operation, value)</h4>
+              <div class="markdown level1 summary"><p>Generates a property filter condition string for a &#39;binary&#39; value.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function binaryFilter(propertyName, operation, value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>propertyName</em></td>
+                    <td>
+                      <p>A string containing the name of the property to compare.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>operation</em></td>
+                    <td>
+                      <p>A string containing the comparison operator to use. 
+                                     See Constants.TableConstants.QueryComparisons for a list of allowed operations.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">buffer</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>A &#39;buffer&#39; containing the value to compare with the property.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>A string containing the formatted filter condition.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="TableQuery_stringFilter" data-uid="TableQuery.stringFilter">stringFilter(propertyName, operation, value)</h4>
+              <div class="markdown level1 summary"><p>Generates a property filter condition string.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function stringFilter(propertyName, operation, value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>propertyName</em></td>
+                    <td>
+                      <p>A string containing the name of the property to compare.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>operation</em></td>
+                    <td>
+                      <p>A string containing the comparison operator to use. 
+                                     See Constants.TableConstants.QueryComparisons for a list of allowed operations.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>A &#39;string&#39; containing the value to compare with the property.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>A string containing the formatted filter condition.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="TableQuery_combineFilters" data-uid="TableQuery.combineFilters">combineFilters(filterA, operatorString, filterB)</h4>
+              <div class="markdown level1 summary"><p>Creates a filter condition using the specified logical operator on two filter conditions.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function combineFilters(filterA, operatorString, filterB)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>filterA</em></td>
+                    <td>
+                      <p>A string containing the first formatted filter condition.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>operatorString</em></td>
+                    <td>
+                      <p>A string containing the operator to use (AND, OR).</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>filterB</em></td>
+                    <td>
+                      <p>A string containing the second formatted filter condition.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>A string containing the combined filter expression.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="TableQuery_and" data-uid="TableQuery#and">and(condition, arguments)</h4>
+              <div class="markdown level1 summary"><p>Specifies an AND where condition.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function and(condition, arguments)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>condition</em></td>
+                    <td>
+                      <p>The condition string.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">array</span></td>
+                    <td><em>arguments</em></td>
+                    <td>
+                      <p>Any number of arguments to be replaced in the condition by the question mark (?).</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="TableQuery.html">TableQuery</a></td>
+                    <td><p>A table query object with the and clause.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="TableQuery_or" data-uid="TableQuery#or">or(condition, arguments)</h4>
+              <div class="markdown level1 summary"><p>Specifies an OR where condition.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function or(condition, arguments)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>condition</em></td>
+                    <td>
+                      <p>The condition.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">array</span></td>
+                    <td><em>arguments</em></td>
+                    <td>
+                      <p>Any number of arguments to be replaced in the condition by the question mark (?).</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="TableQuery.html">TableQuery</a></td>
+                    <td><p>A table query object with the or clause.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="TableQuery_toQueryObject" data-uid="TableQuery#toQueryObject">toQueryObject()</h4>
+              <div class="markdown level1 summary"><p>Returns the query string object for the query.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function toQueryObject()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><p>JSON object representing the query string arguments for the query.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

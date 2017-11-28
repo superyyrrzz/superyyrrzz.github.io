@@ -1,0 +1,4161 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GLOBAL
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GLOBAL
+   ">
+    <meta name="generator" content="docfx 1.0.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="global" data-uid="global">Class GLOBAL
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <h3 id="functions">Functions
+              </h3>
+              
+              
+              <h4 id="_global_generateDevelopmentStorageCredentials" data-uid="_global.generateDevelopmentStorageCredentials">generateDevelopmentStorageCredentials(proxyUri)</h4>
+              <div class="markdown level1 summary"><p>Creates a connection string that can be used to create a service which runs on the storage emulator. The emulator must be downloaded separately.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function generateDevelopmentStorageCredentials(proxyUri)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>proxyUri</em></td>
+                    <td>
+                      <p>The proxyUri. By default, <a href="http://127.0.0.1">http://127.0.0.1</a></p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>A connection string representing the development storage credentials.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_createTableService" data-uid="_global.createTableService">createTableService(storageAccountOrConnectionString, storageAccessKey, host)</h4>
+              <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="TableService.html">TableService</a> object.
+If no storageaccount or storageaccesskey are provided, the AZURE_STORAGE_CONNECTION_STRING and then the AZURE_STORAGE_ACCOUNT and AZURE_STORAGE_ACCESS_KEY 
+environment variables will be used.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createTableService(storageAccountOrConnectionString, storageAccessKey, host)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>storageAccountOrConnectionString</em></td>
+                    <td>
+                      <p>The storage account or the connection string.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>storageAccessKey</em></td>
+                    <td>
+                      <p>The storage access key.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">object</span></td>
+                    <td><em>host</em></td>
+                    <td>
+                      <p>The host address. To define primary only, pass a string. 
+                                                    Otherwise &#39;host.primaryHost&#39; defines the primary host and &#39;host.secondaryHost&#39; defines the secondary host.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="TableService.html">TableService</a></td>
+                    <td><p>A new TableService object.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_createTableServiceWithSas" data-uid="_global.createTableServiceWithSas">createTableServiceWithSas(host, sasToken)</h4>
+              <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="TableService.html">TableService</a> object using the host Uri and the SAS credentials provided.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createTableServiceWithSas(host, sasToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">object</span></td>
+                    <td><em>host</em></td>
+                    <td>
+                      <p>The host address. To define primary only, pass a string. 
+                                                    Otherwise &#39;host.primaryHost&#39; defines the primary host and &#39;host.secondaryHost&#39; defines the secondary host.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>sasToken</em></td>
+                    <td>
+                      <p>The Shared Access Signature token.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="TableService.html">TableService</a></td>
+                    <td><p>A new TableService object with the SAS credentials.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_createBlobService" data-uid="_global.createBlobService">createBlobService(storageAccountOrConnectionString, storageAccessKey, host)</h4>
+              <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="BlobService.html">BlobService</a> object.
+If no storageaccount or storageaccesskey are provided, the AZURE_STORAGE_CONNECTION_STRING and then the AZURE_STORAGE_ACCOUNT and AZURE_STORAGE_ACCESS_KEY 
+environment variables will be used.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createBlobService(storageAccountOrConnectionString, storageAccessKey, host)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>storageAccountOrConnectionString</em></td>
+                    <td>
+                      <p>The storage account or the connection string.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>storageAccessKey</em></td>
+                    <td>
+                      <p>The storage access key.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">object</span></td>
+                    <td><em>host</em></td>
+                    <td>
+                      <p>The host address. To define primary only, pass a string. 
+                                                    Otherwise &#39;host.primaryHost&#39; defines the primary host and &#39;host.secondaryHost&#39; defines the secondary host.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="BlobService.html">BlobService</a></td>
+                    <td><p>A new BlobService object.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_createBlobServiceWithSas" data-uid="_global.createBlobServiceWithSas">createBlobServiceWithSas(host, sasToken)</h4>
+              <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="BlobService.html">BlobService</a> object using the host Uri and the SAS credentials provided.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createBlobServiceWithSas(host, sasToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">object</span></td>
+                    <td><em>host</em></td>
+                    <td>
+                      <p>The host address. To define primary only, pass a string. 
+                                                    Otherwise &#39;host.primaryHost&#39; defines the primary host and &#39;host.secondaryHost&#39; defines the secondary host.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>sasToken</em></td>
+                    <td>
+                      <p>The Shared Access Signature token.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="BlobService.html">BlobService</a></td>
+                    <td><p>A new BlobService object with the SAS credentials.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_createBlobServiceAnonymous" data-uid="_global.createBlobServiceAnonymous">createBlobServiceAnonymous(host)</h4>
+              <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="BlobService.html">BlobService</a> object using the host uri and anonymous access.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createBlobServiceAnonymous(host)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">object</span></td>
+                    <td><em>host</em></td>
+                    <td>
+                      <p>The host address. To define primary only, pass a string. 
+                                                    Otherwise &#39;host.primaryHost&#39; defines the primary host and &#39;host.secondaryHost&#39; defines the secondary host.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="BlobService.html">BlobService</a></td>
+                    <td><p>A new BlobService object with the anonymous credentials.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_createFileService" data-uid="_global.createFileService">createFileService(storageAccountOrConnectionString, storageAccessKey, host)</h4>
+              <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="FileService.html">FileService</a> object.
+If no storageaccount or storageaccesskey are provided, the AZURE_STORAGE_CONNECTION_STRING and then the AZURE_STORAGE_ACCOUNT and AZURE_STORAGE_ACCESS_KEY 
+environment variables will be used.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createFileService(storageAccountOrConnectionString, storageAccessKey, host)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>storageAccountOrConnectionString</em></td>
+                    <td>
+                      <p>The storage account or the connection string.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>storageAccessKey</em></td>
+                    <td>
+                      <p>The storage access key.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">object</span></td>
+                    <td><em>host</em></td>
+                    <td>
+                      <p>The host address. To define primary only, pass a string. 
+                                                    Otherwise &#39;host.primaryHost&#39; defines the primary host and &#39;host.secondaryHost&#39; defines the secondary host.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="FileService.html">FileService</a></td>
+                    <td><p>A new FileService object.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_createFileServiceWithSas" data-uid="_global.createFileServiceWithSas">createFileServiceWithSas(host, sasToken)</h4>
+              <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="FileService.html">FileService</a> object using the host Uri and the SAS credentials provided.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createFileServiceWithSas(host, sasToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">object</span></td>
+                    <td><em>host</em></td>
+                    <td>
+                      <p>The host address. To define primary only, pass a string. 
+                                                    Otherwise &#39;host.primaryHost&#39; defines the primary host and &#39;host.secondaryHost&#39; defines the secondary host.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>sasToken</em></td>
+                    <td>
+                      <p>The Shared Access Signature token.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="FileService.html">FileService</a></td>
+                    <td><p>A new FileService object with the SAS credentials.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_createQueueService" data-uid="_global.createQueueService">createQueueService(storageAccountOrConnectionString, storageAccessKey, host)</h4>
+              <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="QueueService.html">QueueService</a> object.
+If no storageaccount or storageaccesskey are provided, the AZURE_STORAGE_CONNECTION_STRING and then the AZURE_STORAGE_ACCOUNT and AZURE_STORAGE_ACCESS_KEY 
+environment variables will be used.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createQueueService(storageAccountOrConnectionString, storageAccessKey, host)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>storageAccountOrConnectionString</em></td>
+                    <td>
+                      <p>The storage account or the connection string.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>storageAccessKey</em></td>
+                    <td>
+                      <p>The storage access key.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">object</span></td>
+                    <td><em>host</em></td>
+                    <td>
+                      <p>The host address. To define primary only, pass a string. 
+                                                    Otherwise &#39;host.primaryHost&#39; defines the primary host and &#39;host.secondaryHost&#39; defines the secondary host.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="QueueService.html">QueueService</a></td>
+                    <td><p>A new QueueService object.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_createQueueServiceWithSas" data-uid="_global.createQueueServiceWithSas">createQueueServiceWithSas(host, sasToken)</h4>
+              <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="QueueService.html">QueueService</a> object using the host Uri and the SAS credentials provided.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function createQueueServiceWithSas(host, sasToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">object</span></td>
+                    <td><em>host</em></td>
+                    <td>
+                      <p>The host address. To define primary only, pass a string. 
+                                                    Otherwise &#39;host.primaryHost&#39; defines the primary host and &#39;host.secondaryHost&#39; defines the secondary host.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>sasToken</em></td>
+                    <td>
+                      <p>The Shared Access Signature token.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="QueueService.html">QueueService</a></td>
+                    <td><p>A new QueueService object with the SAS credentials.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_generateAccountSharedAccessSignature" data-uid="_global.generateAccountSharedAccessSignature">generateAccountSharedAccessSignature(storageAccountOrConnectionString, storageAccessKey, sharedAccessPolicy)</h4>
+              <div class="markdown level1 summary"><p>Generates an account shared access signature token</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function generateAccountSharedAccessSignature(storageAccountOrConnectionString, storageAccessKey, sharedAccessPolicy)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>storageAccountOrConnectionString</em></td>
+                    <td>
+                      <p>The storage account or the connection string.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>storageAccessKey</em></td>
+                    <td>
+                      <p>The storage access key.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>sharedAccessPolicy</em></td>
+                    <td>
+                      <p>The shared access policy.</p>
+
+                      
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">SharedAccessServices</span></td>
+                            <td><em>AccessPolicy.Services</em></td>
+                            <td>
+                              <p>The services (blob, file, queue, table) for a shared access signature associated with this shared access policy.
+                                                                                      Refer to <code>Constants.AccountSasConstants.Services</code>.</p>
+
+                              
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">SharedAccessResourceTypes</span></td>
+                            <td><em>AccessPolicy.ResourceTypes</em></td>
+                            <td>
+                              <p>The resource type for a shared access signature associated with this shared access policy.
+                                                                                      Refer to <code>Constants.AccountSasConstants.ResourceTypes</code>.</p>
+
+                              
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">SharedAccessPermissions</span></td>
+                            <td><em>AccessPolicy.Permissions</em></td>
+                            <td>
+                              <p>The permissions for a shared access signature. 
+                                                                                      Refer to <code>Constants.AccountSasConstants.Permissions</code>.</p>
+
+                              
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">date</span></td>
+                            <td><em>AccessPolicy.Start</em></td>
+                            <td>
+                              <p>The time at which the Shared Access Signature becomes valid.</p>
+
+                              
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">date</span></td>
+                            <td><em>AccessPolicy.Expiry</em></td>
+                            <td>
+                              <p>The time at which the Shared Access Signature becomes expired.</p>
+
+                              
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>AccessPolicy.IPAddressOrRange</em></td>
+                            <td>
+                              <p>The permission type. Refer to <code>Constants.AccountSasConstants.ResourceTypes</code>.</p>
+
+                              
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>AccessPolicy.Protocols</em></td>
+                            <td>
+                              <p>The possible protocols. Refer to <code>Constants.AccountSasConstants.ResourceTypes</code>.</p>
+
+                              
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_serialize" data-uid="_global.serialize">serialize(The)</h4>
+              <div class="markdown level1 summary"><p>Builds an XML representation for a block list.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function serialize(The)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">array</span></td>
+                    <td><em>The</em></td>
+                    <td>
+                      <p>block list.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>The XML block list.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_noMatchConnectionString" data-uid="_global.noMatchConnectionString">noMatchConnectionString(connectionString)</h4>
+              <div class="markdown level1 summary"><p>Throws an exception if the connection string format does not match any of the
+available formats.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function noMatchConnectionString(connectionString)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>connectionString</em></td>
+                    <td>
+                      <p>The invalid formatted connection string.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td><p>none</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_noMatchSettings" data-uid="_global.noMatchSettings">noMatchSettings(settings)</h4>
+              <div class="markdown level1 summary"><p>Throws an exception if the settings dont match any of the
+available formats.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function noMatchSettings(settings)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>settings</em></td>
+                    <td>
+                      <p>The invalid settings.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td><p>none</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_parseAndValidateKeys" data-uid="_global.parseAndValidateKeys">parseAndValidateKeys(connectionString, validKeys)</h4>
+              <div class="markdown level1 summary"><p>Parses the connection string and then validate that the parsed keys belong to
+the validSettingKeys</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function parseAndValidateKeys(connectionString, validKeys)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>connectionString</em></td>
+                    <td>
+                      <p>The user provided connection string.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">array</span></td>
+                    <td><em>validKeys</em></td>
+                    <td>
+                      <p>The valid keys.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">array</span></td>
+                    <td><p>The tokenized connection string keys.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_getValidator" data-uid="_global.getValidator">getValidator(array, boolean, boolean)</h4>
+              <div class="markdown level1 summary"><p>Creates an anonymous function that acts as predicate to perform a validation.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getValidator(array, boolean, boolean)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">requirements</span></td>
+                    <td><em>array</em></td>
+                    <td>
+                      <p>The array of conditions to satisfy.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">isRequired</span></td>
+                    <td><em>boolean</em></td>
+                    <td>
+                      <p>Either these conditions are all required or all
+optional.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">atLeastOne</span></td>
+                    <td><em>boolean</em></td>
+                    <td>
+                      <p>Indicates that at least one requirement must
+succeed.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_setting" data-uid="_global.setting">setting(name)</h4>
+              <div class="markdown level1 summary"><p>Creates a setting value condition that validates it is one of the
+passed valid values.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function setting(name)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The setting key name.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">array</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_atLeastOne" data-uid="_global.atLeastOne">atLeastOne()</h4>
+              <div class="markdown level1 summary"><p>Creates an &quot;at lease one&quot; predicate for the provided list of requirements.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function atLeastOne()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td><p>callable</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_optional" data-uid="_global.optional">optional()</h4>
+              <div class="markdown level1 summary"><p>Creates an optional predicate for the provided list of requirements.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function optional()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_allRequired" data-uid="_global.allRequired">allRequired()</h4>
+              <div class="markdown level1 summary"><p>Creates an required predicate for the provided list of requirements.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function allRequired()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_settingWithFunc" data-uid="_global.settingWithFunc">settingWithFunc(name, predicate)</h4>
+              <div class="markdown level1 summary"><p>Creates a setting value condition using the passed predicate.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function settingWithFunc(name, predicate)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>name</em></td>
+                    <td>
+                      <p>The setting key name.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td><em>predicate</em></td>
+                    <td>
+                      <p>The setting value predicate.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">array</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_matchedSpecification" data-uid="_global.matchedSpecification">matchedSpecification(array)</h4>
+              <div class="markdown level1 summary"><p>Tests to see if a given list of settings matches a set of filters exactly.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function matchedSpecification(array)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td><em>array</em></td>
+                    <td>
+                      <p>$settings The settings to check.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td><p>boolean If any filter returns null, false. If there are any settings
+left over after all filters are processed, false. Otherwise true.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_generateEmptyCondition" data-uid="_global.generateEmptyCondition">generateEmptyCondition()</h4>
+              <div class="markdown level1 summary"><p>Constructs an empty access condition.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function generateEmptyCondition()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><p>An empty AccessCondition object</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_generateIfNotExistsCondition" data-uid="_global.generateIfNotExistsCondition">generateIfNotExistsCondition()</h4>
+              <div class="markdown level1 summary"><p>Constructs an access condition such that an operation will be performed only if the resource does not exist on the service</p>
+<p>Setting this access condition modifies the request to include the HTTP If-None-Match conditional header</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function generateIfNotExistsCondition()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">AccessConditions</span></td>
+                    <td><p>An AccessCondition object that represents a condition that checks for nonexistence</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_generateIfExistsCondition" data-uid="_global.generateIfExistsCondition">generateIfExistsCondition()</h4>
+              <div class="markdown level1 summary"><p>Constructs an access condition such that an operation will be performed only if the resource exists on the service</p>
+<p>Setting this access condition modifies the request to include the HTTP If-Match conditional header</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function generateIfExistsCondition()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">AccessConditions</span></td>
+                    <td><p>An AccessCondition object that represents a condition that checks for existence</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_generateIfNoneMatchCondition" data-uid="_global.generateIfNoneMatchCondition">generateIfNoneMatchCondition(etag)</h4>
+              <div class="markdown level1 summary"><p>Constructs an access condition such that an operation will be performed only if the resource&#39;s ETag value 
+does not match the specified ETag value</p>
+<p>Setting this access condition modifies the request to include the HTTP If-None-Match conditional header</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function generateIfNoneMatchCondition(etag)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>etag</em></td>
+                    <td>
+                      <p>The ETag value to check against the resource&#39;s ETag</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">AccessConditions</span></td>
+                    <td><p>An AccessCondition object that represents the If-None-Match condition</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_generateIfMatchCondition" data-uid="_global.generateIfMatchCondition">generateIfMatchCondition(etag)</h4>
+              <div class="markdown level1 summary"><p>Constructs an access condition such that an operation will be performed only if the resource&#39;s ETag value
+matches the specified ETag value</p>
+<p>Setting this access condition modifies the request to include the HTTP If-Match conditional header</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function generateIfMatchCondition(etag)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>etag</em></td>
+                    <td>
+                      <p>The ETag value to check against the resource&#39;s ETag</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">AccessConditions</span></td>
+                    <td><p>An AccessCondition object that represents the If-Match condition</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_generateIfModifiedSinceCondition" data-uid="_global.generateIfModifiedSinceCondition">generateIfModifiedSinceCondition(time)</h4>
+              <div class="markdown level1 summary"><p>Constructs an access condition such that an operation will be performed only if the resource has been
+modified since the specified time</p>
+<p>Setting this access condition modifies the request to include the HTTP If-Modified-Since conditional header</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function generateIfModifiedSinceCondition(time)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Date</span> | <span class="xref">string</span></td>
+                    <td><em>time</em></td>
+                    <td>
+                      <p>A date object specifying the time since which the resource must have been modified</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">AccessConditions</span></td>
+                    <td><p>An AccessCondition object that represents the If-Modified-Since condition</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_generateIfNotModifiedSinceCondition" data-uid="_global.generateIfNotModifiedSinceCondition">generateIfNotModifiedSinceCondition(time)</h4>
+              <div class="markdown level1 summary"><p>Constructs an access condition such that an operation will be performed only if the resource has not been
+modified since the specified time</p>
+<p>Setting this access condition modifies the request to include the HTTP If-Unmodified-Since conditional header</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function generateIfNotModifiedSinceCondition(time)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Date</span> | <span class="xref">string</span></td>
+                    <td><em>time</em></td>
+                    <td>
+                      <p>A date object specifying the time since which the resource must have not been modified</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">AccessConditions</span></td>
+                    <td><p>An AccessCondition object that represents the If-Unmodified-Since condition</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_generateSequenceNumberEqualCondition" data-uid="_global.generateSequenceNumberEqualCondition">generateSequenceNumberEqualCondition(sequenceNumber)</h4>
+              <div class="markdown level1 summary"><p>Constructs an access condition such that an operation will be performed only if the resource&#39;s sequence number
+is equal to the specified value</p>
+<p>Setting this access condition modifies the request to include the HTTP x-ms-if-sequence-number-eq conditional header</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function generateSequenceNumberEqualCondition(sequenceNumber)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Number</span> | <span class="xref">string</span></td>
+                    <td><em>sequenceNumber</em></td>
+                    <td>
+                      <p>A date object specifying the time since which the resource must have not been modified</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">AccessConditions</span></td>
+                    <td><p>An AccessCondition object that represents the If-Unmodified-Since condition</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_generateSequenceNumberLessThanCondition" data-uid="_global.generateSequenceNumberLessThanCondition">generateSequenceNumberLessThanCondition(sequenceNumber)</h4>
+              <div class="markdown level1 summary"><p>Constructs an access condition such that an operation will be performed only if the resource&#39;s sequence number
+is less than the specified value</p>
+<p>Setting this access condition modifies the request to include the HTTP x-ms-if-sequence-number-lt conditional header</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function generateSequenceNumberLessThanCondition(sequenceNumber)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Number</span> | <span class="xref">string</span></td>
+                    <td><em>sequenceNumber</em></td>
+                    <td>
+                      <p>A date object specifying the time since which the resource must have not been modified</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">AccessConditions</span></td>
+                    <td><p>An AccessCondition object that represents the If-Unmodified-Since condition</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_generateSequenceNumberLessThanOrEqualCondition" data-uid="_global.generateSequenceNumberLessThanOrEqualCondition">generateSequenceNumberLessThanOrEqualCondition(sequenceNumber)</h4>
+              <div class="markdown level1 summary"><p>Constructs an access condition such that an operation will be performed only if the resource&#39;s sequence number
+is less than or equal to the specified value</p>
+<p>Setting this access condition modifies the request to include the HTTP x-ms-if-sequence-number-le conditional header</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function generateSequenceNumberLessThanOrEqualCondition(sequenceNumber)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Number</span> | <span class="xref">string</span></td>
+                    <td><em>sequenceNumber</em></td>
+                    <td>
+                      <p>A date object specifying the time since which the resource must have not been modified</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">AccessConditions</span></td>
+                    <td><p>An AccessCondition object that represents the If-Unmodified-Since condition</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_format" data-uid="_global.format">format(date, skipMilliseconds, millisecondsPading)</h4>
+              <div class="markdown level1 summary"><p>Formats a date into an iso 8061 string.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function format(date, skipMilliseconds, millisecondsPading)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">date</span></td>
+                    <td><em>date</em></td>
+                    <td>
+                      <p>The date to format.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">bool</span></td>
+                    <td><em>skipMilliseconds</em></td>
+                    <td>
+                      <p>Boolean value indicating if the miliseconds part of the date should not be included.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">integer</span></td>
+                    <td><em>millisecondsPading</em></td>
+                    <td>
+                      <p>Number of digits to left pad the miliseconds.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>The date formated in the ISO 8061 date format.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_parse" data-uid="_global.parse">parse(stringDateTime)</h4>
+              <div class="markdown level1 summary"><p>Parses an ISO 8061 date string into a date object.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function parse(stringDateTime)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>stringDateTime</em></td>
+                    <td>
+                      <p>The string with the date to parse in the ISO 8061 format.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">date</span></td>
+                    <td><p>The parsed date.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_trimPortFromUri" data-uid="_global.trimPortFromUri">trimPortFromUri(uri)</h4>
+              <div class="markdown level1 summary"><p>Trim the default port in the url.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function trimPortFromUri(uri)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>uri</em></td>
+                    <td>
+                      <p>The URI to be encoded.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>The URI without defualt port.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_objectKeysLength" data-uid="_global.objectKeysLength">objectKeysLength(value)</h4>
+              <div class="markdown level1 summary"><p>Returns the number of keys (properties) in an object.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function objectKeysLength(value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>The object which keys are to be counted.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">number</span></td>
+                    <td><p>The number of keys in the object.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_isBrowser" data-uid="_global.isBrowser">isBrowser()</h4>
+              <div class="markdown level1 summary"><p>Checks if in a browser environment.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function isBrowser()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">bool</span></td>
+                    <td><p>True if in a browser environment, false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_isIE" data-uid="_global.isIE">isIE()</h4>
+              <div class="markdown level1 summary"><p>Checks if in IE.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function isIE()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">bool</span></td>
+                    <td><p>True if in IE, false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_is32" data-uid="_global.is32">is32()</h4>
+              <div class="markdown level1 summary"><p>Checks if in a 32bit Node.js environment.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function is32()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">bool</span></td>
+                    <td><p>True if in a 32bit Node.js environment, false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_objectIsNull" data-uid="_global.objectIsNull">objectIsNull(value)</h4>
+              <div class="markdown level1 summary"><p>Checks if a value is null or undefined.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function objectIsNull(value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>The value to check for null or undefined.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">bool</span></td>
+                    <td><p>True if the value is null or undefined, false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_objectIsEmpty" data-uid="_global.objectIsEmpty">objectIsEmpty(object)</h4>
+              <div class="markdown level1 summary"><p>Checks if an object is empty.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function objectIsEmpty(object)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>object</em></td>
+                    <td>
+                      <p>The object to check if it is null.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">bool</span></td>
+                    <td><p>True if the object is empty, false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_objectIsInt" data-uid="_global.objectIsInt">objectIsInt(value)</h4>
+              <div class="markdown level1 summary"><p>Determines if an object contains an integer number.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function objectIsInt(value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>The object to assert.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">bool</span></td>
+                    <td><p>True if the object contains an integer number; false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_objectIsNaN" data-uid="_global.objectIsNaN">objectIsNaN(value)</h4>
+              <div class="markdown level1 summary"><p>Determines if an object is a NaN.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function objectIsNaN(value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>The object to assert.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">bool</span></td>
+                    <td><p>True if the object is a NaN; false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_objectIsString" data-uid="_global.objectIsString">objectIsString(object)</h4>
+              <div class="markdown level1 summary"><p>Checks if an object is a string.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function objectIsString(object)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>object</em></td>
+                    <td>
+                      <p>The object to check if it is a string.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">bool</span></td>
+                    <td><p>True if the object is a string, false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_objectIsFunction" data-uid="_global.objectIsFunction">objectIsFunction(object)</h4>
+              <div class="markdown level1 summary"><p>Check if an object is a function</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function objectIsFunction(object)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>object</em></td>
+                    <td>
+                      <p>The object to check whether it is function</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">bool</span></td>
+                    <td><p>True if the specified object is function, otherwise false</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_zeroPaddingString" data-uid="_global.zeroPaddingString">zeroPaddingString()</h4>
+              <div class="markdown level1 summary"><p>Front zero padding of string to sepcified length</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function zeroPaddingString()</code></pre>
+              </div>
+              
+              
+              <h4 id="_global_stringIsEmpty" data-uid="_global.stringIsEmpty">stringIsEmpty(value)</h4>
+              <div class="markdown level1 summary"><p>Checks if a value is an empty string, null or undefined.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function stringIsEmpty(value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>The value to check for an empty string, null or undefined.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">bool</span></td>
+                    <td><p>True if the value is an empty string, null or undefined, false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_IsNullOrEmptyOrUndefinedOrWhiteSpace" data-uid="_global.IsNullOrEmptyOrUndefinedOrWhiteSpace">IsNullOrEmptyOrUndefinedOrWhiteSpace(value)</h4>
+              <div class="markdown level1 summary"><p>Checks if a value is null, empty, undefined or consists only of white-space characters.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function IsNullOrEmptyOrUndefinedOrWhiteSpace(value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>The value to check for null, empty, undefined and white-space only characters.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">bool</span></td>
+                    <td><p>True if the value is an empty string, null, undefined, or consists only of white-space characters, false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_stringFormat" data-uid="_global.stringFormat">stringFormat(text, arguments)</h4>
+              <div class="markdown level1 summary"><p>Formats a text replacing &#39;?&#39; by the arguments.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function stringFormat(text, arguments)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>text</em></td>
+                    <td>
+                      <p>The string where the ? should be replaced.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">array</span></td>
+                    <td><em>arguments</em></td>
+                    <td>
+                      <p>Value(s) to insert in question mark (?) parameters.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_stringStartsWith" data-uid="_global.stringStartsWith">stringStartsWith(text, prefix)</h4>
+              <div class="markdown level1 summary"><p>Determines if a string starts with another.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function stringStartsWith(text, prefix)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>text</em></td>
+                    <td>
+                      <p>The string to assert.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>prefix</em></td>
+                    <td>
+                      <p>The string prefix.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Bool</span></td>
+                    <td><p>True if the string starts with the prefix; false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_stringEndsWith" data-uid="_global.stringEndsWith">stringEndsWith(text, suffix)</h4>
+              <div class="markdown level1 summary"><p>Determines if a string ends with another.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function stringEndsWith(text, suffix)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>text</em></td>
+                    <td>
+                      <p>The string to assert.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>suffix</em></td>
+                    <td>
+                      <p>The string suffix.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Bool</span></td>
+                    <td><p>True if the string ends with the suffix; false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_removeBOM" data-uid="_global.removeBOM">removeBOM(str)</h4>
+              <div class="markdown level1 summary"><p>Removes the BOM from a string.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function removeBOM(str)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>str</em></td>
+                    <td>
+                      <p>The string from where the BOM is to be removed</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>The string without the BOM.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_merge" data-uid="_global.merge">merge(object)</h4>
+              <div class="markdown level1 summary"><p>Merges multiple objects.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function merge(object)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>object</em></td>
+                    <td>
+                      <p>The objects to be merged</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><p>The merged object.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_inArrayInsensitive" data-uid="_global.inArrayInsensitive">inArrayInsensitive(needle, haystack)</h4>
+              <div class="markdown level1 summary"><p>Checks if a value exists in an array. The comparison is done in a case
+insensitive manner.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function inArrayInsensitive(needle, haystack)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>needle</em></td>
+                    <td>
+                      <p>The searched value.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">array</span></td>
+                    <td><em>haystack</em></td>
+                    <td>
+                      <p>The array.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_tryGetValueInsensitive" data-uid="_global.tryGetValueInsensitive">tryGetValueInsensitive(key, haystack, default)</h4>
+              <div class="markdown level1 summary"><p>Returns the specified value of the key passed from object and in case that
+this key doesn&#39;t exist, the default value is returned. The key matching is
+done in a case insensitive manner.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function tryGetValueInsensitive(key, haystack, default)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>key</em></td>
+                    <td>
+                      <p>The array key.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>haystack</em></td>
+                    <td>
+                      <p>The object to be used.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">mix</span></td>
+                    <td><em>default</em></td>
+                    <td>
+                      <p>The value to return if $key is not found in $array.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td><p>mix</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_tryGetValueChain" data-uid="_global.tryGetValueChain">tryGetValueChain(object, keys, default)</h4>
+              <div class="markdown level1 summary"><p>Returns the value in a chained object.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function tryGetValueChain(object, keys, default)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>object</em></td>
+                    <td>
+                      <p>The object with the values.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">array</span></td>
+                    <td><em>keys</em></td>
+                    <td>
+                      <p>The keys.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">mix</span></td>
+                    <td><em>default</em></td>
+                    <td>
+                      <p>The value to return if $key is not found in $array.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td><p>mix</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_setObjectInnerPropertyValue" data-uid="_global.setObjectInnerPropertyValue">setObjectInnerPropertyValue(object, keys, object)</h4>
+              <div class="markdown level1 summary"><p>Set the value of an inner property of an object.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function setObjectInnerPropertyValue(object, keys, object)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>object</em></td>
+                    <td>
+                      <p>The target object.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">array</span></td>
+                    <td><em>keys</em></td>
+                    <td>
+                      <p>The property chain keys.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">mix</span></td>
+                    <td><em>object</em></td>
+                    <td>
+                      <p>The value to be set.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_truncatedISO8061Date" data-uid="_global.truncatedISO8061Date">truncatedISO8061Date(a)</h4>
+              <div class="markdown level1 summary"><p>Rounds a date off to seconds.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function truncatedISO8061Date(a)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Date</span></td>
+                    <td><em>a</em></td>
+                    <td>
+                      <p>date</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>the date in ISO8061 format, with no milliseconds component</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_calculateMD5" data-uid="_global.calculateMD5">calculateMD5()</h4>
+              <div class="markdown level1 summary"><p>Calculate md5sum for the stream</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function calculateMD5()</code></pre>
+              </div>
+              
+              
+              <h4 id="_global_isBufferAllZero" data-uid="_global.isBufferAllZero">isBufferAllZero()</h4>
+              <div class="markdown level1 summary"><p>Whether the content of buffer is all zero</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function isBufferAllZero()</code></pre>
+              </div>
+              
+              
+              <h4 id="_global_getContentMd5" data-uid="_global.getContentMd5">getContentMd5()</h4>
+              <div class="markdown level1 summary"><p>Calculate md5sum for the content</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function getContentMd5()</code></pre>
+              </div>
+              
+              
+              <h4 id="_global_parseCopyProgress" data-uid="_global.parseCopyProgress">parseCopyProgress()</h4>
+              <div class="markdown level1 summary"><p>Parse copy progress string in the format of bytesCopied/totalBytes</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function parseCopyProgress()</code></pre>
+              </div>
+              
+              
+              <h4 id="_global_normalizePropertyNameFromXML" data-uid="_global.normalizePropertyNameFromXML">normalizePropertyNameFromXML()</h4>
+              <div class="markdown level1 summary"><p>Normalize the property name from XML to keep consistent with 
+the name defined in the property headers</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function normalizePropertyNameFromXML()</code></pre>
+              </div>
+              
+              
+              <h4 id="_global_setPropertyValueFromXML" data-uid="_global.setPropertyValueFromXML">setPropertyValueFromXML()</h4>
+              <div class="markdown level1 summary"><p>Set the property value from XML</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function setPropertyValueFromXML()</code></pre>
+              </div>
+              
+              
+              <h4 id="_global_filterOutNonReservedProperties" data-uid="_global.filterOutNonReservedProperties">filterOutNonReservedProperties()</h4>
+              <div class="markdown level1 summary"><p>Filter out non-reserved properties from options</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function filterOutNonReservedProperties()</code></pre>
+              </div>
+              
+              
+              <h4 id="_global_isValidEnumValue" data-uid="_global.isValidEnumValue">isValidEnumValue(value, list)</h4>
+              <div class="markdown level1 summary"><p>Checks if the given value is a valid enumeration or not.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function isValidEnumValue(value, list)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>The value to validate.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>list</em></td>
+                    <td>
+                      <p>The enumeration values.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_isValidUri" data-uid="_global.isValidUri">isValidUri(uri)</h4>
+              <div class="markdown level1 summary"><p>Creates a anonymous function that check if the given uri is valid or not.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function isValidUri(uri)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>uri</em></td>
+                    <td>
+                      <p>The uri to validate.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_isValidHost" data-uid="_global.isValidHost">isValidHost(host)</h4>
+              <div class="markdown level1 summary"><p>Checks if the given host is valid or not.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function isValidHost(host)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">object</span></td>
+                    <td><em>host</em></td>
+                    <td>
+                      <p>The host to validate.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_isValidUuid" data-uid="_global.isValidUuid">isValidUuid(uuid)</h4>
+              <div class="markdown level1 summary"><p>Checks if the given value is a valid UUID or not.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function isValidUuid(uuid)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span> | <span class="xref">object</span></td>
+                    <td><em>uuid</em></td>
+                    <td>
+                      <p>The uuid to validate.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_isBase64Encoded" data-uid="_global.isBase64Encoded">isBase64Encoded(key)</h4>
+              <div class="markdown level1 summary"><p>Creates a anonymous function that check if a given key is base 64 encoded.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function isBase64Encoded(key)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>key</em></td>
+                    <td>
+                      <p>The key to validate.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_isValidFunction" data-uid="_global.isValidFunction">isValidFunction(function)</h4>
+              <div class="markdown level1 summary"><p>Validates a function.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function isValidFunction(function)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>function</em></td>
+                    <td>
+                      <p>The function to validate.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">function</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_containerNameIsValid" data-uid="_global.containerNameIsValid">containerNameIsValid(containerName)</h4>
+              <div class="markdown level1 summary"><p>Validates a container name.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function containerNameIsValid(containerName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>containerName</em></td>
+                    <td>
+                      <p>The container name.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_blobNameIsValid" data-uid="_global.blobNameIsValid">blobNameIsValid(containerName, blobname)</h4>
+              <div class="markdown level1 summary"><p>Validates a blob name.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function blobNameIsValid(containerName, blobname)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>containerName</em></td>
+                    <td>
+                      <p>The container name.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>blobname</em></td>
+                    <td>
+                      <p>The blob name.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_blobTierNameIsValid" data-uid="_global.blobTierNameIsValid">blobTierNameIsValid(blobTier)</h4>
+              <div class="markdown level1 summary"><p>Validates a blob tier name.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function blobTierNameIsValid(blobTier)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>blobTier</em></td>
+                    <td>
+                      <p>The blob tier name.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_shareNameIsValid" data-uid="_global.shareNameIsValid">shareNameIsValid(shareName)</h4>
+              <div class="markdown level1 summary"><p>Validates a share name.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function shareNameIsValid(shareName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>shareName</em></td>
+                    <td>
+                      <p>The share name.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_queueNameIsValid" data-uid="_global.queueNameIsValid">queueNameIsValid(queueName)</h4>
+              <div class="markdown level1 summary"><p>Validates a queue name.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function queueNameIsValid(queueName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>queueName</em></td>
+                    <td>
+                      <p>The queue name.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_tableNameIsValid" data-uid="_global.tableNameIsValid">tableNameIsValid(table)</h4>
+              <div class="markdown level1 summary"><p>Validates a table name.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function tableNameIsValid(table)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>table</em></td>
+                    <td>
+                      <p>The table name.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_browserFileIsValid" data-uid="_global.browserFileIsValid">browserFileIsValid(browserFile)</h4>
+              <div class="markdown level1 summary"><p>Validates an HTML File object.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function browserFileIsValid(browserFile)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">File</span></td>
+                    <td><em>browserFile</em></td>
+                    <td>
+                      <p>The HTML File object.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_pageRangesAreValid" data-uid="_global.pageRangesAreValid">pageRangesAreValid(rangeStart, rangeEnd, writeBlockSizeInBytes)</h4>
+              <div class="markdown level1 summary"><p>Validates page ranges.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function pageRangesAreValid(rangeStart, rangeEnd, writeBlockSizeInBytes)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">int</span></td>
+                    <td><em>rangeStart</em></td>
+                    <td>
+                      <p>The range starting position.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">int</span></td>
+                    <td><em>rangeEnd</em></td>
+                    <td>
+                      <p>The range ending position.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">int</span></td>
+                    <td><em>writeBlockSizeInBytes</em></td>
+                    <td>
+                      <p>The block size.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_blobTypeIsValid" data-uid="_global.blobTypeIsValid">blobTypeIsValid(type)</h4>
+              <div class="markdown level1 summary"><p>Validates a blob type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function blobTypeIsValid(type)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>type</em></td>
+                    <td>
+                      <p>The type name.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_shareACLIsValid" data-uid="_global.shareACLIsValid">shareACLIsValid(type)</h4>
+              <div class="markdown level1 summary"><p>Validates share ACL type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function shareACLIsValid(type)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>type</em></td>
+                    <td>
+                      <p>The type name.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_shareQuotaIsValid" data-uid="_global.shareQuotaIsValid">shareQuotaIsValid(type)</h4>
+              <div class="markdown level1 summary"><p>Validates share quota value.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function shareQuotaIsValid(type)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">int</span></td>
+                    <td><em>type</em></td>
+                    <td>
+                      <p>The quota value.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_serialize" data-uid="_global.serialize">serialize(The)</h4>
+              <div class="markdown level1 summary"><p>Builds an XML representation for a block list.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function serialize(The)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">array</span></td>
+                    <td><em>The</em></td>
+                    <td>
+                      <p>block list.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>The XML block list.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_propertyType" data-uid="_global.propertyType">propertyType(value)</h4>
+              <div class="markdown level1 summary"><p>Get the Edm type of an object.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function propertyType(value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>A typed instance.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>The Edm type.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_deserializeValueFromJson" data-uid="_global.deserializeValueFromJson">deserializeValueFromJson(type, value)</h4>
+              <div class="markdown level1 summary"><p>Convert a JSON value from over the wire into the correct EDM type.</p>
+<p>Note that Int64, is remaining a string.  Converting it to a Number would lose precision.
+Int32, Boolean, and Double should already be the correct non-string types</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function deserializeValueFromJson(type, value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>type</em></td>
+                    <td>
+                      <p>The type of the value as it appears in the type attribute.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>The value in JSON format.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><p>The unserialized value.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_serializeValue" data-uid="_global.serializeValue">serializeValue(type, value)</h4>
+              <div class="markdown level1 summary"><p>Convert a raw EdmType value into the JSON value expected to be sent over the wire.</p>
+<p>TODO: validate correct input types?
+Expects Edm.Int64 and Edm.String to be string, Edm.Double and Edm.Int32 to be Number,
+Edm.Guid to be an array or buffer compatible with Node.uuid, Edm.Binary to be a Node Buffer, Edm.DateTime to be a Date,
+and Edm.Boolean to be a boolean.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function serializeValue(type, value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>type</em></td>
+                    <td>
+                      <p>The type of the value as it will appear in the type attribute.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>The value</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><p>The serialized value.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_serializeQueryValue" data-uid="_global.serializeQueryValue">serializeQueryValue(value)</h4>
+              <div class="markdown level1 summary"><p>Serializes value into proper value to be used in odata query value.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function serializeQueryValue(value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>value</em></td>
+                    <td>
+                      <p>The value to be serialized.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><p>The serialized value.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_constructEntityWebResource" data-uid="_global.constructEntityWebResource">constructEntityWebResource(operation, table, entityDescriptor, options)</h4>
+              <div class="markdown level1 summary"><p>Constructs the web resource for a table operation.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function constructEntityWebResource(operation, table, entityDescriptor, options)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>operation</em></td>
+                    <td>
+                      <p>The operation to perform.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>table</em></td>
+                    <td>
+                      <p>The table name.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>entityDescriptor</em></td>
+                    <td>
+                      <p>The entity descriptor.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>options</em></td>
+                    <td>
+                      <p>The create options or callback function.</p>
+
+                      
+                      <h6 class="parameters">Properties</h6>
+                      <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><span class="xref">boolean</span></td>
+                            <td><em>checkEtag</em></td>
+                            <td>
+                              <p>Boolean value indicating weather the etag should be matched or not.</p>
+
+                              
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>echoContent</em></td>
+                            <td>
+                              <p>Whether or not to return the entity upon a successful insert. Default to false.</p>
+
+                              
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">string</span></td>
+                            <td><em>payloadFormat</em></td>
+                            <td>
+                              <p>The payload format to use for the request.</p>
+
+                              
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">LocationMode</span></td>
+                            <td><em>locationMode</em></td>
+                            <td>
+                              <p>Specifies the location mode used to decide which location the request should be sent to. 
+                                                                Please see StorageUtilities.LocationMode for the possible values.</p>
+
+                              
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">int</span></td>
+                            <td><em>timeoutIntervalInMs</em></td>
+                            <td>
+                              <p>The server timeout interval, in milliseconds, to use for the request.</p>
+
+                              
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">int</span></td>
+                            <td><em>clientRequestTimeoutInMs</em></td>
+                            <td>
+                              <p>The timeout of client requests, in milliseconds, to use for the request.</p>
+
+                              
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><span class="xref">int</span></td>
+                            <td><em>maximumExecutionTimeInMs</em></td>
+                            <td>
+                              <p>The maximum execution time, in milliseconds, across all potential retries, to use when making this request.
+                                                                The maximum execution time interval begins at the time that the client begins building the request. The maximum
+                                                                execution time is checked intermittently while performing requests, and before executing retries.</p>
+
+                              
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">webResource</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="_global_setTableRequestHeadersAndBody" data-uid="_global.setTableRequestHeadersAndBody">setTableRequestHeadersAndBody(webResource, body)</h4>
+              <div class="markdown level1 summary"><p>Sets the table request headers.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">function setTableRequestHeadersAndBody(webResource, body)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">string</span></td>
+                    <td><em>webResource</em></td>
+                    <td>
+                      <p>The webResource to add headers to.</p>
+
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">object</span></td>
+                    <td><em>body</em></td>
+                    <td>
+                      <p>The body of the request.</p>
+
+                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="members">Members
+              </h3>
+              
+              
+              <h4 id="_global_DEFAULT_PROTOCOL" data-uid="_global.DEFAULT_PROTOCOL">DEFAULT_PROTOCOL</h4>
+              <div class="markdown level1 summary"><p>The default protocol.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">DEFAULT_PROTOCOL</code></pre>
+              </div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
