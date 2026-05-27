@@ -1,0 +1,9 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+Gemfile.lock
+.bundle/
+node_modules/
+.DS_Store
+Thumbs.db

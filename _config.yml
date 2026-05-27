@@ -1,0 +1,98 @@
+theme: jekyll-theme-chirpy
+
+lang: en
+timezone: Asia/Shanghai
+
+title: Renze Yu
+tagline: Personal blog
+description: >-
+  Personal blog of Renze Yu.
+
+url: "https://superyyrrzz.github.io"
+
+github:
+  username: superyyrrzz
+
+social:
+  name: Renze Yu
+  email: ""
+  links:
+    - https://github.com/superyyrrzz
+
+theme_mode: # [light | dark] — leave empty for auto switch by OS preference
+
+avatar: ""
+
+toc: true
+
+paginate: 10
+
+permalink: /posts/:title/
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - tools
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - package*.json
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
