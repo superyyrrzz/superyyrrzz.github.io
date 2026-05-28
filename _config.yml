@@ -47,13 +47,26 @@ collections:
     output: true
     sort_by: order
 
+comments:
+  provider: giscus
+  giscus:
+    repo: superyyrrzz/superyyrrzz.github.io
+    repo_id: MDEwOlJlcG9zaXRvcnk1NjU4MjUyNw==
+    category: General
+    category_id: DIC_kwDOA19hf84C-AIj
+    mapping: pathname
+    strict: 0
+    input_position: bottom
+    lang: en
+    reactions_enabled: 1
+
 defaults:
   - scope:
       path: ""
       type: posts
     values:
       layout: post
-      comments: false
+      comments: true
       toc: true
       permalink: /posts/:title/
   - scope:
