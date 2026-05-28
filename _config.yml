@@ -21,7 +21,7 @@ social:
 
 theme_mode: # [light | dark] — leave empty for auto switch by OS preference
 
-avatar: ""
+avatar: "https://github.com/superyyrrzz.png"
 
 toc: true
 
