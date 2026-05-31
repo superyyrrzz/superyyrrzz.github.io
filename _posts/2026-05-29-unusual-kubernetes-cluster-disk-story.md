@@ -5,6 +5,9 @@ date: 2026-05-29 10:00:00 +0800
 categories: [Engineering, Microsoft Learn]
 tags: [kubernetes, aks, windows-containers, caching, lru, disk]
 mermaid: true
+image:
+  path: /assets/og/unusual-kubernetes-cluster-disk-story.png
+  alt: "The Disk-Shaped Kubernetes Cluster Behind a Docs Publishing Platform"
 ---
 
 This is the story of an Azure Kubernetes Service (AKS) cluster that

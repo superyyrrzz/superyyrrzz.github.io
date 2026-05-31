@@ -1,9 +1,13 @@
 ---
 title: "Splitting a 20 GB Docs Monorepo Without Breaking It: The migrate-repo-content Tool"
+description: "How we built a reusable tool to decompose a 20 GB content monorepo on demand — with referential integrity, scenario-based tests, and a deliberately small scope contract."
 date: 2026-05-28 10:00:00 +0800
 categories: [Engineering, Microsoft Learn]
 tags: [docs, git, monorepo, refactoring, testing]
 mermaid: true
+image:
+  path: /assets/og/splitting-azure-docs-monorepo.png
+  alt: "Splitting a 20 GB Docs Monorepo Without Breaking It"
 ---
 
 [`MicrosoftDocs/azure-docs`](https://github.com/MicrosoftDocs/azure-docs) is the public-facing repository behind a large
