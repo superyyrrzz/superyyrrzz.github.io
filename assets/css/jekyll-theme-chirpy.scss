@@ -1,0 +1,18 @@
+---
+---
+
+@use "main";
+
+/* Local overrides */
+
+/* Show OG images in full on home/post-list cards rather than center-cropping.
+ * Chirpy's default is object-fit: cover, which clips wide title images
+ * when the card box is narrower than the image's 1.91:1 aspect ratio
+ * (typical on the side-by-side desktop layout). object-fit: contain
+ * letterboxes instead, so the whole title is always visible. */
+#post-list .preview-img img,
+#access-lastmod .preview-img img,
+.related-posts .preview-img img {
+  object-fit: contain !important;
+  background: var(--img-bg);
+}

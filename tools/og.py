@@ -11,6 +11,11 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 W, H = 1200, 630
+# Safe zone: keep all text inside x=[SAFE_X, W-SAFE_X], y=[SAFE_Y, H-SAFE_Y].
+# Social platforms (and our own blog grid on narrow viewports) may center-crop
+# to non-1.91:1 aspect ratios. Anything outside the safe zone can be clipped.
+SAFE_X = 170
+SAFE_Y = 90
 BG_TOP = (15, 23, 42)        # slate-900
 BG_BOTTOM = (30, 41, 59)     # slate-800
 ACCENT = (250, 204, 21)      # amber-400 — guitar/jazz nod, ties to favicon
@@ -54,27 +59,29 @@ def render(title, out_path):
     gradient(img)
     draw = ImageDraw.Draw(img)
 
-    # Accent bar on the left
+    # Accent bar on the left (decorative; safe to clip)
     draw.rectangle([(0, 0), (12, H)], fill=ACCENT)
 
-    # Site name (top-left, monospace)
-    site_font = ImageFont.truetype(CONSOLAS_BOLD, 28)
-    draw.text((60, 56), "Renze Yu", font=site_font, fill=ACCENT)
+    inner_w = W - 2 * SAFE_X
 
-    # URL (top-right, muted)
+    # Site name (top-left of safe zone, monospace)
+    site_font = ImageFont.truetype(CONSOLAS_BOLD, 28)
+    draw.text((SAFE_X, SAFE_Y), "Renze Yu", font=site_font, fill=ACCENT)
+
+    # URL (top-right of safe zone, muted)
     url_font = ImageFont.truetype(SEGOE_REG, 24)
     url = "superyyrrzz.github.io"
     url_w = draw.textlength(url, font=url_font)
-    draw.text((W - 60 - url_w, 60), url, font=url_font, fill=MUTED)
+    draw.text((W - SAFE_X - url_w, SAFE_Y + 4), url, font=url_font, fill=MUTED)
 
-    # Title (centered vertically-ish, large)
+    # Title (vertically centered, wrapped within safe zone)
     if title:
-        size = 44
+        size = 40
         tfont = ImageFont.truetype(SEGOE_BOLD, size)
-        lines = wrap(draw, title, tfont, W - 140)
-        for trial in (72, 64, 56, 50, 44):
+        lines = wrap(draw, title, tfont, inner_w)
+        for trial in (64, 56, 50, 44, 40):
             tfont = ImageFont.truetype(SEGOE_BOLD, trial)
-            lines = wrap(draw, title, tfont, W - 140)
+            lines = wrap(draw, title, tfont, inner_w)
             if len(lines) <= 4:
                 size = trial
                 break
@@ -82,16 +89,16 @@ def render(title, out_path):
         total_h = line_h * len(lines)
         y = (H - total_h) // 2 - 10
         for line in lines:
-            draw.text((60, y), line, font=tfont, fill=FG)
+            draw.text((SAFE_X, y), line, font=tfont, fill=FG)
             y += line_h
     else:
         tag_font = ImageFont.truetype(SEGOE_BOLD, 84)
-        draw.text((60, 240), "Renze Yu", font=tag_font, fill=FG)
+        draw.text((SAFE_X, 240), "Renze Yu", font=tag_font, fill=FG)
         sub_font = ImageFont.truetype(SEGOE_REG, 36)
-        draw.text((60, 350), "engineering notes", font=sub_font, fill=MUTED)
+        draw.text((SAFE_X, 350), "engineering notes", font=sub_font, fill=MUTED)
 
-    # Footer hairline
-    draw.rectangle([(60, H - 80), (W - 60, H - 79)], fill=MUTED)
+    # Footer hairline (inside safe zone)
+    draw.rectangle([(SAFE_X, H - SAFE_Y - 10), (W - SAFE_X, H - SAFE_Y - 9)], fill=MUTED)
 
     img.save(out_path, "PNG", optimize=True)
     print(f"wrote {out_path}")
