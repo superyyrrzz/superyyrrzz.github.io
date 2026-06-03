@@ -61,6 +61,10 @@ comments:
     lang: en
     reactions_enabled: 1
 
+analytics:
+  google:
+    id: G-G7YE6PCJZE
+
 defaults:
   - scope:
       path: ""
